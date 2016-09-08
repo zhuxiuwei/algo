@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 160816
  * Difficulty: Easy
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 You may assume that each input would have exactly one solution.
@@ -27,7 +28,7 @@ public class P001_TwoSum {
 				res[1] = i;
 				return res;
 			}
-			map.put(nums[i], i);	//!!!!!!!!!!Note bug here: If move map.put before 'if' @ line 23, will fail test case: {3,2,4}, 6
+			map.put(nums[i], i);	
 		}
 		return null;
     }
@@ -39,3 +40,6 @@ public class P001_TwoSum {
 		System.out.println(Arrays.toString(p.twoSum(nums, target)));
 	}
 }
+/**
+ * Note bug: If move #31 map.put before 'if' #23, will fail test case: {3,2,4}, 6
+ */
