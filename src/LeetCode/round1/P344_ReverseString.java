@@ -32,5 +32,5 @@ public class P344_ReverseString {
 }
 
 /**
- * Ò»´ÎÍ¨¹ý¡£
+ * ä¸€æ¬¡é€šè¿‡ã€‚
  */

@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**  
  * 160908
  * Difficulty: Medium
-Given a non negative integer number num. For every numbers i in the range 0 ¡Ü i ¡Ü num calculate the number of 1's in their binary representation and return them as an array.
+Given a non negative integer number num. For every numbers i in the range 0 ï¿½ï¿½ i ï¿½ï¿½ num calculate the number of 1's in their binary representation and return them as an array.
 
 Example:
 For num = 5 you should return [0,1,1,2,1,2].
@@ -49,5 +49,5 @@ public class P338_CountingBits {
 
 }
 /**
- * Ò»´ÎÍ¨¹ý¡£
+ * ä¸€æ¬¡é€šè¿‡ã€‚
  */
