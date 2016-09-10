@@ -12,7 +12,7 @@ Could you do it without any loop/recursion in O(1) runtime?
 public class P258_AddDigits {
 	
 	public int addDigits(int num) {
-		if(num == 0) return 0;	//ע�� bug
+		if(num == 0) return 0;	//注意 bug
         return num % 9 == 0 ? 9: num % 9;
     }
 	
