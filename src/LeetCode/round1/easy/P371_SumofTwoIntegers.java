@@ -1,4 +1,4 @@
-package LeetCode.round1;
+package LeetCode.round1.easy;
 
 /**
  * 位操作的题目，对我比较新，有些意思。一次通过。

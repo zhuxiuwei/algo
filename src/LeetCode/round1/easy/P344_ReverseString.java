@@ -1,4 +1,4 @@
-package LeetCode.round1;
+package LeetCode.round1.easy;
 /***
  * 160908
  * Difficulty: Easy
