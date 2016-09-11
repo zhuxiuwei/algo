@@ -22,7 +22,7 @@ public class P260_SingleNumberIII {
 			diff = diff ^ nums[i];
 		
 		
-		//step2: 取出diff的1个为1的bit，说明两个唯一出现一次的数字在这个bit上是不一样的。 （注意，这里用到了异或的"diff"性质 -- 两个bit异或为1，说明两个bit不相等。我们利用这个性质，给原数组分组。）
+		//step2: 取出diff的1个=1的bit，即这两个唯一出现一次的数字在这个bit上是不一样的。 （注意，这里用到了异或的"diff"性质 -- 两个bit异或=1，说明两个bit不相等。接下来我们利用这个性质给原数组分组。）
 		int chosenBit = 1;
 		while(true)
 			if((diff & chosenBit) > 0) 
@@ -30,7 +30,7 @@ public class P260_SingleNumberIII {
 			else
 				chosenBit *= 2;
 		
-		/*step3. 然后把数组按照这个chosen bit分成两组 -- chosenBit所在的bit为1的一组，为0的是另一组。这这两组一定符合以下规律：
+		/*step3. 然后把数组按照这个chosen bit分成两组 -- chosenBit所在的bit为1的为一组，为0的是另一组。这这两组一定符合以下规律：
 			1. 两个只出现一次的数字，被分别分到了不同的组；
 			2. 所有出现2次的数字，其两个数字一定被分到了同一组中。
 			
