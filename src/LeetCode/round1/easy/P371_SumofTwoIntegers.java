@@ -45,6 +45,7 @@ public class P371_SumofTwoIntegers {
 //		System.out.println(a ^ b);
 //		System.out.println(a | b);
 //		System.out.println(a << b);
+//		System.out.println(~b);
 	}
 
 }

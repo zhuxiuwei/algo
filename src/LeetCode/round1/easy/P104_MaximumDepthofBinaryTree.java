@@ -1,6 +1,6 @@
 package LeetCode.round1.easy;
 
-import LeetCode.round1.TreeNode;
+import LeetCode.round1.common.TreeNode;
 
 /**
  * Easy  160910

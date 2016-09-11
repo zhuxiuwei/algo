@@ -14,6 +14,12 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 `Given an array of integers, every element appears twice except for one. Find that single one.`  
 `Note:Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?`  
 * [第一个的提交](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P136_SingleNumber.java#L53)思路是完全错的，典型的以偏概全。  
-* [最优答案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P136_SingleNumber.java#L17)：用到了__异或__的性：性质1：a ^ a = 0，性质2：0 ^ a = a。 性质3：交换律。  --->  a ^ a ^ b = b。 不熟，没想到。  
+* [最优答案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P136_SingleNumber.java#L17)：用到了__异或__的性质：性质1：a ^ a = 0，性质2：0 ^ a = a。 性质3：交换律。  --->  a ^ a ^ b = b。 不熟，没想到。  
+习题389.[Find the Difference](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P389_FindTheDifference.java)，可以用一样的解题思路。  
 
-  
+[Question 260 Single Number II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P260_SingleNumberIII.java) ★★★★  
+`Given an array of numbers nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once.`  
+`For example: Given nums = [1, 2, 1, 3, 2, 5], return [3, 5].?`  
+`Note: The order of the result is not important. So in the above example, [5, 3] is also correct. Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?`    
+还是异或的bit操作，对于一次全异或后，如何区分两个唯一出现一次数字没有想出好的思路。看的[答案](http://www.cnblogs.com/Anthony-Wang/p/5048762.html)。Bit操作的算法还是不熟练。  
+

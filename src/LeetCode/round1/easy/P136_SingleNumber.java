@@ -92,6 +92,6 @@ public class P136_SingleNumber {
 
 }
 /**
- * - 第一次的思路完全是错的，见
+ * - 第一次的思路完全是错的，见singleNumber_fail1
  * - 利用异或的性质：性质1：a ^ a = 0，性质2：0 ^ a = a。 性质3：交换律。  --->  a ^ a ^ b = b.  不熟悉这个操作。
  */

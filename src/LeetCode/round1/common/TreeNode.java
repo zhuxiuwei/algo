@@ -1,4 +1,4 @@
-package LeetCode.round1;
+package LeetCode.round1.common;
 
 /**
  * Used by below questions: 
