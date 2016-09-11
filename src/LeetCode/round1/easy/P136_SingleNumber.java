@@ -1,4 +1,8 @@
 package LeetCode.round1.easy;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 160910 Easy 
 Given an array of integers, every element appears twice except for one. Find that single one.
@@ -7,12 +11,31 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
 public class P136_SingleNumber {
 
 	/**
-	 * 如果使用哈希表，可以很容易实现线性时间的算法。难点是如何不使用额外内存。
-	 * 
-	 * 
+	 * Implementation without using extra memory(hash table), the preferred answer.
+	 * Leverage XOR: a ^ a = 0;
 	 */
 	public int singleNumber(int[] nums) {
-		return 0;
+		int res = 0;
+		for (int i = 0; i < nums.length; i++) 
+			res = res ^ nums[i];
+		return res;
+    }
+	
+	/**
+	 * Simple when use hash table. But need O(N) space.
+	 */
+	public int singleNumber_HashTable(int[] nums) {
+		int res = 0;
+		Set<Integer> set = new HashSet<Integer>();
+		for (int i = 0; i < nums.length; i++) {
+			if(!set.contains(nums[i]))
+				set.add(nums[i]);
+			else
+				set.remove(nums[i]);
+		}
+		for (int i: set)	//should be only 1 element left in set. 
+			res = i;
+		return res;
     }
 	
 	
@@ -58,14 +81,17 @@ public class P136_SingleNumber {
 	
 	public static void main(String[] args) {
 		P136_SingleNumber p = new P136_SingleNumber();
-//		System.out.println(p.singleNumber(new int[]{2,2,1}));
-//		System.out.println(p.singleNumber(new int[]{1,1,2}));
-//		System.out.println(p.singleNumber(new int[]{10,2,3,3,2}));
-//		System.out.println(p.singleNumber(new int[]{2,3,10,2,3}));
-//		System.out.println(p.singleNumber(new int[]{1,2,3,3,2}));
-//		System.out.println(p.singleNumber(new int[]{2,3,1,2,3}));
-		System.out.println(p.singleNumber_fail1(new int[]{10,1,1,3,3}));
-		System.out.println(Integer.MAX_VALUE);
+		System.out.println(p.singleNumber(new int[]{2,2,1}));
+		System.out.println(p.singleNumber(new int[]{1,1,2}));
+		System.out.println(p.singleNumber(new int[]{10,2,3,3,2}));
+		System.out.println(p.singleNumber(new int[]{2,3,10,2,3}));
+		System.out.println(p.singleNumber(new int[]{1,2,3,3,2}));
+		System.out.println(p.singleNumber(new int[]{2,3,1,2,3}));
+		System.out.println(p.singleNumber(new int[]{10,1,1,3,3}));
 	}
 
 }
+/**
+ * - 第一次的思路完全是错的，见
+ * - 利用异或的性质：性质1：a ^ a = 0，性质2：0 ^ a = a。 性质3：交换律。  --->  a ^ a ^ b = b.  不熟悉这个操作。
+ */
