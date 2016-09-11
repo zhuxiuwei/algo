@@ -22,7 +22,7 @@ public class P260_SingleNumberIII {
 			diff = diff ^ nums[i];
 		
 		
-		//step2: 取出diff的1个位1的bit，说明两个唯一出现一次的数字在这个bit上是不一样的。
+		//step2: 取出diff的1个为1的bit，说明两个唯一出现一次的数字在这个bit上是不一样的。 （注意，这里用到了异或的"diff"性质 -- 两个bit异或为1，说明两个bit不相等。我们利用这个性质，给原数组分组。）
 		int chosenBit = 1;
 		while(true)
 			if((diff & chosenBit) > 0) 
@@ -53,3 +53,8 @@ public class P260_SingleNumberIII {
 	}
 
 }
+
+/**
+  还是异或的bit操作，对于一次全异或后，如何区分两个唯一出现一次数字没有想出好的思路。看的答案 http://www.cnblogs.com/Anthony-Wang/p/5048762.html。Bit操作的算法还是不熟练。  
+  有思路后，一次AC。
+ */
