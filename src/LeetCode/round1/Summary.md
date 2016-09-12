@@ -26,6 +26,6 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 [Question 137 Single Number II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java) ★★★★  
 `Given an array of integers, every element appears three times except for one. Find that single one. (注：这个single one只出现一次，不包括2次。)`  
 `Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?`  
-先实现了[需要constant memory的solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java)。实现的过程中，注意__两个bug__:
+先实现了[需要constant memory的solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L14)。实现的过程中，注意__两个bug__:
 * a. 不要忽略[负数的情况](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L56)。（这里需要熟悉__[Java中对负数的二进制表示](http://blog.csdn.net/garybrother/article/details/5991918)__。）。同时注意用到了_无符号右移操作_。
-* b. 对于(Integer.MIN_VALUE边界值的处理需要注意)[https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L38]。  Integer.MAX_VALUE + 1 = Integer.MIN_VALUE。 Integer.MAX_VALUE只用到了31个bit，故表达的数字的绝对值，比Integer.MIN_VALUE是要小1的。
+* b. 对于[Integer.MIN_VALUE边界值的处理需要注意](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L38)。  Integer.MAX_VALUE + 1 = Integer.MIN_VALUE。 Integer.MAX_VALUE只用到了31个bit，故表达的数字的绝对值，比Integer.MIN_VALUE是要小1的。
