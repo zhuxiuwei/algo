@@ -1,4 +1,4 @@
-需要注意的的题目总结
+题目总结
 =
 [Question 371 Sum of Two Integers](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P371_SumofTwoIntegers.java) ★★★  
 `Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.`  
