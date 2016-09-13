@@ -40,6 +40,6 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 `Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based. You may assume that each input would have exactly one solution.`  
 `Input: numbers={2, 7, 11, 15}, target=9`  
 `Output: index1=1, index2=2`  
-* [二分搜索](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P167_TwoSumII_InputArrayIsSorted.java#L27)写的还是不能bug free，导致reject了几次。  
-* O(n) Runtime的__[双指针算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P167_TwoSumII_InputArrayIsSorted.java#L48)__，没有想到。看的指导。其实应该挺直观好想的。  
+* [二分搜索](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P167_TwoSumII_InputArrayIsSorted.java#L27)写的还是不能bug free，导致reject了几次。  
+* O(n) Runtime的__[双指针算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P167_TwoSumII_InputArrayIsSorted.java#L48)__，没有想到。看的指导。其实应该挺直观好想的。  
 
