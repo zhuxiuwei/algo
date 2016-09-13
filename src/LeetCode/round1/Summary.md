@@ -28,4 +28,18 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 `Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?`  
 先实现了[需要constant memory的solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L14)。实现的过程中，注意__两个bug__:
 * a. 不要忽略[负数的情况](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L56)。（这里需要熟悉__[Java中对负数的二进制表示](http://blog.csdn.net/garybrother/article/details/5991918)__。）。同时注意用到了_无符号右移操作_。
-* b. 对于[Integer.MIN_VALUE边界值的处理需要注意](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L38)。  Integer.MAX_VALUE + 1 = Integer.MIN_VALUE。 Integer.MAX_VALUE只用到了31个bit，故表达的数字的绝对值，比Integer.MIN_VALUE是要小1的。
+* b. 对于[Integer.MIN_VALUE边界值的处理需要注意](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P137_SingleNumberII.java#L38)。  Integer.MAX_VALUE + 1 = Integer.MIN_VALUE。 Integer.MAX_VALUE只用到了31个bit，故表达的数字的绝对值，比Integer.MIN_VALUE是要小1的。  
+
+[Question 283 Move Zeroes](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P283_MoveZeroes.java) ★  
+`Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.`  
+`For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].`  
+`Note: You must do this in-place without making a copy of the array. Minimize the total number of operations.`  
+典型的不需要太思考算法，但是要注意边界值处理等。第一遍没仔细看题，没注意所有非0元素的要保持原来的顺序，错了。修改后一次AC。  
+
+[Question 167 Two SumII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P167_TwoSumII_InputArrayIsSorted.java) ★★★  
+`Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based. You may assume that each input would have exactly one solution.`  
+`Input: numbers={2, 7, 11, 15}, target=9`  
+`Output: index1=1, index2=2`  
+* [二分搜索](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P167_TwoSumII_InputArrayIsSorted.java#L27)写的还是不能bug free，导致reject了几次。  
+* O(n) Runtime的__[双指针算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P167_TwoSumII_InputArrayIsSorted.java#L48)__，没有想到。看的指导。其实应该挺直观好想的。  
+

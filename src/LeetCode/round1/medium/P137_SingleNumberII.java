@@ -45,7 +45,7 @@ public class P137_SingleNumberII {
 						res += Math.pow(2, i);
 				}
 			}
-			System.out.println("aaa " + res);
+			
 			res = 0 - res;	//负数 
 		}
 		
@@ -81,8 +81,8 @@ public class P137_SingleNumberII {
 	public static void main(String[] args) {
 		P137_SingleNumberII p = new P137_SingleNumberII();
 		System.out.println(p.singleNumber_withConstantMemory(new int[]{-2,-2,1,1,-3,1,-3,-3,-9,-2}));
-		System.out.println(p.singleNumber_withConstantMemory(new int[]{-2147483647}));
-		System.out.println(p.singleNumber_withConstantMemory(new int[]{-2147483648}));
+		System.out.println(p.singleNumber_withConstantMemory(new int[]{3,-2147483647,3,3,}));
+		System.out.println(p.singleNumber_withConstantMemory(new int[]{3,3,-2147483648,3}));
 		
 		
 		System.out.println(Integer.toBinaryString(2147483647)); 
