@@ -5,7 +5,7 @@ import java.util.Random;
 import LeetCode.round1.common.ListNode;
 
 /**
- * 160913  典型的随机抽样问题。
+ * 160913  用到了Reservoir sampling（蓄水池抽样）
 Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen.
 Follow up: What if the linked list is extremely large and its length is unknown to you? Could you solve this efficiently without using extra space?
 
@@ -22,34 +22,42 @@ solution.getRandom();
 public class P382_LinkedListRandomNode {
 
 	private ListNode head;
+	private ListNode cursor;	//used by getRandom_fail2()
 	
 	/** @param head The linked list's head.
     Note that the head is guaranteed to be not null, so it contains at least one node. */
 	public P382_LinkedListRandomNode(ListNode head) {
 		this.head = head;
+		this.cursor = head;
 	}
-
-	/** Returns a random node's value. */
+	
+	/** 
+	 *  Use Reservoir sampling（蓄水池抽样）. No need to know the List length.
+	 * */
 	public int getRandom() {
-		//get length
-		ListNode t = head;
-		int length = 1;
-		while(t.next != null){
-			t = t.next;
-			length ++;
-		}
+		ListNode n = head;
+		Random ran = new Random();
 		
-		t = head;
-		for(int i = 0; i < new Random().nextInt(length); i++)
-			t =t.next;
-		return t.val;
+		for (int i = 2; ; i++) {
+			int v = ran.nextInt(i);
+			if(v == (i - 1))
+				return n.val; 
+			else{
+				n = n.next;
+				if(n == null){	//back to head
+					n = head;
+					i = 2;
+				}
+			}
+		}
 	}
 	
 	/**
-	 * Use O(1) space to store length, and use Java Random library, but failed to AC.
+	 * Get list length first.
+	 * Use O(1) space to store length, and use Java Random library.
 	 */
-	public int getRandom_fail() {
-		//get length
+	public int getRandom_getLentghFirst() {
+		//get length first
 		ListNode t = head;
 		int length = 1;
 		while(t.next != null){
@@ -58,17 +66,38 @@ public class P382_LinkedListRandomNode {
 		}
 		
 		t = head;
-		for(int i = 0; i < new Random().nextInt(length); i++)
+		Random ran = new Random();
+		int r = ran.nextInt(length);
+		for(int i = 0; i < r; i++)
 			t =t.next;
 		return t.val;
 	}
+
+	/** 
+	 *  Failed to AC. Maybe due to lack of randomness?
+	 *  Use O(1) pointer space.
+	 *  return 1,2，...., length -1, 1,2 ... , evenly. 
+	 * */
+	public int getRandom_fail2() {
+		//get return value
+		int ret = cursor.val;
+		
+		//move cursor to prepare for next random call.
+		cursor = cursor.next;
+		if(cursor == null) cursor = head;	//go back to head
+		
+		return ret;
+	}
+	
 	
 	public static void main(String[] args) {
-		Random r = new Random();
-		int end = 41;
-		for (int i = 0; i < end; i++) {
-			System.out.println(r.nextInt(end));
-		}
-			
+		int r =  new Random().nextInt(0);
+		System.out.println(r);
 	}
 }
+/**
+ * 1. 首先用了查询length的算法。注意：
+ * 	1.1 Random ran = new Random();一定先生成好ran对象，不能放在for里： for(int i = 0; i < new Random().nextInt(length); i++)，这种不能AC；
+ * 	1.2  ran.nextInt(length); 要保证length >0，否则报错： java.lang.IllegalArgumentException: bound must be positive
+ * 2. 正规解法是用“蓄水池抽样”算法。不知道这个算法，搜索到的。
+ */
