@@ -35,21 +35,35 @@ public class P382_LinkedListRandomNode {
 	 *  Use Reservoir sampling（蓄水池抽样）. No need to know the List length.
 	 * */
 	public int getRandom() {
-		ListNode n = head;
-		Random ran = new Random();
 		
-		for (int i = 2; ; i++) {
-			int v = ran.nextInt(i);
-			if(v == (i - 1))
-				return n.val; 
-			else{
-				n = n.next;
-				if(n == null){	//back to head
-					n = head;
-					i = 2;
-				}
-			}
-		}
+		//below will fail to AC
+//		ListNode n = head;
+//		Random ran = new Random();
+//		for (int i = 2; ; i++) {
+//			int v = ran.nextInt(i);
+//			if(v == (i - 1))
+//				return n.val; 
+//			else{
+//				n = n.next;
+//				if(n == null){	//back to head
+//					n = head;
+//					i = 2;
+//				}
+//			}
+//		}
+		
+		//below can AC, from http://www.cnblogs.com/grandyang/p/5759926.html 
+		Random ran = new Random();
+		int res = head.val, i = 2;
+        ListNode cur = head.next;
+        while (cur != null) {
+            int j = ran.nextInt(i);
+            if (j == 0) res = cur.val;
+            ++i;
+            cur = cur.next;
+        }
+        return res;
+	        
 	}
 	
 	/**
@@ -91,13 +105,13 @@ public class P382_LinkedListRandomNode {
 	
 	
 	public static void main(String[] args) {
-		int r =  new Random().nextInt(0);
-		System.out.println(r);
+		
 	}
 }
 /**
  * 1. 首先用了查询length的算法。注意：
  * 	1.1 Random ran = new Random();一定先生成好ran对象，不能放在for里： for(int i = 0; i < new Random().nextInt(length); i++)，这种不能AC；
  * 	1.2  ran.nextInt(length); 要保证length >0，否则报错： java.lang.IllegalArgumentException: bound must be positive
- * 2. 正规解法是用“蓄水池抽样”算法。不知道这个算法，搜索到的。
+ * 2. 正规解法是用“蓄水池抽样”算法。不知道这个算法，搜索到的。http://www.cnblogs.com/grandyang/p/5759926.html 
+ *  自己写的几次都不能AC。还是不太明白原理。不想浪费时间了。
  */
