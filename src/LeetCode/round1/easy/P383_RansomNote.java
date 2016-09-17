@@ -93,6 +93,6 @@ public class P383_RansomNote {
 }
 
 /**
- * 1. canConstruct()利用Int【32】数组的最佳思路没想到，注意。
+ * 1. canConstruct()利用Int【32】数组的最佳思路没想到，注意学习思路 -- 当hash table的key是有限集合时，可以考虑能不能用数组代替。
  * 2. 暴力解法canConstruct_JavaAPI()注意bug：replace()方法会替换全部match字符串，要用replaceFirst
  */
