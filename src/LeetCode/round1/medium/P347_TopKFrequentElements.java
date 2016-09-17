@@ -38,8 +38,6 @@ public class P347_TopKFrequentElements {
 		for (Map.Entry<Integer, Integer> entry: valToTimes.entrySet()) 
 			pq.add(entry);
 		
-		System.out.println(pq);
-		
 		List<Integer> res = new ArrayList<Integer>();
 		for (int i = 0; i < k; i++) 
 			res.add(pq.poll().getKey());
