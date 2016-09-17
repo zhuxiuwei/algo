@@ -58,9 +58,14 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 1. [利用Int【32】数组的最佳思路canConstruct()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L23)没想到，注意学习思路 -- __当hash table的key是有限集合时，考虑能不能用数组代替hash table__。  
 2. 暴力解法[canConstruct_JavaAPI()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L76)注意bug：replace()方法会替换全部match字符串，要用replaceFirst  
 
-[P100 Same Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P100_SameTree.java) ★  
+[100 Same Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P100_SameTree.java) ★  
 `Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.`  
 Note when get pre-order and mid-orde result, [must include string "null"](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P100_SameTree.java#L66). See this scenario:  
 ![](https://github.com/zhuxiuwei/algo/blob/master/Images/100%20Same%20Tree.png)  
 As pre=oder, mid-order will both print(1,1), the bug will return "true" wrongly.  
 
+[347 Same Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P347_TopKFrequentElements.java) ★  
+`Given a non-empty array of integers, return the k most frequent elements. For example, Given [1,1,1,2,2,3] and k = 2, return [1,2]`  
+Note for the __[usage of Map.Entry<K, V>](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P347_TopKFrequentElements.java#L31)__, which I was not familiar before.  
+
+ 

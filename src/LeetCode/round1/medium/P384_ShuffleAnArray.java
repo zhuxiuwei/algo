@@ -46,7 +46,7 @@ public class P384_ShuffleAnArray {
     		int ranIdx = ran.nextInt(origin.length);
 			
     		if(ranIdx != i){
-    			//swap elemant @ random index and i
+    			//swap elements @ random index and i
     			int tmp = res[i];
     			res[i] = res[ranIdx];
     			res[ranIdx] = tmp;
