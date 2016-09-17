@@ -53,7 +53,7 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 `delete a node (except the tail) in a singly linked list, given only access to that node`  
 思路比较有意思，要开阔思路。  
 
-[383 Ransom Note](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java) ★★ 
+[383 Ransom Note](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java) ★★  
 `Given  an  arbitrary  ransom  note  string  and  another  string  containing  letters from  all  the  magazines,  write  a  function  that  will  return  true  if  the  ransom   note  can  be  constructed  from  the  magazines ;  otherwise,  it  will  return  false. Each  letter  in  the  magazine  string  can  only  be  used  once  in  your  ransom  note.`  
 1. [利用Int【32】数组的最佳思路canConstruct()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L23)没想到，注意。  
 2. 暴力解法[canConstruct_JavaAPI()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L76)注意bug：replace()方法会替换全部match字符串，要用replaceFirst  

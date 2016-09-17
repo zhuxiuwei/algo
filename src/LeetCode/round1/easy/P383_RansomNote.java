@@ -73,7 +73,7 @@ public class P383_RansomNote {
 	public boolean canConstruct_JavaAPI(String ransomNote, String magazine) {
         for (int i = 0; i < ransomNote.length(); i++) {
 			if(magazine.contains(ransomNote.charAt(i) + "")){
-				magazine = magazine.replaceFirst(ransomNote.charAt(i) + "", "");	//!!!! Not bug here: can not use replace(). otherwise will fail like "aa", "aab".(Coz replace() will replace ALL matched) 
+				magazine = magazine.replaceFirst(ransomNote.charAt(i) + "", "");	//!!!! Note bug here: can not use replace(). otherwise will fail like "aa", "aab".(Coz replace() will replace ALL matched) 
 				continue;
 			}
 			else
