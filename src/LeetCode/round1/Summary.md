@@ -43,9 +43,20 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 * [二分搜索](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P167_TwoSumII_InputArrayIsSorted.java#L27)写的还是不能bug free，导致reject了几次。  
 * O(n) Runtime的__[双指针算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P167_TwoSumII_InputArrayIsSorted.java#L48)__，没有想到。看的指导。其实应该挺直观好想的。  
 
-[382 LinkedList Random Node](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P382_LinkedListRandomNode.java) ★★★  
-1. 首先用了[查询length的算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P382_LinkedListRandomNode.java#L73)。注意：  
+[382 LinkedList Random Node](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P382_LinkedListRandomNode.java) ★★★  
+1. 首先用了[查询length的算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P382_LinkedListRandomNode.java#L73)。注意：  
 1.1 Random ran = new Random();一定先生成好ran对象，不能放在for里： for(int i = 0; i < new Random().nextInt(length); i++)，这种不能AC;  
 1.2  ran.nextInt(length); 要保证length >0，否则报错： java.lang.IllegalArgumentException: bound must be positive  
-2. 正规解法是用“__[蓄水池抽样](http://www.cnblogs.com/grandyang/p/5759926.html)__”算法。不知道这个算法，搜索到的。 [自己写的](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P382_LinkedListRandomNode.java#L39)几次都不能AC。还是不太明白原理。不想浪费时间了。  
+2. 正规解法是用“__[蓄水池抽样](http://www.cnblogs.com/grandyang/p/5759926.html)__”算法。不知道这个算法，搜索到的。 [自己写的](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P382_LinkedListRandomNode.java#L39)几次都不能AC。还是不太明白原理。不想浪费时间了。  
+
+[237 Delete Node In A LinkedList](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P237_DeleteNodeInALinkedList.java) ★★★  
+`delete a node (except the tail) in a singly linked list, given only access to that node`  
+思路比较有意思，要开阔思路。  
+
+[383 Ransom Note](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java) ★★ 
+`Given  an  arbitrary  ransom  note  string  and  another  string  containing  letters from  all  the  magazines,  write  a  function  that  will  return  true  if  the  ransom   note  can  be  constructed  from  the  magazines ;  otherwise,  it  will  return  false. Each  letter  in  the  magazine  string  can  only  be  used  once  in  your  ransom  note.`  
+1. [利用Int【32】数组的最佳思路canConstruct()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L23)没想到，注意。  
+2. 暴力解法[canConstruct_JavaAPI()](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P383_RansomNote.java#L76)注意bug：replace()方法会替换全部match字符串，要用replaceFirst  
+
+
 
