@@ -61,5 +61,6 @@ __位操作__的题目，对我比较新，有些意思。一次通过。
 [P100 Same Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P100_SameTree.java) ★  
 `Given two binary trees, write a function to check if they are equal or not. Two binary trees are considered equal if they are structurally identical and the nodes have the same value.`  
 Note when get pre-order and mid-orde result, [must include string "null"](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P100_SameTree.java#L66). See this scenario:  
+![](https://github.com/zhuxiuwei/algo/blob/master/Images/100%20Same%20Tree.png)  
+As pre=oder, mid-order will both print(1,1), the bug will return "true" wrongly.  
 
-As pre=oder, mid-order will both print(1,1), the bug will return "true" wrongly.
