@@ -12,10 +12,9 @@ Follow up: Could you solve it with constant space complexity? (Note: The output 
 public class P238_ProductofArrayExceptSelf {
 
 	/**
+	 * AC: 25ms
 	 * 思路巧妙。自己没想出来。从左到右遍历一遍算出每个元素左边的积，再从右到左遍历一遍算出每个元素右边的积和左边的积的积，就取得了结果。
 	 * 参考： https://discuss.leetcode.com/topic/18864/simple-java-solution-in-o-n-without-extra-space
-	 * @param nums
-	 * @return
 	 */
 	public int[] productExceptSelf(int[] nums) {
 		int n = nums.length;
