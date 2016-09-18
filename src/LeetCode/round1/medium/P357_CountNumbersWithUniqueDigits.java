@@ -21,8 +21,8 @@ public class P357_CountNumbersWithUniqueDigits {
 		for (int i = 0; i < Math.pow(10, n); i++) {
 			if(isUnique(i))
 				res ++;
-			else
-				System.out.print(i + " ");
+//			else
+//				System.out.print(i + " ");
 		}
         return res;
     }
@@ -36,6 +36,11 @@ public class P357_CountNumbersWithUniqueDigits {
 	
 	public static void main(String[] args) {
 		P357_CountNumbersWithUniqueDigits p = new P357_CountNumbersWithUniqueDigits();
+		System.out.println(p.countNumbersWithUniqueDigits_StringAndSet_fail(1));
+		System.out.println(p.countNumbersWithUniqueDigits_StringAndSet_fail(2));
+		System.out.println(p.countNumbersWithUniqueDigits_StringAndSet_fail(3));
+		System.out.println(p.countNumbersWithUniqueDigits_StringAndSet_fail(4));
+		System.out.println(p.countNumbersWithUniqueDigits_StringAndSet_fail(5));
 	}
 
 }

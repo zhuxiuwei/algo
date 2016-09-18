@@ -72,4 +72,10 @@ Note for the __[usage of Map.Entry<K, V>](https://github.com/zhuxiuwei/algo/blob
 `Say you have an array for which the ith element is the price of a given stock on day i. If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock), design an algorithm to find the maximum profit.`  
 [One bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P121_BestTimeToBuyAndSellStock.java#L43):  If not add that line, will fail such scenario: [1, 2]  
 
+[238 Product of Array Except Self](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P238_ProductofArrayExceptSelf.java) ★★★★★  
+`Given an array of n integers where n > 1, nums, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Solve it without division and in O(n). For example, given [1,2,3,4], return [24,12,8,6].`  
+`Follow up: Could you solve it with constant space complexity?`  
+* 开始自己做，花费了不少时间，画图考虑各种情况，试图找出规律，最后[花了很多时间结果也不对](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P238_ProductofArrayExceptSelf.java#L42)。看这密密麻麻的图：  
+![](https://github.com/zhuxiuwei/algo/blob/master/Images/100%20Same%20Tree.png)  
+* [最终AC的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P238_ProductofArrayExceptSelf.java#L20)参考的[LeetCode讨论区最热门答案](https://discuss.leetcode.com/topic/18864/simple-java-solution-in-o-n-without-extra-space)。__好的方案真的很优雅__。自己想不到。  
 
