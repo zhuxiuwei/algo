@@ -79,6 +79,6 @@ Note for the __[usage of Map.Entry<K, V>](https://github.com/zhuxiuwei/algo/blob
 ![](https://github.com/zhuxiuwei/algo/blob/master/Images/238%20Product%20of%20Array%20Except%20Self%20-%20failed.png)  
 * [最终AC的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P238_ProductofArrayExceptSelf.java#L19)参考的[LeetCode讨论区最热门答案](https://discuss.leetcode.com/topic/18864/simple-java-solution-in-o-n-without-extra-space)。__好的方案真的很优雅__。自己想不到。  
 
-[168. Excel Sheet Column Title](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P168_ExcelSheetColumnTitle.java),[Excel Sheet Column Number](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P171_ExcelSheetColumnNumber.java)  
+[168. Excel Sheet Column Title](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P168_ExcelSheetColumnTitle.java),[171. Excel Sheet Column Number](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P171_ExcelSheetColumnNumber.java)★   
 不难，但估计白板上写对有难度，尤其是168，一边看leetcode test result，一边debug来做的。  
 
