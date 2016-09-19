@@ -85,8 +85,8 @@ Note for the __[usage of Map.Entry<K, V>](https://github.com/zhuxiuwei/algo/blob
 [169. Majority Element](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java) ★★★★  
 `Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.`  
 题不难，但是最优的space O(1)解决方案并不好想，__查的最佳答案，还是挺优雅的__。  
-* [Space O(1)的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L22)自己想不到，挺巧妙的。参考的[LeetCode最热方案](https://discuss.leetcode.com/topic/8692/o-n-time-o-1-space-fastest-solution)  
-* 利用[quick sort partition思路的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L74)居然Timeout了,理论上应该比[majorityElement_sort方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L63)更快，__可能是我写的partition在一些特殊输入时（如1,1,1,1,2,2,2,2,2）不够高效吧__。  
+* [Space O(1)的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L21)自己想不到，挺巧妙的。参考的[LeetCode最热方案](https://discuss.leetcode.com/topic/8692/o-n-time-o-1-space-fastest-solution)  
+* 利用[quick sort partition思路的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L67)居然Timeout了,理论上应该比[majorityElement_sort方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P169_MajorityElement.java#L58)更快，__可能是我写的partition在一些特殊输入时（如1,1,1,1,2,2,2,2,2）不够高效吧__。  
 
 
 
