@@ -26,7 +26,7 @@ public class P169_MajorityElement {
 			else
 				count--;
 
-			if (count == 0) {
+			if (count == 0) {	//when count drops to 0, change major
 				count = 1;
 				major = nums[i];
 			}
