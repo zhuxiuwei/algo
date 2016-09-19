@@ -26,13 +26,13 @@ public class P168_ExcelSheetColumnTitle {
 			r = 26;
 		}
 		
-		char s2 = (char)((int)'A' + r - 1);
+		char right = (char)((int)'A' + r - 1);
 		if(d > 26){
 			String left = convertToTitle(d);
-			return left + s2;
+			return left + right;
 		}else{
-			char s1 = d == 0? ' ': (char)((int)'A' + d - 1);
-	        return (s1 + "" +s2).trim();
+			char left = d == 0? ' ': (char)((int)'A' + d - 1);
+	        return (left + "" +right).trim();
 		}
     }
 	
