@@ -18,7 +18,7 @@ Follow up: If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, 
 public class P392_IsSubsequence {
 	
 	/**
-	 * greedy. AC: 63 ms
+	 * greedy. AC: 38 ms
 	 */
 	public boolean isSubsequence(String s, String t) {
 		int i = 0, j =0;
