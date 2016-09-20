@@ -11,7 +11,7 @@ You may assume that the array is non-empty and the majority element always exist
 
 /**
  *	1. O(1)的方案自己想不到，挺巧妙的。参考的LeetCode最热方案：https://discuss.leetcode.com/topic/8692/o-n-time-o-1-space-fastest-solution
- *  2. 利用quick sort partition思路的majorityElement_quickSortPartition_failed，理论上应该比majorityElement_sort更快，结果timeout，可能是我写的partition在一些特殊输入时（如1,1,1,1,2,2,2,2,2）不够高效吧。
+ *  2. 利用quick sort partition思路的majorityElement_quickSortPartition_failed，理论上应该比majorityElement_sort更快，结果timeout，可能是因为quick sort partition在一些特殊输入时（如1,1,1,1,2,2,2,2,2，基本有序） 不够高效吧。
  */
 public class P169_MajorityElement {
 
