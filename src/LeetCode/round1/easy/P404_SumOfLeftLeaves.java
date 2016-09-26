@@ -15,10 +15,17 @@ Example:
 
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 */
-public class P404SumOfLeftLeaves {
+public class P404_SumOfLeftLeaves {
 	private int sum = 0;
+	
+	/**
+	 * AC: 9ms
+	 */
 	public int sumOfLeftLeaves(TreeNode root) {
-		
+		if(root != null){
+			preOrder(root.left, true);
+			preOrder(root.right, false);
+		}
         return this.sum;
     }
 	
@@ -27,7 +34,14 @@ public class P404SumOfLeftLeaves {
 	 * @param mode	true: parent call left recursive; false: parent call right recursive
 	 */
 	private void preOrder(TreeNode root, boolean mode){
+		if(root == null)
+			return;
 		
+		if(mode && root.left == null && root.right == null)
+			sum += root.val;
+		
+		preOrder(root.left, true);
+		preOrder(root.right, false);
 	}
 	
 }
