@@ -92,11 +92,11 @@ Note for the __[usage of Map.Entry<K, V>](https://github.com/zhuxiuwei/algo/blob
 `Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers. Return the maximum product you can get.For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 + 3 + 4).`    
 典型的__DP算法__，比较简单。自底向上和自顶向下都自己实现。  
 
-[405. Convert a Number to Hexadecimal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/easy/P405_ConvertANumberToHexadecimal.java) ★★  
+[405. Convert a Number to Hexadecimal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P405_ConvertANumberToHexadecimal.java) ★★  
 __Bit操作__问题。不难，但是要__注意三个bug__:  
 * input为0的edge case;  
 * 想表示11110000000000000000000000000000，不能写成2^31+2^30+2^29+2^28，结果不是预期的。应写成：```int base = 15 << 28;```  
-* 每次得到temp后，别忘了右移到最低4位，才能做0~e的映射。具体见[43行](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/easy/P405_ConvertANumberToHexadecimal.java#L43)。  
+* 每次得到temp后，别忘了右移到最低4位，才能做0~e的映射。具体见[43行](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P405_ConvertANumberToHexadecimal.java#L43)。  
 
 
 
