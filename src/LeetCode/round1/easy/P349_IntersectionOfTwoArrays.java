@@ -18,7 +18,8 @@ The result can be in any order.
 public class P349_IntersectionOfTwoArrays {
 
 	/**
-	 * Use quick sort and two pointers. AC: 17 ms
+	 * Use quick sort and two pointers. AC: 5ms, 78%	
+	 * If replace my sort() with JDK Arrays.sort(), result is 8ms. So weird that my sort() is faster than JDK's....
 	 * Time: O(nlgn), space: 0(1)
 	 * @param num
 	 */
@@ -47,14 +48,14 @@ public class P349_IntersectionOfTwoArrays {
         Iterator<Integer> it = res.iterator();
         for (int k = 0; it.hasNext(); k++) 
         	r[k] = it.next();
-        System.out.println(res);
+        //System.out.println(res);
         return r;
 	}
 	
 	//sort
 	private void sort(int[] num){
 		quickSort(num, 0, num.length - 1);
-		System.out.println(Arrays.toString(num));
+		//System.out.println(Arrays.toString(num));
 	}
 	private void quickSort(int num[], int start, int end){
 		if(num == null || num.length == 0 || start >= end)
@@ -84,7 +85,7 @@ public class P349_IntersectionOfTwoArrays {
 	
 	
 	/**
-	 * Use hash table version. Simple. AC: 7ms
+	 * Use hash table version. Simple. AC: 7ms, 24%.
 	 * Time: O(n), space: O(n)
 	 */
 	public int[] intersection_hashtable(int[] nums1, int[] nums2) {
@@ -104,9 +105,7 @@ public class P349_IntersectionOfTwoArrays {
 	
 	public static void main(String[] args) {
 		P349_IntersectionOfTwoArrays p = new P349_IntersectionOfTwoArrays();
-		p.sort(new int[]{0,1, 0,0});
-		
-		p.intersection(new int[]{1,4,3,2,2,1}, new int[]{4,2,2});
+		System.out.println(Arrays.toString(p.intersection(new int[]{1,4,3,2,2,1}, new int[]{4,2,2})));
 	}
 
 }

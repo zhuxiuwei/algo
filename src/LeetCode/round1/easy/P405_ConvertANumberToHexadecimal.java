@@ -36,11 +36,11 @@ public class P405_ConvertANumberToHexadecimal {
 		
         StringBuilder sb = new StringBuilder();
         boolean zeroSkipped = false;
-        int base = 15 << 28;	//!!!! Note bug 2: 想表示11110000000000000000000000000000，不能写成2^31+2^30+2^29+2^28，结果不时预期的。
+        int base = 15 << 28;	//!!!! Note bug 2: 想表示11110000000000000000000000000000，不能写成2^31+2^30+2^29+2^28，结果不是预期的。
         for (int i = 7; i >= 0; i--) {
         	//System.out.println(Integer.toBinaryString(base));
 			int temp = base & num;
-			temp = temp >>> i * 4;	//!!!! Note bug 3: 每次得到temp后，别忘了右移到最低4位，才能做0~e的映射。
+			temp = temp >>> i * 4;	//!!!! Note bug 3: 每次得到temp后，别忘了右移到最低4位，才能做Hexadecimal 0到e的映射。
 			//System.out.println(temp);
 			if(temp != 0){
 				if(temp < 10)
@@ -78,7 +78,8 @@ public class P405_ConvertANumberToHexadecimal {
 
 	public static void main(String[] args) {
 		P405_ConvertANumberToHexadecimal p = new P405_ConvertANumberToHexadecimal();
-		System.out.println(p.toHex(0));
+		System.out.println(p.toHex(0));		//0
+		System.out.println(p.toHex(26));	//1a
 	}
 
 }
