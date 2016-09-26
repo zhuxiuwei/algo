@@ -18,12 +18,16 @@ public class P343_IntegerBreak {
 		else if(n == 3)
 			return 2;
 		else{
-			if(n % 3 == 0)
-				return (int)Math.pow(3, n/3);
-			else if(n % 3 == 1)
-				return (int)Math.pow(3, n/3 - 1) * 2 * 2;
-			else
-				return (int)Math.pow(3, n/3) * 2;
+			switch(n % 3){
+				case 0:
+					return (int)Math.pow(3, n/3);
+				case 1:
+					return (int)Math.pow(3, n/3 - 1) * 2 * 2;
+				case 2:
+					return (int)Math.pow(3, n/3) * 2;
+				default:	//unreachable.
+					return 0;
+			}
 		}
     }
 	
@@ -88,6 +92,6 @@ public class P343_IntegerBreak {
 		P343_IntegerBreak p = new P343_IntegerBreak();
 		System.out.println(p.integerBreak_DP_bottomUp(11));
 		System.out.println(p.integerBreak_DP_upBottom(12));
-		System.out.println(p.integerBreak_math(3));
+		System.out.println(p.integerBreak_math(12));
 	}
 }
