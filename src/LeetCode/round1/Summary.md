@@ -98,5 +98,9 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 * 想表示11110000000000000000000000000000，不能写成2^31+2^30+2^29+2^28，结果不是预期的。应写成：```int base = 15 << 28;```  
 * 每次得到temp后，别忘了右移到最低4位，才能做0~e的映射。具体见[43行](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P405_ConvertANumberToHexadecimal.java#L43)。  
 
+[94. Binary Tree Inorder Traversal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P94_BinaryTreeInorderTraversal.java) ★★★★  
+`Binary Tree Inorder Traversal iteratively(non-recursive)`  
+非递归的中序遍历，连错7次才AC成功，根本无法做到bug free，沮丧。。。  
+
 
 
