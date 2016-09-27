@@ -40,7 +40,7 @@ public class P405_ConvertANumberToHexadecimal {
         for (int i = 7; i >= 0; i--) {
         	//System.out.println(Integer.toBinaryString(base));
 			int temp = base & num;
-			temp = temp >>> i * 4;	//!!!! Note bug 3: 每次得到temp后，别忘了右移到最低4位，才能做Hexadecimal 0到e的映射。
+			temp = temp >>> i * 4;	//!!!! Note bug 3: 每次得到temp后，别忘了右移到最低4位，才能做Hexadecimal 0到f的映射。
 			//System.out.println(temp);
 			if(temp != 0){
 				if(temp < 10)

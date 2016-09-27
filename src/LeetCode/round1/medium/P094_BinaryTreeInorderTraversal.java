@@ -11,7 +11,7 @@ import LeetCode.round1.common.TreeNode;
 Given a binary tree, return the inorder traversal of its nodes' values.
 Note: Recursive solution is trivial, could you do it iteratively?
  */
-public class P94_BinaryTreeInorderTraversal {
+public class P094_BinaryTreeInorderTraversal {
 	
 	/**
 	 * AC: 1ms, 41%.
@@ -74,7 +74,7 @@ public class P94_BinaryTreeInorderTraversal {
 		node3.right = node2;
 		
 		
-		P94_BinaryTreeInorderTraversal p = new P94_BinaryTreeInorderTraversal();
+		P094_BinaryTreeInorderTraversal p = new P094_BinaryTreeInorderTraversal();
 		System.out.println(p.inorderTraversal(node3));
 	}
 }
