@@ -101,6 +101,10 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 [94. Binary Tree Inorder Traversal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P94_BinaryTreeInorderTraversal.java) ★★★★  
 `Binary Tree Inorder Traversal iteratively(non-recursive)`  
 非递归的中序遍历，连错7次才AC成功，根本无法做到bug free，沮丧。。。  
+我之前在[《算法导论》时也写过](https://github.com/zhuxiuwei/CLRS/blob/master/src/chap12_BinarySearchTree/BinaryTree.java#L60)，当时写的实现看起来更简单，虽然效率可能略低一些（进出栈次数会多一些）  
+
+[206. Reverse Linked List](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java) ★  
+链表翻转的[非递归](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java#L15)和[递归](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java#L33)算法，都一次写对，比较欣慰。。  
 
 
 
