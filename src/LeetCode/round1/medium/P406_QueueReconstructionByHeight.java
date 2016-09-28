@@ -17,6 +17,23 @@ Output:
 public class P406_QueueReconstructionByHeight {
 
 	public int[][] reconstructQueue(int[][] people) {
+		
+		//like insert sort.
+		for (int i = 0; i < people.length; i++) {
+			int index = -1;
+			int[] first = new int[]{Integer.MAX_VALUE,0};
+			for (int j = i; j < people.length; j++) {
+				int tempK = people[j][1] == 0 ? 0 : people[j][1] - i;
+				if(tempK == 0 && people[j][0] < first[0]){
+					index = j;
+					first = people[j];
+				}
+			}
+			//move first to proper position.
+			int[] temp = people[i];
+			people[i] = first;
+			people[index] = temp;
+		}
 		return people;
     }
 	
@@ -56,13 +73,11 @@ public class P406_QueueReconstructionByHeight {
 	
 	public static void main(String[] args) {
 		P406_QueueReconstructionByHeight p = new P406_QueueReconstructionByHeight();
-		int[][] a = new int[][]{{7,0},{4,4},{7,1},{5,0},{6,1},{5,2}};
-		System.out.println(Arrays.deepToString(a));
+		int[][] a = new int[][]{{7,0},{4,4},{7,1},{5,0},{6,1},{5,2}};	//[[5, 0], [7, 0], [5, 2], [6, 1], [4, 4], [7, 1]]
 		p.reconstructQueue(a);
 		System.out.println(Arrays.deepToString(a));
 		
-		a = new int[][]{{6,0},{5,0},{4,0},{3,2},{2,2},{1,4}};
-		System.out.println(Arrays.deepToString(a));
+		a = new int[][]{{6,0},{5,0},{4,0},{3,2},{2,2},{1,4}};	//[[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
 		p.reconstructQueue(a);
 		System.out.println(Arrays.deepToString(a));
 	}
