@@ -106,5 +106,9 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 [206. Reverse Linked List](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java) ★  
 链表翻转的[非递归](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java#L15)和[递归](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P206_ReverseLinkedList.java#L33)算法，都一次写对，比较欣慰。。  
 
-
+[406. Queue Reconstruction by Height](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P406_QueueReconstructionByHeight.java) ★★★  
+`一个二维数组记录了身高和这个人前面不必他高的人数，要求重新给二唯数组排序。`  
+不是很顺畅。问题：  
+* 思路的问题，不是特别好想。[首先给的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P406_QueueReconstructionByHeight.java#L61)思路完全是错的，完全只是符合题目sample的特例。  
+* [正确方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P406_QueueReconstructionByHeight.java#L26)，不是很顺畅，想通思路花了一些时间。编程实现的时候也需要小心，不是特别直观的。  
 
