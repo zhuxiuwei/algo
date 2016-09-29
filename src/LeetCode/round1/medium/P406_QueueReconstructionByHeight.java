@@ -36,11 +36,11 @@ public class P406_QueueReconstructionByHeight {
 			int index = -1;	//will store index that find its final proper position.
 			int[] first = new int[]{Integer.MAX_VALUE,0};	//store proper array value that finds its final position.
 			for (int j = i; j < people.length; j++) {
-				int tempK = m.get(people[j]);
+				int newK = m.get(people[j]);
 				if( i >= 1 && people[j][0] <= people[i - 1][0])
-					if(tempK != 0)
-						m.put(people[j], --tempK);
-				if(tempK == 0 && people[j][0] < first[0]){
+					if(newK != 0)
+						m.put(people[j], --newK);
+				if(newK == 0 && people[j][0] < first[0]){	//'more proper' people found.
 					index = j;
 					first = people[j];
 				}
