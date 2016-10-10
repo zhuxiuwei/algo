@@ -46,7 +46,8 @@ public class P318_MaximumProductOfWordLengths {
 			int bit = 0;
 			for (int j = 0; j < words[i].length(); j++) {
 				char c = words[i].charAt(j);
-				bit = 1 <<(int)(c - 'a');	//!!!!!!!Note: this is much faster than using Math.pow()!!! If use Math.pow(), AC: 134ms, 14%.
+				//!!!!!!!Note: this is much faster than using Math.pow()!!! If use Math.pow(), AC: 134ms, 14%.
+				bit = 1 <<(int)(c - 'a');	
 				//bit = (int)Math.pow(2, (int)(c - 'a'));
 				bits[i] = bits[i] | bit;
 			}
@@ -64,10 +65,9 @@ public class P318_MaximumProductOfWordLengths {
 		return res;
     }
 	
-	
 	/**
 	 * go through each word, and use set to de-dup.
-	 * Correct, but failed to AC due to timeout for large input.
+	 * Correct, but failed to AC due to timeout for large input(对于一个大case，bit算法27ms，此算法1200ms+).
 	 */
 	public int maxProduct_FailTimeOut(String[] words) {
 		if(words == null)
