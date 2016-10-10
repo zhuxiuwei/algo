@@ -40,15 +40,14 @@ public class P318_MaximumProductOfWordLengths {
 			return 0;
 		
 		int res = 0;
-		
 		//turn string to int. a -> 1, b -> 2(10), c -> 4(100)... etc.
 		int[] bits = new int[words.length];
 		for (int i = 0; i < words.length; i++) {
 			int bit = 0;
 			for (int j = 0; j < words[i].length(); j++) {
-				char c = words[i].charAt(j);	//!!!!!!!Note: this is much faster than using Math.pow()!!! If use Math.pow(), AC: 134ms, 14%.
+				char c = words[i].charAt(j);
+				bit = 1 <<(int)(c - 'a');	//!!!!!!!Note: this is much faster than using Math.pow()!!! If use Math.pow(), AC: 134ms, 14%.
 				//bit = (int)Math.pow(2, (int)(c - 'a'));
-				bit = 1 <<(int)(c - 'a');
 				bits[i] = bits[i] | bit;
 			}
 		}
@@ -64,6 +63,7 @@ public class P318_MaximumProductOfWordLengths {
 		}
 		return res;
     }
+	
 	
 	/**
 	 * go through each word, and use set to de-dup.
