@@ -119,3 +119,8 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 * 用[heap的方法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P378_KthSmallestElementInASortedMatrix.java#L37)，开始想到了用队列，但是发现插入的顺序没法保证，卡在那儿了，期初不想用优先级队列。后来看discussion，别人用的也是heap(优先级队列。)  
 * 用heap的方法，注意使用[辅助class](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P378_KthSmallestElementInASortedMatrix.java#L66)来简化编程。如果都记录int下标和val的话，实现时比较麻烦。  
 
+[318. Maximum Product of Word Lengths](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java) ★★  
+ * 直观的[使用Set去重](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L72)的算法，超时了。  
+ * 应该用Bit操作。需要注意，[当把一个char映射到一个bit时，用位移'>>'操作，比用幂指运算Math.pow(2, (int)(c - 'a')快很多](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L49)。  
+
+
