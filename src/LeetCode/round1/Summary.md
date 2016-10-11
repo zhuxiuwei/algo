@@ -119,9 +119,20 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 * 用[heap的方法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P378_KthSmallestElementInASortedMatrix.java#L37)，开始想到了用队列，但是发现插入的顺序没法保证，卡在那儿了，期初不想用优先级队列。后来看discussion，别人用的也是heap(优先级队列。)  
 * 用heap的方法，注意使用[辅助class](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P378_KthSmallestElementInASortedMatrix.java#L66)来简化编程。如果都记录int下标和val的话，实现时比较麻烦。  
 
-[318. Maximum Product of Word Lengths](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java) ★★  
+[318. Maximum Product of Word Lengths](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java) ★★
+`Given a string array words, find the maximum value of length(word[i]) * length(word[j]) where the two words do not share common letters. You may assume that each word will contain only lower case letters. If no such two words exist, return 0.`  
 又一典型__bit操作__问题。  
  * 直观的[使用Set去重](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L72)的算法，超时了(对于一个大case，bit算法27ms，此算法1200ms+)。  
  * 应该用Bit操作。需要注意，[当把一个char映射到一个bit时，用位移'>>'操作，比用幂指运算Math.pow(2, (int)(c - 'a')快很多](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L49)。  
 
+[416. Partition Equal Subset Sum  QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P416_PartitionEqualSubsetSum.java) ★★  
+`Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.`  
+貌似__此题的test case有问题__。我一个[投机取巧的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P416_PartitionEqualSubsetSum.java#L64)被AC了，但感觉不对。我的Greedy方案现在不确定对不对。 已经[提问](https://discuss.leetcode.com/topic/62630/need-help-super-wired-test-cases-are-there-wrong-test-cases)了。  
+
+[328. Odd Even Linked List](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P328_OddEvenLinkedList.java) ★★  
+`Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.`  
+`Example:`  
+`Given 1->2->3->4->5->NULL,`  
+`return 1->3->5->2->4->NULL.`  
+类似链表翻转，很直观，但是考验编程的问题。需要注意边界值空指针等。注意一个没判断null导致NullPointer的[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P328_OddEvenLinkedList.java#L32)。  
 

@@ -3,7 +3,23 @@ package LeetCode.round1.common;
 public class ListNode {
 	public int val;
 	public ListNode next;
-	ListNode(int x) {
+	public ListNode(int x) {
 		val = x;
+	}
+	
+	public void printList(){
+		ListNode cur = this;
+		while(cur != null){
+			System.out.print(cur);
+			if(cur.next != null)
+				System.out.print("->");
+			cur = cur.next;
+		}
+		System.out.println();
+	}
+	
+	@Override
+	public String toString(){
+		return this.val + "";
 	}
 }
