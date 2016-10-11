@@ -42,7 +42,7 @@ public class P328_OddEvenLinkedList {
 			}
 		}
 		preOdd.next = evenHead;
-        return head;
+		return head;
     }
 	
 	public static void main(String[] args) {

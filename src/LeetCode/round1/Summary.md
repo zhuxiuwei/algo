@@ -134,5 +134,5 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 `Example:`  
 `Given 1->2->3->4->5->NULL,`  
 `return 1->3->5->2->4->NULL.`  
-类似链表翻转，很直观，但是考验编程的问题。需要注意边界值空指针等。注意一个没判断null导致NullPointer的[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P328_OddEvenLinkedList.java#L32)。  
+类似__链表翻转__，很直观，但是考验编程技巧。需要注意边界值、空指针等。注意一个没判断null导致NullPointer的[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P328_OddEvenLinkedList.java#L32)。  
 
