@@ -138,7 +138,7 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 
 [287. Find the Duplicate Number  QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java) ★★  
 `Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive). Assume that there is only one duplicate number, find the duplicate one.`  
-__第一个__接触到的hard的题目。[符合条件的bit方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L28)，思考出来还是花了一些时间的。有意思的是，这个符合条件的方案是O(n)的，速度竟然比[一个不符合条件的O(NlgN)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L58)的AC时间还慢。好几次遇到__这种时间分析的结果不是绝对的__。  
+__第一个__接触到的`hard`的题目。[符合条件的bit方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L28)，思考出来还是花了一些时间的。有意思的是，这个符合条件的方案是O(n)的，速度竟然比[一个不符合条件的O(NlgN)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L58)的AC时间还慢。好几次遇到__这种时间分析的结果优劣不是绝对的__。  
 
 
 
