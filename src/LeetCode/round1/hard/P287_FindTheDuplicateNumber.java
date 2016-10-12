@@ -15,7 +15,41 @@ There is only one duplicate number in the array, but it could be repeated more t
  */
 public class P287_FindTheDuplicateNumber {
 
-	
+	/**
+	 * 符合条件的解法。
+	 * 思路：先计算从1 ~ n的二进制表示，每个bit的个数，记为数组target；
+	 * 然后计算nums中，所有数字，每个bit的个数，记为数组actual;
+	 * 数组actual比target的bit多的位（不管多几），就是多出的数的二级制表示位。根据二进制表示位可以推算出多出的数字的十进制表示。
+	 * 
+	 * Space: 两个额外的32 bit数组；
+	 * Time: O(n)
+	 * AC: 15ms, 7.75%.
+	 */
+	public int findDuplicate_bit(int[] nums) {
+		int[] target = new int[32], actual = new int[32];
+		
+		//fill target and actual array.
+		for (int i = 1; i <= nums.length; i++) {
+			int bit = 1;
+			for (int j = 0; j < 32; j++) {
+				if((i != nums.length) && (i & bit) == bit)
+					target[j] ++;
+				if((nums[i - 1]& bit) == bit)
+					actual[j] ++;
+				bit = bit << 1;
+			}
+		}
+		
+		//calculate final result based on target & actual
+		int res = 0, bit = 1;
+		for (int i = 0; i < 32; i++) {
+			if(target[i] < actual[i])
+				res = res | bit;
+			bit = bit << 1;
+		}
+		
+        return res;
+    }
 	
 	/**
 	 * （不符合条件的解法）
@@ -46,7 +80,8 @@ public class P287_FindTheDuplicateNumber {
     }
 	
 	public static void main(String[] args) {
-
+		P287_FindTheDuplicateNumber p = new P287_FindTheDuplicateNumber();
+		System.out.println(p.findDuplicate_bit(new int[]{4,5,3,1,2,4}));
 	}
 
 }
