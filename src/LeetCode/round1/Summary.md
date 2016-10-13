@@ -140,5 +140,6 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 `Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive). Assume that there is only one duplicate number, find the duplicate one.`  
 __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L28)，思考出来还是花了一些时间的。有意思的是，这个符合条件的方案是O(n)的，速度竟然比[一个不符合条件的O(NlgN)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L58)的AC时间还慢。好几次遇到__这种时间分析的结果优劣不是绝对的__。  
 
-
-
+[230. Kth Smallest Element in a BST](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P230_KthSmallestElementInABST.java) ★★★★  
+`Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.`  
+[递归写的并不顺利](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P230_KthSmallestElementInABST.java#L22)。开始不想定义全局变量current res，但是各种出错。只好最后弄这种简单的写法了。  这样可以让递归方法void，而不是返回int，或者Node。
