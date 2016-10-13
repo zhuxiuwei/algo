@@ -142,4 +142,8 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 
 [230. Kth Smallest Element in a BST](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P230_KthSmallestElementInABST.java) ★★★★  
 `Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.`  
-[递归写的并不顺利](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P230_KthSmallestElementInABST.java#L22)。开始不想定义全局变量current res，但是各种出错。只好最后弄这种简单的写法了。  这样可以让递归方法void，而不是返回int，或者Node。
+[递归写的并不顺利](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P230_KthSmallestElementInABST.java#L22)。开始不想定义全局变量current res，但是各种出错。只好最后弄这种简单的写法了。  这样可以让递归方法void，而不是返回int，或者Node。  
+`Follow up:What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?`  
+答： 可以给TreeNode增加一个filed，记录其左孩子的数目，也就是小于它的节点数。每次插入删除节点时，都可以更新受牵连的节点的这个field值。  
+
+

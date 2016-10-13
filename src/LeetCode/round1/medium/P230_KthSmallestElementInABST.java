@@ -13,6 +13,7 @@ What if the BST is modified (insert/delete operations) often and you need to fin
  */
 /**
  * Note: 1.  递归写的并不顺利。开始不想定义全局变量current res，但是各种出错。只好最后弄这种简单的写法了。这样可以让递归方法void，而不是返回int，或者Node。
+ * Follow up的答案： 可以给TreeNode增加一个filed，记录其左孩子的数目，也就是小于它的节点数。每次插入删除节点时，都可以更新受牵连的节点的这个field值。
  */
 public class P230_KthSmallestElementInABST {
 	
