@@ -8,7 +8,6 @@ package study.backTracking;
 public class NQueens {
 
 	private int n = 8;	//default it 8. 8 queens problem.
-	private boolean canContinue = true;
 	private int solutionIndex = 0;
 	public NQueens(int n){
 		this.n = n;
@@ -19,7 +18,7 @@ public class NQueens {
 	 * @return
 	 */
 	public void printSolution(){
-		int[] res = new int[n];		//Use an array to specify each queen's location in each row.
+		int[] res = new int[n];		//Use an array to specify each queen's location in a row.
 		printSolution_helper(res, 0);
 	}
 	/**
@@ -28,16 +27,12 @@ public class NQueens {
 	 * @param row current row.
 	 */
 	private void printSolution_helper(int[] res, int row){
-		if(row == 0 && !canContinue)
-			return;	//quit the whole method.
-
-		for (int i = 0; i < res.length; i++) {
+		for (int i = 0; i < res.length; i++) {	//check each column in the row.
 			if(isLegalLocation(res, row, i)){
 				res[row] = i;
-				canContinue = true;
 				if(row == res.length - 1){	//last row reached. can print solution.
 					//Leverage res array, print solution
-					System.out.println(String.format("\r\nPrint solution: %s " , ++ solutionIndex));
+					System.out.println(String.format("\r\nSolution %s: " , ++solutionIndex));
 					for (int j = 0; j < res.length; j++) {
 						for (int k = 0; k < res.length; k++) {
 							if(res[j] == k)
@@ -50,27 +45,24 @@ public class NQueens {
 					}
 				}else
 					printSolution_helper(res, row + 1);
-			}else{
-				if(i == res.length - 1)
-					canContinue = false;	//backtracking: need to go back to previous row.
 			}
 		}
 	}
 	/**
-	 * Given a location, judge if it's allowed. 
+	 * Given a location, judge if it's allowed to put a queen here. 
 	 * @param res the result array
 	 * @param rowIndex row of the location
 	 * @param columnIndex column of the location
 	 * @return
 	 */
 	private boolean isLegalLocation(int[] res, int rowIndex, int columnIndex){
-		if(rowIndex == 0)
+		if(rowIndex == 0)	//For first row, always return true.
 			return true;
-		for (int i = 0; i < rowIndex; i++) {	//is in same column.
+		for (int i = 0; i < rowIndex; i++) { //Judge if in same column.
 			if(res[i] == columnIndex)
 				return false;
 		}
-		for (int i = 0; i < rowIndex; i++) {	//is in same diagonal.
+		for (int i = 0; i < rowIndex; i++) { //Judge if in same diagonal.
 			if(Math.abs(columnIndex - res[i]) == Math.abs(rowIndex - i))
 				return false;
 		}
