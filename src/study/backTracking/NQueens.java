@@ -36,7 +36,7 @@ public class NQueens {
 					for (int j = 0; j < res.length; j++) {
 						for (int k = 0; k < res.length; k++) {
 							if(res[j] == k)
-								System.out.print("♚ ");
+								System.out.print("♕ ");
 							else
 								System.out.print("○ ");
 							if(k == res.length - 1)
