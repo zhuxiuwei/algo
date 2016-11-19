@@ -146,4 +146,11 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Follow up:What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?`  
 答： 可以给TreeNode增加一个filed，记录其左孩子的数目，也就是小于它的节点数。每次插入删除节点时，都可以更新受牵连的节点的这个field值。  
 
+[453. Minimum Moves to Equal Array Elements   QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java) ★★★★  
+`Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1. For example, input [1,2,3], result is 3. Explanation: [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]`  
+纯**数学**向的题目。虽是Easy的，还是折腾了不少时间。  
+ * [最开始的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java#L63)是平铺直叙的，就是老老实实的一步步来，直到得出结果。结果这种方案超时。  
+ * [接受的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java#L25)，**完全是凭借看规律看出来的，花了不少时间。并不是很明白其中的数学道理**。如果面试遇到这样问题肯定懵逼了，  
 
+ 
+ 
