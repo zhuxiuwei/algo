@@ -125,7 +125,7 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
  * 直观的[使用Set去重](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L72)的算法，超时了(对于一个大case，bit算法27ms，此算法1200ms+)。  
  * 应该用Bit操作。需要注意，[当把一个char映射到一个bit时，用位移'>>'操作，比用幂指运算Math.pow(2, (int)(c - 'a')快很多](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P318_MaximumProductOfWordLengths.java#L49)。  
 
-[416. Partition Equal Subset Sum  QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P416_PartitionEqualSubsetSum.java) ★★  
+[416. Partition Equal Subset Sum  Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P416_PartitionEqualSubsetSum.java) ★★  
 `Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.`  
 貌似__此题的test case有问题__。我一个[投机取巧的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P416_PartitionEqualSubsetSum.java#L64)被AC了，但感觉不对。我的Greedy方案现在不确定对不对。 已经[提问](https://discuss.leetcode.com/topic/62630/need-help-super-wired-test-cases-are-there-wrong-test-cases)了。  
 
@@ -136,7 +136,7 @@ __Bit操作__问题。不难，但是要__注意三个bug__:
 `return 1->3->5->2->4->NULL.`  
 类似__链表翻转__，很直观，但是考验编程技巧。需要注意边界值、空指针等。注意一个没判断null导致NullPointer的[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P328_OddEvenLinkedList.java#L32)。  
 
-[287. Find the Duplicate Number  QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java) ★★  
+[287. Find the Duplicate Number Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java) ★★  
 `Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive). Assume that there is only one duplicate number, find the duplicate one.`  
 __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L28)，思考出来还是花了一些时间的。有意思的是，这个符合条件的方案是O(n)的，速度竟然比[一个不符合条件的O(NlgN)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P287_FindTheDuplicateNumber.java#L58)的AC时间还慢。好几次遇到__这种时间分析的结果优劣不是绝对的__。  
 
@@ -146,11 +146,17 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Follow up:What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?`  
 答： 可以给TreeNode增加一个filed，记录其左孩子的数目，也就是小于它的节点数。每次插入删除节点时，都可以更新受牵连的节点的这个field值。  
 
-[453. Minimum Moves to Equal Array Elements   QuestionEditorial Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java) ★★★★  
+[453. Minimum Moves to Equal Array Elements Solution](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java) ★★★★  
 `Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1. For example, input [1,2,3], result is 3. Explanation: [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]`  
 纯**数学**向的题目。虽是Easy的，还是折腾了不少时间。  
  * [最开始的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java#L63)是平铺直叙的，就是老老实实的一步步来，直到得出结果。结果这种方案超时。  
  * [接受的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P453_MinimumMovesToEqualArrayElements.java#L25)，**完全是凭借看规律看出来的，花了不少时间。并不是很明白其中的数学道理**。如果面试遇到这样问题肯定懵逼了，  
+ 
+ [423. Reconstruct Original Digits from English](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P423_ReconstructOriginalDigitsFromEnglish.java) ★★★★★  
+`Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order.`  
+`Example  Input: "owoztneoer" Output: "012"`  
+**花费了很多时间的一个问题。**  
+* [超时的解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P423_ReconstructOriginalDigitsFromEnglish.java#L106)就花费了很多时间，写了非常ugly的code，最后还超时了。其中**一个问题始终没解决**，就是不知道为啥从HashSet的Iterator移除一个元素死活不管用，我另写test case就没有这个问题。在第143行附近。  
+* [巧妙地解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P423_ReconstructOriginalDigitsFromEnglish.java#L39)，基于以下思路：  
+![](https://github.com/zhuxiuwei/algo/blob/master/Images/423_Reconstruct_Original_Digits_from_English.png)  
 
- 
- 

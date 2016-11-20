@@ -44,8 +44,7 @@ public class P453_MinimumMovesToEqualArrayElements {
 			if (nums[i] != min)
 				baseResult += (nums[i] - max);
 			else {
-				if (!meetMin) { // in case there're several min values. Only ONE
-								// min doesn't involve in baseResult adjustment.
+				if (!meetMin) { // in case there're several min values. Only the FIRST ONE min doesn't involve in baseResult adjustment.
 					meetMin = true;
 					continue;
 				}
