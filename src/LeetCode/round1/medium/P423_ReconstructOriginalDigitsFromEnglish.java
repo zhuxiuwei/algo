@@ -30,6 +30,7 @@ Output: "45"
  */
 public class P423_ReconstructOriginalDigitsFromEnglish {
 	
+	private String[] ne = new String[]{"zero","one","two","three","four","five","six","seven","eight","nine"};
 	/**
 	 * 巧妙地解法。O(N)。 
 	 * AC： 53ms, 25%
@@ -93,10 +94,11 @@ public class P423_ReconstructOriginalDigitsFromEnglish {
 		return sb.toString();
     }
 	private void updateMap(Map<Character, Integer> cToI, int number, int count){
-		String[] ne = new String[]{"zero","one","two","three","four","five","six","seven","eight","nine"};
-		for (int i = 0; i < ne[number].length(); i++) {
-			char c = ne[number].charAt(i);
-			cToI.put( c, cToI.get(c) - count);
+		if(count > 0){
+			for (int i = 0; i < ne[number].length(); i++) {
+				char c = ne[number].charAt(i);
+				cToI.put( c, cToI.get(c) - count);
+			}
 		}
 	}
 	

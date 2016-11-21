@@ -155,7 +155,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [423. Reconstruct Original Digits from English](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java) ★★★★★  
 `Given a non-empty string containing an out-of-order English representation of digits 0-9, output the digits in ascending order. Example  Input: "owoztneoer" Output: "012"`  
 **花费了很多时间的一个问题。**  
-* [超时的解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java#L106)就花费了很多时间，写了非常ugly的code，最后还超时了。其中**一个问题始终没解决**，就是不知道为啥从HashSet的Iterator移除一个元素死活不管用，我另写test case就没有这个问题。在第143行附近。  
-* [巧妙地解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java#L39)，基于以下思路：  
+* [超时的解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java#L108)就花费了很多时间，写了非常ugly的code，最后还超时了。其中**一个问题始终没解决**，就是不知道为啥从HashSet的Iterator移除一个元素死活不管用，我另写test case就没有这个问题。在第145行附近。  
+* [巧妙地解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java#L40)，基于以下思路：  
 ![](https://github.com/zhuxiuwei/algo/blob/master/Images/423_Reconstruct_Original_Digits_from_English.png)  
 
