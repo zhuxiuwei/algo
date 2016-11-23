@@ -159,3 +159,11 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [巧妙地解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P423_ReconstructOriginalDigitsFromEnglish.java#L40)，基于以下思路：  
 ![](https://github.com/zhuxiuwei/algo/blob/master/Images/423_Reconstruct_Original_Digits_from_English.png)  
 
+[447. Number of Boomerangs](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P447_NumberOfBoomerangs.java) ★★  
+`Given n points in the plane that are all pairwise distinct, a "boomerang"(回旋镖) is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).Find the number of boomerangs. You may assume that n will be at most 500 and coordinates of points are all in the range [-10000, 10000] (inclusive).`  
+开始的思路完全是错的，提交两次错误答案。第三次才捋清楚。编程本身不复杂。关键的公式在[第42行](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P447_NumberOfBoomerangs.java#L42)。**对排列组合又有点拎不清了**。  
+
+[436. Find Right Interval](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P436_FindRightInterval.java) ★★  
+典型**二分查找**的题目。**代码写起来比较繁琐**，因为又要一顿折腾地sort，又要二分查找。 写的时候有点小bug。 错误AC了两次。  
+
+
