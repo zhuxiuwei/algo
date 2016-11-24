@@ -166,4 +166,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [436. Find Right Interval](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P436_FindRightInterval.java) ★★  
 典型**二分查找**的题目。**代码写起来比较繁琐**，因为又要一顿折腾地sort，又要二分查找。 写的时候有点小bug。 错误AC了两次。  
 
+[459. Repeated Substring Pattern](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P459_RepeatedSubstringPattern.java) ★★ 
+`Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000. Example 1: Input: "abab" Output: True  Explanation: It's the substring "ab" twice.` 
+**字符串处理**。[最后判断结果该返回true false的条件](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P459_RepeatedSubstringPattern.java#L39)需要小心，写错了一次。 构造pattern什么的倒是很顺利。  
 
