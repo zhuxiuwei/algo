@@ -167,11 +167,11 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 典型**二分查找**的题目。**代码写起来比较繁琐**，因为又要一顿折腾地sort，又要二分查找。 写的时候有点小bug。 错误AC了两次。  
 
 [459. Repeated Substring Pattern](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P459_RepeatedSubstringPattern.java) ★★  
-`Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000. Example 1: Input: "abab" Output: True  Explanation: It's the substring "ab" twice.` 
+`Given a non-empty string check if it can be constructed by taking a substring of it and appending multiple copies of the substring together. You may assume the given string consists of lowercase English letters only and its length will not exceed 10000. Example 1: Input: "abab" Output: True  Explanation: It's the substring "ab" twice.`  
 **字符串处理**。[最后判断结果该返回true false的条件](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P459_RepeatedSubstringPattern.java#L39)需要小心，写错了一次。 构造pattern什么的倒是很顺利。  
 
-[39. Combination Sum](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P039_CombinationSum.java) ★★★★★★  
-`Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times. For example, given candidate set [2, 3, 6, 7] and target 7, A solution set is: [[7], [2, 2, 3]]` 
+[39. Combination Sum](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P039_CombinationSum.java) ★★★★★★  
+`Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times. For example, given candidate set [2, 3, 6, 7] and target 7, A solution set is: [[7], [2, 2, 3]]`  
 **！！！！极其不顺利，典型回溯法问题！！！！**。一个题目弄到凌晨一点多。主要是总超时，然后还不会剪枝，一剪枝结果根本就不对了，跟踪递归堆栈还跟不明白。。 最后只好用了一个很傻逼的memorized cache来尽量减少无效递归，虽然AC了，也只打败了1.9%更sb的。  
 
   
