@@ -174,4 +174,9 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T. The same repeated number may be chosen from C unlimited number of times. For example, given candidate set [2, 3, 6, 7] and target 7, A solution set is: [[7], [2, 2, 3]]`  
 **！！！！极其不顺利，典型回溯法问题！！！！**。一个题目弄到凌晨一点多。主要是总超时，然后还不会剪枝，一剪枝结果根本就不对了，跟踪递归堆栈还跟不明白。。 最后只好用了一个很傻逼的memorized cache来尽量减少无效递归，虽然AC了，也只打败了1.9%更sb的。  
 
-  
+[22. Generate Parentheses](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P022_GenerateParentheses.java) ★★★★★  
+`Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is:["((()))",  "(()())",  "(())()",  "()(())",  "()()()"]`  
+**！！！！典型回溯法问题，依旧不顺利！！！！**。在[一个判断条件](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P022_GenerateParentheses.java#L40)的地方卡了半天，感觉一个应该进去的if条件死活进不去，还以为是eclipse debug时候的bug，后来仔细想是我理解的不对。   
+
+ 
+
