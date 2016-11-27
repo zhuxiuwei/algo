@@ -178,5 +178,6 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is:["((()))",  "(()())",  "(())()",  "()(())",  "()()()"]`  
 **！！！！典型回溯法问题，依旧不顺利！！！！**。在[一个判断条件](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P022_GenerateParentheses.java#L40)的地方卡了半天，感觉一个应该进去的if条件死活进不去，还以为是eclipse debug时候的bug，后来仔细想是我理解的不对。   
 
- 
-
+[401. Binary Watch](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P401_BinaryWatch.java) ★★★  
+![](https://upload.wikimedia.org/wikipedia/commons/8/8b/Binary_clock_samui_moon.jpg)  
+**！典型回溯法问题，还算顺利！** 难得还算顺利。但是依然没有信心手写，因为IDE里debug还是有点小问题。  
