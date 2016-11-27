@@ -180,10 +180,13 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 
 [401. Binary Watch](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P401_BinaryWatch.java.java) ★★★  
 ![](https://github.com/zhuxiuwei/algo/blob/master/Images/401_BinaryWatch.png)  
-**！典型回溯法问题，还算顺利！** 难得还算顺利。但是依然没有信心手写，因为IDE里debug还是有点小问题。  
+**！典型回溯法问题，还算顺利！** 难得还算顺利。但是依然没有信心手写，因为IDE里debug时还是有点小问题。  
 
-[21. Merge Two SortedLists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P021_MergeTwoSortedLists) ★  
-有一个[Bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P021_MergeTwoSortedLists#L21)。  
+[21. Merge Two SortedLists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P021_MergeTwoSortedLists.java) ★  
+有一个[Bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P021_MergeTwoSortedLists.java#L21)。  
+
+[108. Convert Sorted Array to Binary Search Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P108_ConvertSortedArrayToBinarySearchTree.java) ★  
+典型**递归算法**。有一个[低级bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P108_ConvertSortedArrayToBinarySearchTree.java#L27): 算数组的mid index，是mid=(start+end)/2， 而不是(end-start)/2..... 太低级的错误了。  
 
 
 
