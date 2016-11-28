@@ -11,7 +11,7 @@ import LeetCode.round1.common.IntArrayComparator;
 import LeetCode.round1.common.Interval;
 
 /**
-161127
+161128
 Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 Note:
 - You may assume the interval's end point is always bigger than its start point.
@@ -35,7 +35,7 @@ Explanation: You don't need to remove any of the intervals since they're already
 public class P435_NonOverlappingIntervals {
 	
 	/**
-	 * AC： 14貌似， 30.2%.
+	 * AC： 14ms， 30.2%.
 	 * 思路：按start排序，遇到一个overlap，就及时删除 -- greedy。 ！！！！注意一个bug。
 	 * @param intervals
 	 * @return
