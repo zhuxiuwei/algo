@@ -2,7 +2,9 @@ package LeetCode.round1.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 161128
@@ -31,12 +33,15 @@ public class P018_4Sum {
 		}
 		if(target < min || target > max)
 			return res;
+		
+		
+		
 		return res;
     }
 	
 	public static void main(String[] args) {
 		P018_4Sum p = new P018_4Sum();
-		p.fourSum(new int[]{1, 0, -1, 0, -2, 2},  0);
+		System.out.println(p.fourSum(new int[]{1, 0, -1, 0, -2, 2},  0));
 	}
 
 }

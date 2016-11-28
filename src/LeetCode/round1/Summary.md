@@ -193,6 +193,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 花的时间比较长。[第一次的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L75)完全是错的，而且各种hash操作很费时间。  
 正确的**Greedy**思路也有一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L57)。  
 
-
-
+[46. Permutations](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P046_Permutations.java) ★★★★  
+`Given a collection of distinct numbers, return all possible permutations(排列).`  
+**！典型回溯法问题，不算困难也不算顺利。还是debug着写的。**  
 
