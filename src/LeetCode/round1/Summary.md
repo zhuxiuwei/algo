@@ -188,6 +188,11 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [108. Convert Sorted Array to Binary Search Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P108_ConvertSortedArrayToBinarySearchTree.java) ★  
 典型**递归算法**。有一个[低级bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P108_ConvertSortedArrayToBinarySearchTree.java#L27): 算数组的mid index，是mid=(start+end)/2， 而不是(end-start)/2..... 太低级的错误了。  
 
+[435. Convert Sorted Array to Binary Search Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java) ★★★★  
+`Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.`  
+花的时间比较长。[第一次的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L75)完全是错的，而且各种hash操作很费时间。  
+正确的**Greedy**思路也有一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L57)。  
+
 
 
 

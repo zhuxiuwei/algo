@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import LeetCode.round1.common.IntArrayComparator;
 import LeetCode.round1.common.Interval;
 
 /**
@@ -32,10 +33,44 @@ Output: 0
 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
  */
 public class P435_NonOverlappingIntervals {
+	
+	/**
+	 * AC： 14貌似， 30.2%.
+	 * 思路：按start排序，遇到一个overlap，就及时删除 -- greedy。 ！！！！注意一个bug。
+	 * @param intervals
+	 * @return
+	 */
+	public int eraseOverlapIntervals(Interval[] intervals) {
+		if(intervals == null || intervals.length <= 1)
+			return 0;
+		int count = 0;
+		List<int[]> itvs = new ArrayList<int[]>();
+		for (int i = 0; i < intervals.length; i++) 
+			itvs.add(new int[]{intervals[i].start, intervals[i].end});
 
+		//sort
+		Collections.sort(itvs, new IntArrayComparator());
+		int lastNoLapIdx = 0;
+		for (int i = 1; i < itvs.size(); i++) {
+			if(isOverlapped(itvs.get(lastNoLapIdx), itvs.get(i))){
+				count++;
+				if(itvs.get(lastNoLapIdx)[1] > itvs.get(i)[1])	//！！！注意bug: 必须加上这个判断。删除的是end更大的那个，而不是简单删除后来的那个。
+					lastNoLapIdx = i;
+			}
+			else
+				lastNoLapIdx = i;
+		}
+		return count;
+	}
+	private boolean isOverlapped(int[] i1, int[] i2){
+		if(i1[1] <= i2[0] || i2[1] <= i1[0])
+			return false;
+		return true;
+	}
+	
 	/**
 	 * ！！！！！！思路不对， 思路是：从overlap最多的interval，依次删除。思路对这个case错误：[[0,2],[1,3],[1,3],[2,4],[3,5],[3,5],[4,6]]。按照这个思路先删除overlap最多的[2 4]，最后一共5次。而正确答案是删除全部[1 3][3 5]共4次。
-	 * 花了很多时间。（包括一个奇怪的debug结果和run结果不一致的问题，为了fix这个问题，在生成itvToOverLapItvSet时用LinkedHashMap）
+	 * 花了很多时间。（包括一个奇怪的debug结果和run结果不一致的问题，为了fix这个问题，在生成itvToOverLapItvSet时用LinkedHashMap。见往下第六行itvToOverLapItvSet = new LinkedHashMap。）
 	 */
 	public int eraseOverlapIntervals_ideaWrong(Interval[] intervals) {
 		if(intervals == null || intervals.length <= 1)
@@ -114,11 +149,9 @@ public class P435_NonOverlappingIntervals {
 	
 	public static void main(String[] args) {
 		P435_NonOverlappingIntervals p = new P435_NonOverlappingIntervals();
-//		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(1,2),new Interval(2,3),new Interval(3,4),new Interval(1,3), new Interval(1,100)}));
-//			System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(1,2),new Interval(1,2),new Interval(1,2)}));
-//		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(0,2),new Interval(1,3),new Interval(2,4),new Interval(3,5), new Interval(4,6)}));
-//		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(0,2),new Interval(1,3),new Interval(2,4),new Interval(3,5), new Interval(4,6), new Interval(5,7)}));
-		System.out.println(p.eraseOverlapIntervals_ideaWrong(new Interval[]{new Interval(0,2),new Interval(1,3),new Interval(1,3),new Interval(2,4),new Interval(3,5),new Interval(3,5), new Interval(4,6)}));
+		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(0,2),new Interval(1,3),new Interval(1,3),new Interval(2,4),new Interval(3,5),new Interval(3,5), new Interval(4,6)}));	//4
+		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(0,2),new Interval(1,3),new Interval(2,4),new Interval(2,4),new Interval(3,5), new Interval(4,6)}));	//3
+		System.out.println(p.eraseOverlapIntervals(new Interval[]{new Interval(0,5),new Interval(1,2),new Interval(2,3)}));	//1
 	}
 
 }
