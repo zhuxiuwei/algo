@@ -193,15 +193,15 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 花的时间比较长。[第一次的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L75)完全是错的，而且各种hash操作很费时间。  
 正确的**Greedy**思路也有一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P435_NonOverlappingIntervals.java#L57)。  
 
-[46. Permutations](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P046_Permutations.java) ★★★★  
+[46. Permutations](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P046_Permutations.java) ★★★  
 `Given a collection of distinct numbers, return all possible permutations(排列).`  
 **！典型回溯法问题，不算困难也不算顺利。还是debug着写的。**  
 
 [394. Decode String](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java) ★★★★  
 `Given an encoded string, return it's decoded string. Example: s = "2[abc]3[cd]ef", return "abcabccdcdcdef".`  
 **典型的实现前需要想清楚、写起来比较复杂的代码，写出来的东西是典型的面相过程的风格。这种code一旦出现bug就很难维护**。有点类似我在IBM时做的Json生成器。  
-写了两次才成功。[第一次](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L102) 花了不少时间，最后成了垃圾代码。拆西墙补东墙的状态。发现一个新fail case，修改，老的case又过不了。**失败的原因，是可能出现的情况没有想清楚。导致一出现一个新情况，就开始打补丁，越高越乱。**想清楚后，重新再实现一遍，就快很多了。  
-新实现比较顺利，只有一个[容易出现的bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L41)。  
+写了两次才成功。[第一次](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L102) 花了不少时间，最后成了垃圾代码。拆西墙补东墙的状态。发现一个新fail case，修改，老的case又过不了。**失败的原因，是可能出现的情况没有想清楚。导致一出现一个新情况，就开始打补丁，越搞越乱。**想清楚后，重新再实现一遍，就快很多了。  
+[新实现](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L23)比较顺利，只有一个[容易出现的bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L41)。  
 
 
 
