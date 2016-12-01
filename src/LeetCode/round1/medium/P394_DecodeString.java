@@ -1,7 +1,5 @@
 package LeetCode.round1.medium;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -17,27 +15,87 @@ s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
  */
 public class P394_DecodeString {
 
+	/**
+	 * 经过decodeString_Wrong()的失败，明白了所有可能的情况后，就可以设计好Module，然后实现就不是大问题了。比较顺利。 
+	 * ！！！唯一一个容易出bug的地方在第36行的while(i < s.length())找配对Sting里。尤其是第42,43行。
+	 * AC: 4ms, 42%.
+	 */
 	public String decodeString(String s) {
 		StringBuilder sb = new StringBuilder(), tempSB = new StringBuilder();
 		Stack<StringCount> stack = new Stack<StringCount>();
 		int count = -1;
-		String content = "";
-        boolean isInNum = false, isInString = false;
 		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
 			if(c >= '0' && c <= '9'){	//number
 				tempSB.append(c);
 			}else if(c == '['){
 				//time to push stack
-				if(count == -1) count = 0;	//in case number is not specified, like 'sd' in 'sd2[f]'.
+				count = Integer.parseInt(tempSB.toString());
+				tempSB.setLength(0);
+				i ++;
+				while(i < s.length()){	//找到接下来配对的string。
+					char d = s.charAt(i);
+					if(d != ']' && !(d >= '0' && d <= '9'))	//not number or ]. must be string. (impossible to be [)
+						tempSB.append(d);
+					else{
+						//!!!!!容易bug的地方！！！！
+						i --;	//不是string，记得要回退。 
+						break;
+					}
+					i ++;
+				}
 				StringCount sc = new StringCount(count, tempSB.toString());
+				stack.push(sc);
+				count = -1; tempSB.setLength(0);
+			}else if(c == ']'){	//time to pop one.
+				StringCount sc = stack.pop();
+				StringBuilder tempsb2 = new StringBuilder();
+				for (int j = 0; j < sc.count; j++) 
+					tempsb2.append(sc.content);
+				if(!stack.isEmpty()){
+					StringCount sc2 = stack.peek();
+					sc2.content += tempsb2.toString();
+				}else
+					sb.append(tempsb2);
+			}else{	//special string repeat only once. 出现在这里的string，一定都是没有 数字+[ 开头的，比如"sd2[f2[e]g]i"里的sd,g,i。 
+				tempSB.append(c);
+				i++;
+				while(i < s.length()){
+					char d = s.charAt(i);
+					if(d != ']' && !(d >= '0' && d <= '9'))	//not number or ]. must be string. (impossible to be [)
+						tempSB.append(d);
+					else{
+						i --;
+						break;
+					}
+					i ++;
+				}
+				if(!stack.isEmpty()){
+					StringCount sc2 = stack.peek();
+					sc2.content += tempSB.toString();
+				}else
+					sb.append(tempSB);
+				count = -1; tempSB.setLength(0);
 			}
 		}
 		return sb.toString();
 	}
+	class StringCount{
+		private int count;
+		private String content;
+		public StringCount(int count,  String content){
+			this.content = content;
+			this.count = count;
+		}
+		@Override
+		public String toString(){
+			return count + ": " + content;
+		}
+	}
 	
 	/**
 	 * 花了不少时间，垃圾代码。拆西墙补东墙的状态。发现一个新fail case，修改，老的case又过不了。推翻重做吧。
+	 * 失败的原因，是可能出现的情况没有想清楚。导致一出现一个新情况，就开始打补丁，越高越乱。想清楚后，重新再写，就好很多了。
 	 * @param s
 	 * @return
 	 */
@@ -124,27 +182,15 @@ public class P394_DecodeString {
         	sb.append(tempSb);
         return sb.toString();
     }
-	class StringCount{
-		private int count;
-		private String content;
-		public StringCount(int count,  String content){
-			this.content = content;
-			this.count = count;
-		}
-		@Override
-		public String toString(){
-			return count + ": " + content;
-		}
-	}
 	
 	public static void main(String[] args) {
 		P394_DecodeString p = new P394_DecodeString();
-//		System.out.println(p.decodeString("3[a]2[bc]"));	//aaabcbc
-//		System.out.println(p.decodeString("3[a2[c]2[a]]"));		//accaaaccaaaccaa
-//		System.out.println(p.decodeString("3[ab2[c2[f3[d]]]]"));	//abcfdddfdddcfdddfdddabcfdddfdddcfdddfdddabcfdddfdddcfdddfddd
-//		System.out.println(p.decodeString("2[2[b]]"));	//bbbb
-//		System.out.println(p.decodeString("2[abc]3[cd]ef"));	//abcabccdcdcdef  
-//		System.out.println(p.decodeString("sd2[f2[e]g]i"));
+		System.out.println(p.decodeString("3[a]2[bc]"));	//aaabcbc
+		System.out.println(p.decodeString("3[a2[c]2[a]]"));		//accaaaccaaaccaa
+		System.out.println(p.decodeString("3[ab2[c2[f3[d]]]]"));	//abcfdddfdddcfdddfdddabcfdddfdddcfdddfdddabcfdddfdddcfdddfddd
+		System.out.println(p.decodeString("2[2[b]]"));	//bbbb
+		System.out.println(p.decodeString("2[abc]3[cd]ef"));	//abcabccdcdcdef  
+		System.out.println(p.decodeString("sd2[f2[e]g]i"));		//sdfeegfeegi
 	}
 
 }
