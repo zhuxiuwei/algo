@@ -203,6 +203,22 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 写了两次才成功。[第一次](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L102) 花了不少时间，最后成了垃圾代码。拆西墙补东墙的状态。发现一个新fail case，修改，老的case又过不了。**失败的原因，是可能出现的情况没有想清楚。导致一出现一个新情况，就开始打补丁，越搞越乱。**想清楚后，重新再实现一遍，就快很多了。  
 [新实现](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L23)比较顺利，只有一个[容易出现的bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P394_DecodeString.java#L41)。  
 
+[326. Power of Three](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P326_PowerOfThree.java) ★★★  
+最直观的算法最开始都[写错了](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P326_PowerOfThree.java#L57)，弱爆了。。。  
+[不用递归的算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P326_PowerOfThree.java#L13)很巧妙，看的讨论方案。
+
+[421. Maximum XOR of Two Numbers in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java) ★★★★★ 
+`Given a non-empty array of numbers, a0, a1, a2, … , an-1, where 0 ≤ ai < 2^31. Find the maximum result of ai XOR aj, where 0 ≤ i, j < n in O(n) time.`  
+**REFER. FAIL.**  
+* [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java#L70)花了很长时间，而且OJ时复杂case超时了。  
+* [参考答案](https://discuss.leetcode.com/topic/63213/java-o-n-solution-using-bit-manipulation-and-hashmap)。不是很明白。  
+
+
+
+
+
+
+
 
 
 
