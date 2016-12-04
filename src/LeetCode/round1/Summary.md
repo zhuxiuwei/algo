@@ -207,7 +207,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 最直观的算法最开始都[写错了](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P326_PowerOfThree.java#L57)，弱爆了。。。  
 [不用递归的算法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P326_PowerOfThree.java#L13)很巧妙，看的讨论方案。
 
-[421. Maximum XOR of Two Numbers in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java) ★★★★★ 
+[421. Maximum XOR of Two Numbers in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java) ★★★★★  
 `Given a non-empty array of numbers, a0, a1, a2, … , an-1, where 0 ≤ ai < 2^31. Find the maximum result of ai XOR aj, where 0 ≤ i, j < n in O(n) time.`  
 **REFER. FAIL.**  
 * [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java#L70)花了很长时间，而且OJ时复杂case超时了。  
