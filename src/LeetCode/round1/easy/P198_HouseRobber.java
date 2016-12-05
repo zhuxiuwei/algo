@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 161202
+ * 161202,1205
 You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping 
 you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses 
 were broken into on the same night.
@@ -13,15 +13,24 @@ Given a list of non-negative integers representing the amount of money of each h
 public class P198_HouseRobber {
 	
 	/**
-	 * DP 
-	 * 
+	 * 161205 DP 
+	 * AC: 0ms
 	 */
 	public int rob(int[] nums) {
-		return 1;
+		if(nums == null || nums.length == 0)
+			return 0;
+		if(nums.length == 1)
+			return nums[0];
+		int[] res = new int[nums.length];
+		res[0] = nums[0];
+		res[1] = Math.max(nums[0], nums[1]);
+		for (int i = 2; i < res.length; i++) 
+			res[i] = Math.max(res[i -1], res[i - 2] + nums[i]);
+		return res[res.length - 1];
 	}
 	
 	/**
-	 * 思路：每次看三个，依次往前看。
+	 * 161202 思路：每次看三个，依次往前看。
 	 * 完全不对。因为可能导致“链”断掉。 {2,4,8,9,9,3}就过不了。最后选了8,9.把2丢掉了。
 	 */
 	public int rob_wrong(int[] nums) {
@@ -70,6 +79,7 @@ public class P198_HouseRobber {
 		System.out.println(p.rob(new int[]{4, 9, 7, 1}));	//11 *
 		System.out.println(p.rob(new int[]{2,4,8,9,9,3}));	//19 **
 		System.out.println(p.rob(new int[]{2,4,8,9,9,11,13,15,15,15,9}));	//56 **
+		System.out.println(p.rob(new int[]{2,2,4,3,2,5}));	//11 **
 	}
 
 }

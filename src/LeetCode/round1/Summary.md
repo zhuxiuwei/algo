@@ -213,7 +213,14 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java#L70)花了很长时间，而且OJ时复杂case超时了。  
 * [参考答案](https://discuss.leetcode.com/topic/63213/java-o-n-solution-using-bit-manipulation-and-hashmap)。不是很明白。  
 
+[198. House Robber](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P198_HouseRobber.java) ★★★  
+* [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P198_HouseRobber.java#L36)没用DP，思路完全错的。花了些时间。  
+* 调整思路用[DP解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P198_HouseRobber.java#L19)，很快就写出来了。  
 
+[213. House Robber](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java) ★★  
+就是(198. House Robber)的一个延伸。  
+* [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L49)的DP思路是错的。  
+* 然后调整思路，仔细想了下有[简单解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L19)，基于[198. House Robber]比较容易写出来。  
 
 
 
