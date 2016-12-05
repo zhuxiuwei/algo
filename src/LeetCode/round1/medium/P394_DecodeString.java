@@ -54,9 +54,9 @@ public class P394_DecodeString {
 					tempsb2.append(sc.content);
 				if(!stack.isEmpty()){
 					StringCount sc2 = stack.peek();
-					sc2.content += tempsb2.toString();
+					sc2.content += tempsb2.toString();	//Got 'parent' k[encoded_string] in stack, merge to parent'c content(to right side).
 				}else
-					sb.append(tempsb2);
+					sb.append(tempsb2);	//Got no 'parent' in stack, just merge to final result(right side).
 			}else{	//special string repeat only once. 出现在这里的string，一定都是没有 数字+[ 开头的，比如"sd2[f2[e]g]i"里的sd,g,i。 
 				tempSB.append(c);
 				i++;
