@@ -30,14 +30,14 @@ public class P096_UniqueBinarySearchTrees {
         if(n <= 0)
         	return 0;
         List<int[]> trees = new ArrayList<int[]>();
-        trees.add(new int[]{0});
+        trees.add(new int[]{0});	//for n=1
         Set<String> visited = new HashSet<String>();
         for (int i = 0; i < n - 1; i++) {
         	List<int[]> newtrees = new ArrayList<int[]>();
         	for (int[] tree: trees) {
         		for (int j = tree.length - 1; j >= 0; j--) {
 					int c = tree[j];
-					if(c == 0){
+					if(c == 0){	//0: left, 1: has left child, 2: has right child, 3: has 2 children
 						while(c < 2){
 			        		int[] newTree = newInt(tree);
 							newTree[j] = ++c;
@@ -47,7 +47,7 @@ public class P096_UniqueBinarySearchTrees {
 								newtrees.add(newTree);
 							}
 						}
-					}else if(c != 3){
+					}else if(c != 3){	//c=1 or 2(1 child). next value can only be 3(2 children).
 		        		int[] newTree = newInt(tree);
 						newTree[j] = 3;
 						String newTreeStr = Arrays.toString(newTree);
