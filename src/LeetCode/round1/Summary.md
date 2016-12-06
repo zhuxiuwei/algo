@@ -210,7 +210,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [424. Longest Repeating Character Replacement](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P424_LongestRepeatingCharacterReplacement.java) ★★★★★  
 `Given a string that consists of only uppercase English letters, you can replace any letter in the string with another letter at most k times. Find the length of a longest substring containing all repeating letters you can get after performing the above operations. Excample: Input: s = "ABAB", k = 2, Output:4`  
 **REFER. FAIL.**  
-* 不会，[参考答案](https://discuss.leetcode.com/topic/64833/sliding-window-java-easy-explanation-15-lines)。  
+* 用**Sliding Window**. 不会，[参考答案](https://discuss.leetcode.com/topic/64833/sliding-window-java-easy-explanation-15-lines)。  
 
 [421. Maximum XOR of Two Numbers in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P421_MaximumXORofTwoNumbersInAnArray.java) ★★★★★  
 `Given a non-empty array of numbers, a0, a1, a2, … , an-1, where 0 ≤ ai < 2^31. Find the maximum result of ai XOR aj, where 0 ≤ i, j < n in O(n) time.`  
@@ -227,6 +227,8 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L49)的DP思路是错的。  
 * 然后调整思路，仔细想了下有[简单解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L19)，基于[198. House Robber]比较容易写出来。  
 
+[337. House RobberIII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java) ?  
+* [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java#L45)的DP思路是错的。  
 
 
 
