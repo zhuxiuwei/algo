@@ -1,9 +1,12 @@
 package LeetCode.round1.medium;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+import java.util.Set;
+import java.util.Stack;
 
 import LeetCode.round1.common.TreeNode;
 
@@ -32,13 +35,30 @@ Maximum amount of money the thief can rob = 4 + 5 = 9.
 public class P337_HouseRobberIII {
 
 	/**
+	 * 用先序遍历（DFS）
+	 * @param root
+	 * @return
+	 */
+	public int rob(TreeNode root) {
+		if(root == null)
+        	return 0;
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        Set<TreeNode> visited = new HashSet<TreeNode>();
+        List<Integer> res = new ArrayList<Integer>();
+        
+        
+        
+        return res.get(res.size() - 1);
+    }
+	
+	/**
 	 * 思路错！以下case错误选择2+4=6，正确是3+4=7.
 	 *   2
 	 *  / \
 	 * 1   3
 	 *  \
 	 *   4
-	 * 思路：某一行全选，或者不选。问题就退化到和House robber 1一样了。
+	 * 思路：层次遍历（BFS），某一行全选，或者不选。问题就退化到和House robber 1一样了。
 	 * @param root
 	 * @return
 	 */

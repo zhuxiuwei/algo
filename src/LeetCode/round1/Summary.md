@@ -230,6 +230,8 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [337. House RobberIII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java) ?  
 * [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java#L45)的DP思路是错的。  
 
+[202. Happy Number](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P202_HappyNumber.java) ★★★  
+虽然是easy，还是出现了几个bug，编程上有点小复杂，  
 
 
 
