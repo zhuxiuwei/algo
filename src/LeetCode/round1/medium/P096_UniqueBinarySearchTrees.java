@@ -33,7 +33,7 @@ public class P096_UniqueBinarySearchTrees {
 		for (int i = 2; i <= n ; i++) {
 			int sum = 0;
 			for (int j = 0; j < i;  j++) 
-				sum += res[j] * res[i - j - 1];
+				sum += res[j] * res[i - j - 1];	//累加left child和right child的全部可能的组合。
 			res[i] = sum;
 		}
 		return res[n];
