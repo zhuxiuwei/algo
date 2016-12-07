@@ -243,5 +243,8 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `A robot is located at the top-left corner of a m x n grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid. How many possible unique paths are there?`
 **DP问题**。注意一个数组越界的bug。  
 
+[35. Search Insert Position](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P035_SearchInsertPosition.java) ★  
+`Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.`  
+**二分查找问题**。注意还是有[小bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P035_SearchInsertPosition.java#L20)。  
 
 
