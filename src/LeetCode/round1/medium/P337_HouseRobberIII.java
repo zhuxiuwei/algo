@@ -1,12 +1,9 @@
 package LeetCode.round1.medium;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
-import java.util.Set;
-import java.util.Stack;
 
 import LeetCode.round1.common.TreeNode;
 
@@ -31,36 +28,48 @@ Example 2:
   / \   \ 
  1   3   1
 Maximum amount of money the thief can rob = 4 + 5 = 9.
+
+Example 3:
+     2
+    / \
+   1   3
+    \    
+     4   
+Maximum amount of money the thief can rob = 4 + 3 = 7.
  */
 public class P337_HouseRobberIII {
 
 	/**
-	 * 用先序遍历（DFS）
+	 * DFS + DP. Refer: https://discuss.leetcode.com/topic/41572/1ms-java-solution
 	 * @param root
 	 * @return
 	 */
 	public int rob(TreeNode root) {
-		if(root == null)
-        	return 0;
-        Stack<TreeNode> stack = new Stack<TreeNode>();
-        Set<TreeNode> visited = new HashSet<TreeNode>();
-        List<Integer> res = new ArrayList<Integer>();
-        
-        
-        
-        return res.get(res.size() - 1);
+		int[] res = robDP(root);
+		return Math.max(res[0], res[1]);	//res[0] stores result without current node, res[1] contains current node.
     }
+	private int[] robDP(TreeNode node){
+		if(node == null)
+			return new int[]{0, 0};
+		
+		int[] leftRes = robDP(node.left);
+		int[] rightRes = robDP(node.right);
+		
+		int[] res = new int[2];
+		res[0] = Math.max(leftRes[0], leftRes[1]) + Math.max(rightRes[0], rightRes[1]);
+		res[1] = leftRes[0] + rightRes[0] + node.val;
+		return res;
+	}
+	
 	
 	/**
+	 * 思路：层次遍历（BFS），某一行全选，或者不选。问题就退化到和House robber 1一样了。
 	 * 思路错！以下case错误选择2+4=6，正确是3+4=7.
 	 *   2
 	 *  / \
 	 * 1   3
 	 *  \
 	 *   4
-	 * 思路：层次遍历（BFS），某一行全选，或者不选。问题就退化到和House robber 1一样了。
-	 * @param root
-	 * @return
 	 */
 	public int rob_wrong(TreeNode root) {
         if(root == null)
@@ -111,7 +120,7 @@ public class P337_HouseRobberIII {
 		l21.left = l31;
 		l21.right = l32;
 		l22.right = l33;
-		System.out.println(p.rob_wrong(l1));	//9
+		System.out.println(p.rob(l1));	//9
 		
 		/**
 		 *   3
@@ -129,7 +138,7 @@ public class P337_HouseRobberIII {
 		l1.right = l22;
 		l21.right = l31;
 		l22.right = l32;
-		System.out.println(p.rob_wrong(l1));	//7
+		System.out.println(p.rob(l1));	//7
 		
 		/**
 		 *   2
@@ -145,6 +154,6 @@ public class P337_HouseRobberIII {
 		l1.left = l21;
 		l1.right = l22;
 		l21.right = l31;
-		System.out.println(p.rob_wrong(l1));	//7, 3 + 4
+		System.out.println(p.rob(l1));	//7, 3 + 4
 	}
 }

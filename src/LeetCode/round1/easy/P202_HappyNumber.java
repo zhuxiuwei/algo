@@ -24,11 +24,9 @@ public class P202_HappyNumber {
 		if(n == 1)
 			return true;
 		
-		boolean reachSingle = false;	//note bug. For 1111111
-		while(n < 10){
-			reachSingle = true;
+		boolean reachSingle = n < 10;	//!!!!note bug. To guarantee result only convergence to < 10 once. example: 1111111
+		while(n < 10)
 			n *= n;
-		}
 		
 		int sum = 0;
 		while(true){

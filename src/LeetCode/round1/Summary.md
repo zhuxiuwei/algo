@@ -227,8 +227,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L49)的DP思路是错的。  
 * 然后调整思路，仔细想了下有[简单解法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P213_HouseRobberII.java#L19)，基于[198. House Robber]比较容易写出来。  
 
-[337. House RobberIII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java) ?  
-* [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java#L45)的DP思路是错的。  
+[337. House RobberIII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java) ★★★★  
+**REFER.**  
+* [最开始](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java#L74)的DP思路是错的。  
+* [最终答案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P337_HouseRobberIII.java#L47)参考了https://discuss.leetcode.com/topic/41572/1ms-java-solution。  
 
 [202. Happy Number](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P202_HappyNumber.java) ★★★  
 虽然是easy，还是出现了几个bug，编程上有点小复杂，  
