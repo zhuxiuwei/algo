@@ -41,12 +41,13 @@ public class P337_HouseRobberIII {
 
 	/**
 	 * DFS + DP. Refer: https://discuss.leetcode.com/topic/41572/1ms-java-solution
+	 * 和树的先根、中根、后根顺序没关系。
 	 * @param root
 	 * @return
 	 */
 	public int rob(TreeNode root) {
 		int[] res = robDP(root);
-		return Math.max(res[0], res[1]);	//res[0] stores result without current node, res[1] contains current node.
+		return Math.max(res[0], res[1]); //res[0] stores result without current node, res[1] contains result with current node.
     }
 	private int[] robDP(TreeNode node){
 		if(node == null)
@@ -57,10 +58,9 @@ public class P337_HouseRobberIII {
 		
 		int[] res = new int[2];
 		res[0] = Math.max(leftRes[0], leftRes[1]) + Math.max(rightRes[0], rightRes[1]);
-		res[1] = leftRes[0] + rightRes[0] + node.val;
+		res[1] = leftRes[0] + rightRes[0] + node.val;	//这里有点意思。
 		return res;
 	}
-	
 	
 	/**
 	 * 思路：层次遍历（BFS），某一行全选，或者不选。问题就退化到和House robber 1一样了。
