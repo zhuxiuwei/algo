@@ -239,5 +239,9 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [算法超时](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P096_UniqueBinarySearchTrees.java#L47)没想到用DP，用数组表示树去老老实实的计算。问题是拷贝新数组，和生成数组的字符串表示放到Set里来去重很费时间，最后**算法超时**。  
 * [最终答案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P096_UniqueBinarySearchTrees.java#L26)，**看到了DP的tag提示，才想到用DP**。还算顺利，有点小Bug。  
 
+[62. Unique Paths](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P062_UniquePaths.java) ★  
+`A robot is located at the top-left corner of a m x n grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid. How many possible unique paths are there?`
+**DP问题**。注意一个数组越界的bug。  
+
 
 
