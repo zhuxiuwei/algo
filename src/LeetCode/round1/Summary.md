@@ -247,7 +247,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.`  
 **二分查找问题**。注意还是有[小bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P035_SearchInsertPosition.java#L20)。  
 
-[112. Path Sum](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P112_PathSum.java) ★  
+[112. Path Sum](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P112_PathSum.java) ★  
 `Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.`  
-挺简单的问题，因为没考虑仔细，还是搞了个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P112_PathSum.java#L28)，错误了三遍才AC。  
+挺简单的问题，因为没考虑仔细，还是搞了个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P112_PathSum.java#L28)，错误了三遍才AC。  
 
