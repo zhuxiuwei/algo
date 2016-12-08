@@ -239,8 +239,15 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [算法超时](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P096_UniqueBinarySearchTrees.java#L47)没想到用DP，用数组表示树去老老实实的计算。问题是拷贝新数组，和生成数组的字符串表示放到Set里来去重很费时间，最后**算法超时**。  
 * [最终答案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P096_UniqueBinarySearchTrees.java#L26)，**看到了DP的tag提示，才想到用DP**。还算顺利，有点小Bug。  
 
+[62. Unique Paths](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P062_UniquePaths.java) ★  
+`A robot is located at the top-left corner of a m x n grid. The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid. How many possible unique paths are there?`
+**DP问题**。注意一个数组越界的bug。  
+
+[35. Search Insert Position](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P035_SearchInsertPosition.java) ★  
+`Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.`  
+**二分查找问题**。注意还是有[小bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P035_SearchInsertPosition.java#L20)。  
+
 [112. Path Sum](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P112_PathSum.java) ★  
 `Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.`  
 挺简单的问题，因为没考虑仔细，还是搞了个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P112_PathSum.java#L28)，错误了三遍才AC。  
-
 
