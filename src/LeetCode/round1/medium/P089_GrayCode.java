@@ -22,9 +22,7 @@ public class P089_GrayCode {
 
 	/**
 	 * AC: 4ms, 8.2%
-	 * 
-	 * @param n
-	 * @return
+	 * 注意俩bug。
 	 */
 	public List<Integer> grayCode(int n) {
 		Set<Integer> visited = new HashSet<Integer>();
@@ -32,8 +30,9 @@ public class P089_GrayCode {
 		int s = 0;
 		res.add(s);
 		visited.add(s);
-		while (true) {
-			boolean changed = false;
+		boolean changed = true;
+		while (changed) {
+			changed = false;
 			for (int i = 0; i < n; i++) {
 				int s2 = notOnIthBit(s, i); // ！！！注意这个地方，第i个bit取反。第一次写错了。
 				if (!visited.contains(s2)) {
@@ -44,20 +43,11 @@ public class P089_GrayCode {
 					i = -1; // ！！！！注意这里，想让i从0从头开始，要i=-1,而不是i=0.否则下次一开始执行i++，就成从1开始了。
 				}
 			}
-			if (!changed)
-				break;
-			else
-				changed = false;
 		}
 		return res;
 	}
-
 	/**
 	 * 对n在第i个bit上取反。
-	 * 
-	 * @param n
-	 * @param i
-	 * @return
 	 */
 	private int notOnIthBit(int n, int i) {
 		int n2 = (1 << i) | n;
@@ -68,7 +58,7 @@ public class P089_GrayCode {
 
 	public static void main(String[] args) {
 		P089_GrayCode p = new P089_GrayCode();
-		System.out.println(p.grayCode(3)); // [0, 1, 3, 2, 6, 7, 5, 4]
+		System.out.println(p.grayCode(18)); // [0, 1, 3, 2, 6, 7, 5, 4]
 	}
 
 }
