@@ -252,4 +252,12 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 挺简单的问题，因为没考虑仔细，还是搞了个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P112_PathSum.java#L28)，错误了三遍才AC。  
 [113. Path SumII](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P113_PathSumII.java)稍微复杂一点儿，典型**DFS/Backtracking**问题，一遍过。  
 
+[89. Gray Code](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P089_GrayCode.java) ★★  
+`The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0. For example, given n = 2, return [0,1,3,2].`  
+**位操作**问题，不算难，但是有俩编程实现时的bug。  
+
+
+
+
+
 

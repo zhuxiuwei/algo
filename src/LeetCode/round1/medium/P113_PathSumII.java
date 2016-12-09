@@ -6,7 +6,7 @@ import java.util.List;
 import LeetCode.round1.common.TreeNode;
 
 /**
- * 161208
+ * 161209
 Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
 For example: Given the below binary tree and sum = 22,
               5
@@ -61,6 +61,6 @@ public class P113_PathSumII {
 		TreeNode t1 = new TreeNode(2);
 		TreeNode t2 = new TreeNode(1);
 		t1.right = t2;
-		System.out.println(p.pathSum(t1, 3));
+		System.out.println(p.pathSum(t1, 3));	//[[2, 1]]
 	}
 }
