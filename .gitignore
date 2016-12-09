@@ -2,3 +2,6 @@ logs/
 bin/
 target/
 .cache
+.settings/
+.classpath
+.project
