@@ -58,7 +58,7 @@ public class P089_GrayCode {
 
 	public static void main(String[] args) {
 		P089_GrayCode p = new P089_GrayCode();
-		System.out.println(p.grayCode(18)); // [0, 1, 3, 2, 6, 7, 5, 4]
+		System.out.println(p.grayCode(3)); // [0, 1, 3, 2, 6, 7, 5, 4]
 	}
 
 }
