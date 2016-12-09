@@ -1,5 +1,6 @@
 package LeetCode.round1.medium;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import LeetCode.round1.common.TreeNode;
@@ -24,11 +25,35 @@ return
 public class P113_PathSumII {
 
 	/**
-	 * AC: 1ms
+	 * 1 time AC: 3ms, 43.3%
+	 * DFS(backtracking)
 	 */
 	public List<List<Integer>> pathSum(TreeNode root, int sum) {
-        
+		List<List<Integer>> res = new ArrayList<List<Integer>>();
+		helper(root, sum, new ArrayList<Integer>(), res);
+		return res;
     }
+	private void helper(TreeNode node, int sum, List<Integer> temp, List<List<Integer>> res){
+		if(node == null)
+			return;
+		
+		temp.add(node.val);
+		
+		if(node.left == null && node.right == null && node.val == sum){
+			res.add(new ArrayList<Integer>(temp));
+			return;
+		}
+		
+		if(node.left != null){
+			helper(node.left, sum - node.val, temp, res);
+			if(!temp.isEmpty()) temp.remove(temp.size() - 1);
+		}
+		
+		if(node.right != null){
+			helper(node.right, sum - node.val, temp, res);
+			if(!temp.isEmpty()) temp.remove(temp.size() - 1);
+		}
+	}
 	
 	public static void main(String[] args) {
 		P113_PathSumII p = new P113_PathSumII();
