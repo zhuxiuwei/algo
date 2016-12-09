@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
 /**
  * 161209
 The gray code is a binary numeral system where two successive values differ in only one bit.
@@ -23,49 +22,53 @@ public class P089_GrayCode {
 
 	/**
 	 * AC: 4ms, 8.2%
+	 * 
 	 * @param n
 	 * @return
 	 */
 	public List<Integer> grayCode(int n) {
-        Set<Integer> visited = new HashSet<Integer>();
-        List<Integer> res = new ArrayList<Integer>();
-        int s = 0;
-        res.add(s); visited.add(s);
-        while(true){
-        	boolean changed = false;
-        	for (int i = 0; i < n; i++) {
-				int s2 = notOnIthBit(s, i);	//！！！注意这个地方，第i个bit取反。第一次写错了。
-				if(!visited.contains(s2)){
-			        res.add(s2);
-			        visited.add(s2);
-			        s = s2;
-			        changed = true;
-			        i = -1;	//！！！！注意这里，想让i从0从头开始，要i=-1,而不是i=0.否则下次一开始执行i++，就成从1开始了。
+		Set<Integer> visited = new HashSet<Integer>();
+		List<Integer> res = new ArrayList<Integer>();
+		int s = 0;
+		res.add(s);
+		visited.add(s);
+		while (true) {
+			boolean changed = false;
+			for (int i = 0; i < n; i++) {
+				int s2 = notOnIthBit(s, i); // ！！！注意这个地方，第i个bit取反。第一次写错了。
+				if (!visited.contains(s2)) {
+					res.add(s2);
+					visited.add(s2);
+					s = s2;
+					changed = true;
+					i = -1; // ！！！！注意这里，想让i从0从头开始，要i=-1,而不是i=0.否则下次一开始执行i++，就成从1开始了。
 				}
 			}
-        	if(!changed) 
-        		break;
-        	else
-        		changed = false;
-        }
-        return res;
-    }
+			if (!changed)
+				break;
+			else
+				changed = false;
+		}
+		return res;
+	}
+
 	/**
 	 * 对n在第i个bit上取反。
+	 * 
 	 * @param n
 	 * @param i
 	 * @return
 	 */
-	private int notOnIthBit(int n, int i){
+	private int notOnIthBit(int n, int i) {
 		int n2 = (1 << i) | n;
-		if(n == n2)	//ith bit is 1
+		if (n == n2) // ith bit is 1
 			n2 = (1 << i) ^ n;
 		return n2;
 	}
-	
+
 	public static void main(String[] args) {
 		P089_GrayCode p = new P089_GrayCode();
-		System.out.println(p.grayCode(3));	//[0, 1, 3, 2, 6, 7, 5, 4]
+		System.out.println(p.grayCode(3)); // [0, 1, 3, 2, 6, 7, 5, 4]
 	}
 
 }
