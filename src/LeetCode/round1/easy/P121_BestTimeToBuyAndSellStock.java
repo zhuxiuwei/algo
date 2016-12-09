@@ -17,7 +17,7 @@ In this case, no transaction is done, i.e. max profit = 0.
 public class P121_BestTimeToBuyAndSellStock {
 
 	/**
-	 * Use array. AC: 2ms
+	 * Use array. AC: 2ms， 48.6%
 	 * Time: O(n). Space: O(n).
 	 * Note: 1 bug.
 	 */
