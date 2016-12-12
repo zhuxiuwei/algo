@@ -50,9 +50,10 @@ public class P089_GrayCode {
 	 * 对n在第i个bit上取反。
 	 */
 	private int notOnIthBit(int n, int i) {
-		int n2 = (1 << i) | n;
+		int temp = (1 << i);
+		int n2 = temp | n;
 		if (n == n2) // ith bit is 1
-			n2 = (1 << i) ^ n;
+			n2 = temp ^ n;
 		return n2;
 	}
 
