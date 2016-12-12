@@ -258,8 +258,15 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 
 [53. Maximum Subarray](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java) ★★★★  
 `Find the contiguous subarray within an array (containing at least one number) which has the largest sum. For example, given the array [-2,1,-3,4,-1,2,1,-5,4], the contiguous subarray [4,-1,2,1] has the largest sum = 6.`  
-**FAIL(PARTIAL)**  
+**FAIL(PARTIAL)** **分治法**问题。  
 * [O(n)的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java#L16)很快就写好了。  
 * [分治法的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java#L39)缝缝补补花了不少时间，最后结果还不对。思路不对。[参考](https://discuss.leetcode.com/topic/42213/my-divide-and-conquer-solution-in-java-under-instruction-of-clrs-o-nlogn/2)也懒得看了。  
+
+[386. Lexicographical Numbers](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java) ★★★★★  
+`Given an integer n, return 1 - n in lexicographical order. For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].`  
+**REFER** 可转化成**DFS**问题。  
+编程角度不好写。[开始思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L75)是错的，后来[O(n)方案]((https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L40))写到一半写不下去了。最后[DFS方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L18)也是参考的讨论区。  
+
+
 
 
