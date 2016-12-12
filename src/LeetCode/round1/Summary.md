@@ -265,7 +265,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [386. Lexicographical Numbers](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java) ★★★★★  
 `Given an integer n, return 1 - n in lexicographical order. For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].`  
 **REFER** 可转化成**DFS**问题。  
-编程角度不好写。[开始思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L75)是错的，后来[O(n)方案]((https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L40))写到一半写不下去了。最后[DFS方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L18)也是参考的讨论区。  
+编程角度不好写。[开始思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L75)是错的，后来[O(n)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L40)写到一半写不下去了。最后[DFS方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L18)也是参考的讨论区。  
 
 
 
