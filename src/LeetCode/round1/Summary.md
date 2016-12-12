@@ -256,8 +256,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `The gray code is a binary numeral system where two successive values differ in only one bit. Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0. For example, given n = 2, return [0,1,3,2].`  
 **位操作**问题，不算难，但是有俩编程实现时的bug。  
 
-
-
-
+[53. Maximum Subarray](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java) ★★★★  
+`Find the contiguous subarray within an array (containing at least one number) which has the largest sum. For example, given the array [-2,1,-3,4,-1,2,1,-5,4], the contiguous subarray [4,-1,2,1] has the largest sum = 6.`  
+**FAIL(PARTIAL)**  
+* [O(n)的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java#L16)很快就写好了。  
+* [分治法的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P053_MaximumSubarray.java#L39)缝缝补补花了不少时间，最后结果还不对。思路不对。[参考](https://discuss.leetcode.com/topic/42213/my-divide-and-conquer-solution-in-java-under-instruction-of-clrs-o-nlogn/2)也懒得看了。  
 
 
