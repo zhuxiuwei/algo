@@ -10,7 +10,15 @@ If you have figured out the O(n) solution, try coding another solution using the
 public class P053_MaximumSubarray {
 	
 	/**
+	 * TODO: divide and conquer solution
+	 */
+	public int maxSubArray_DivideAndConquer(int[] nums) {
+		return 0;
+	}
+	
+	/**
 	 * 1 time AC: 17ms, 29.6%.
+	 * O(n) solution.
 	 */
 	public int maxSubArray(int[] nums) {
 		int max = Integer.MIN_VALUE, tempSum = 0;
