@@ -271,3 +271,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `You are climbing a stair case. It takes n steps to reach to the top.Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?`  
 题目本身挺简单。一个很好地说明了**循环比递归快得多**的例子。[循环方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P070_ClimbingStairs.java#L14)用0ms,[递归方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P070_ClimbingStairs.java#L35)就AC超时了。  
 
+[173. Binary Search Tree Iterator](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P173_BinarySearchTreeIterator.java) ★★  
+`二叉搜索树的iterator`  
+我的方案貌似不符合题目要求的使用o(h) space的条件。符合o(h) space条件的方案是用Stack，参考https://discuss.leetcode.com/topic/6604/ideal-solution-using-stack-java/11  
+
