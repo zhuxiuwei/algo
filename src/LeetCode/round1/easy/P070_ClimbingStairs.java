@@ -14,10 +14,8 @@ public class P070_ClimbingStairs {
 	public int climbStairs(int n) {
 		if(n <= 0)
 			return 0;
-		if(n == 1)
+		else if(n == 1)
 			return 1;
-		else if(n == 2)
-			return 2;
 		else{
 			int a[] = new int[n];
 			a[0] = 1;
@@ -37,7 +35,7 @@ public class P070_ClimbingStairs {
 	public int climbStairs_timeout(int n) {
 		if(n <= 0)
 			return 0;
-		if(n == 1)
+		else if(n == 1)
 			return 1;
 		else if(n == 2)
 			return 2;
@@ -47,6 +45,7 @@ public class P070_ClimbingStairs {
 	
 	public static void main(String[] args) {
 		P070_ClimbingStairs p = new P070_ClimbingStairs();
-		System.out.println(p.climbStairs(44));
+		System.out.println(p.climbStairs(44));	//1134903170
+		System.out.println(p.climbStairs_timeout(44));	//1134903170
 	}
 }
