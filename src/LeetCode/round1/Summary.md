@@ -267,6 +267,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 **REFER** 可转化成**DFS**问题。  
 编程角度不好写。[开始思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L75)是错的，后来[O(n)方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L40)写到一半写不下去了。最后[DFS方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P386_LexicographicalNumbers.java#L18)也是参考的讨论区。  
 
-
-
+[70. Climbing Stairs](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P070_ClimbingStairs.java) ★  
+`You are climbing a stair case. It takes n steps to reach to the top.Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?`  
+题目本身挺简单。一个很好地说明了**循环比递归快得多**的例子。[循环方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P070_ClimbingStairs.java#L14)用0ms,[递归方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P070_ClimbingStairs.java#L37)就AC超时了。  
 
