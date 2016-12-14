@@ -280,3 +280,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P437_PathSumIII.java#L57)有错，先修复包含0的case，修复后最后整个code比较ugly了，但还是有case不对，不调了。肯定是递归思路有问题。  递归方案对的话，肯定不用这么修修补补。  
 * 参考的https://discuss.leetcode.com/topic/64388/simple-ac-java-solution-dfs  
 
+[153. Find Minimum in Rotated Sorted Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P153_FindMinimumInRotatedSortedArray.java) ★  
+有一个特殊case时的[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P153_FindMinimumInRotatedSortedArray.java#L13)。  
+
+
+
+
+
