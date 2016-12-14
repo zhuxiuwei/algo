@@ -276,7 +276,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 我的方案貌似不符合题目要求的使用o(h) space的条件。符合o(h) space条件的方案是用Stack，参考https://discuss.leetcode.com/topic/6604/ideal-solution-using-stack-java/11  
 
 [437. Path Sum III](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P437_PathSumIII.java) ★★★★  
-**REFER**  
-* [我的方案]有错，如果dedup的话对有0的case就会有错误结果，如果不dedup的话就会多算。还是思路有问题。  
+**REFER, FAIL**  
+* [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P437_PathSumIII.java#L57)有错，先修复包含0的case，修复后最后整个code比较ugly了，但还是有case不对，不调了。肯定是递归思路有问题。  递归方案对的话，肯定不用这么修修补补。  
 * 参考的https://discuss.leetcode.com/topic/64388/simple-ac-java-solution-dfs  
 

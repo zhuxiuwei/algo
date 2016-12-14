@@ -1,6 +1,8 @@
 package LeetCode.round1.easy;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import LeetCode.round1.common.TreeNode;
@@ -50,7 +52,7 @@ public class P437_PathSumIII {
 	
     
 	/**
-	 * Fail on case [0,1,1]. expect 4, output 2.
+	 * Fail on case [1,-2,-3,1,3,-2,null,-1], -1. expect 4, output 3.
 	 */
 	public int pathSum_wrong(TreeNode root, int sum){
 		if(root == null)
@@ -62,24 +64,36 @@ public class P437_PathSumIII {
 	private int res = 0;
 	private int originSsum = 0;
 	Set<TreeNode> matched = new HashSet<TreeNode>();	//for dedup.
+	List<TreeNode> visited = new ArrayList<TreeNode>();	//for special case: contains node 0. Like [0,1,1],1
 	private void helper(TreeNode root, int sum){
+		visited.add(root);
 		if(root.val == sum){
 			if(!matched.contains(root)){
 				res ++;
 				matched.add(root);
+				for (int i = 0; i < visited.size(); i++) {
+					if(visited.get(i).val == 0 	//to fix [0,1,1],1. 对于n个0开头的，res要多加n次。
+							&& !matched.contains(visited.get(i)))	//to fix [0,1,1],0。 防止0在72行加过，在77又加一次。
+						res ++;
+					else
+						break;
+				}
 			}
 		}
 		if(root.left != null){
 			helper(root.left, originSsum);
+			if(!visited.isEmpty()) visited.remove(visited.size() - 1);	//for special case: contains node 0
 			helper(root.left, sum - root.val);
+			if(!visited.isEmpty()) visited.remove(visited.size() - 1);
 		}
 		if(root.right != null){
 			helper(root.right, originSsum);
+			if(!visited.isEmpty()) visited.remove(visited.size() - 1);
 			helper(root.right, sum - root.val);
+			if(!visited.isEmpty()) visited.remove(visited.size() - 1);
 		}
 	}
 	
-
 	public static void main(String[] args) {
 		P437_PathSumIII p = new P437_PathSumIII();
 		TreeNode t1 = new TreeNode(10);
@@ -99,7 +113,7 @@ public class P437_PathSumIII {
 		t4.left = t7;
 		t4.right = t8;
 		t5.right = t9;
-		System.out.println(p.pathSum(t1, 8));	//4
+		System.out.println(p.pathSum_wrong(t1, 8));	//4
 		
 		p = new P437_PathSumIII();
 		TreeNode t11 = new TreeNode(0);
@@ -107,7 +121,10 @@ public class P437_PathSumIII {
 		TreeNode t13 = new TreeNode(1);
 		t11.left = t12;
 		t11.right = t13;
-		System.out.println(p.pathSum(t11, 1));	//4
+		System.out.println(p.pathSum_wrong(t11, 1));	//4
+		
+		p = new P437_PathSumIII();
+		System.out.println(p.pathSum_wrong(t11, 0));	//1
 	}
 
 }
