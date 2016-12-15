@@ -286,7 +286,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [199. Binary Tree Right Side View](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P199_BinaryTreeRightSideView.java) ★★  
 有BFS和DFS两种方案。 [BFS](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P199_BinaryTreeRightSideView.java#L28)有一个bug。 [DFS](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P199_BinaryTreeRightSideView.java#L58)思路完全错了。  
 
-341. Flatten Nested List Iterator[实现1](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P341_FlattenNestedListIterator.java) [实现2](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P341_FlattenNestedListIterator2.java)  
+[341. Flatten Nested List Iterator][实现1](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P341_FlattenNestedListIterator.java) [实现2](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P341_FlattenNestedListIterator2.java)  
 实现1：  ★★★★  
 `迭代器`和`Stack`的题目. 花了比较多的时间， Fail AC好多次。  
 复杂的是因为**需要处理包含empty list的情形**，尤其是有**nested empty list**的情况更复杂。因为包含empty list的时候，hasNext应该也要返回false而不是true，必须提前就要清除掉（迭代器只能next，不能prve回滚，所以不能先next以下试探看看，没问题再prve），因此我的方案是在[构造函数里先过一遍List，递归删除掉所有的空list](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P341_FlattenNestedListIterator.java#L40)。  
