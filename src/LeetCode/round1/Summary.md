@@ -293,3 +293,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 **实现2**： ★  
 不同于实现1, 不用Stack。 递归遍历List<NestedInteger>，把所有的integer放到一个intList里，然后next和hasNext都可以直接调用intList的iterator相应方法。  
 
+[59. Spiral Matrix II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P059_SpiralMatrixII.java) ★★  
+`Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order. For example, Given n = 3,You should return the following matrix: [[ 1, 2, 3 ],  [ 8, 9, 4 ],  [ 7, 6, 5 ]]`  
+考察**编程技巧**的题。有俩小bug。  
+
