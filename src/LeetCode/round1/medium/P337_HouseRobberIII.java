@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+import LeetCode.CommonUtils.BuildTreeFromArrayUtil;
 import LeetCode.round1.common.TreeNode;
 
 /**
@@ -109,18 +110,8 @@ public class P337_HouseRobberIII {
 		  / \   \ 
 		 1   3   1 
 		 */
-		TreeNode l1 = new TreeNode(3);
-		TreeNode l21 = new TreeNode(4);
-		TreeNode l22 = new TreeNode(5);
-		TreeNode l31 = new TreeNode(1);
-		TreeNode l32 = new TreeNode(3);
-		TreeNode l33 = new TreeNode(1);
-		l1.left = l21;
-		l1.right = l22;
-		l21.left = l31;
-		l21.right = l32;
-		l22.right = l33;
-		System.out.println(p.rob(l1));	//9
+		TreeNode root = BuildTreeFromArrayUtil.build(new Integer[]{3,4,5,1,3,1});
+		System.out.println(p.rob(root));	//9
 		
 		/**
 		 *   3
@@ -129,16 +120,8 @@ public class P337_HouseRobberIII {
 		    \   \ 
 		     3   1 
 		 */
-		l1 = new TreeNode(3);
-		l21 = new TreeNode(2);
-		l22 = new TreeNode(3);
-		l31 = new TreeNode(3);
-		l32 = new TreeNode(1);
-		l1.left = l21;
-		l1.right = l22;
-		l21.right = l31;
-		l22.right = l32;
-		System.out.println(p.rob(l1));	//7
+		root = BuildTreeFromArrayUtil.build(new Integer[]{3,2,3,null,3,null,1});
+		System.out.println(p.rob(root));	//7
 		
 		/**
 		 *   2
@@ -147,13 +130,7 @@ public class P337_HouseRobberIII {
 		 *  \
 		 *   4
 		 */
-		l1 = new TreeNode(2);
-		l21 = new TreeNode(1);
-		l22 = new TreeNode(3);
-		l31 = new TreeNode(4);
-		l1.left = l21;
-		l1.right = l22;
-		l21.right = l31;
-		System.out.println(p.rob(l1));	//7, 3 + 4
+		root = BuildTreeFromArrayUtil.build(new Integer[]{2,1,3,null,4});
+		System.out.println(p.rob(root));	//7, 3 + 4
 	}
 }
