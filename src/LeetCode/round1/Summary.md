@@ -297,3 +297,12 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 `Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order. For example, Given n = 3,You should return the following matrix: [[ 1, 2, 3 ],  [ 8, 9, 4 ],  [ 7, 6, 5 ]]`  
 考察**编程技巧**的题。有俩小bug。  
 
+[390. Elimination Game](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P390_EliminationGame.java) ★★★★  
+**REFER, TIMEOUT**  
+* AC的方案是需要O(LgN)的，参考的 https://discuss.leetcode.com/topic/59293/java-easiest-solution-o-logn-with-explanation  
+* [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P390_EliminationGame.java#L47)是O(N)的，超时了。在算1000000000需要1.8s而O(lgn)算法瞬间完成。而且有些bug。  
+
+[367. Valid Perfect Square](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java) ★★  
+* 我的方案注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java#L30)。  
+* 参考 https://discuss.leetcode.com/topic/49325/a-square-number-is-1-3-5-7-java-code  
+
