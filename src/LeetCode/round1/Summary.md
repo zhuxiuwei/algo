@@ -306,3 +306,6 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * 我的方案注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java#L30)。  
 * 参考 https://discuss.leetcode.com/topic/49325/a-square-number-is-1-3-5-7-java-code  
 
+[342. Power of Four](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P342_PowerOfFour.java) ★★  
+* 参考了一个[一行code搞定](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P342_PowerOfFour.java#L20)的解法，注意里面两个很fancy的地方：对`2^n的判断`，和`对16进制的利用`来判断是否奇数位为1。[231. Power of Two](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P231_PowerOfTwo.java)也相应改了。  
+* power of 3的解法，[对于power of 4 不适用](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P342_PowerOfFour.java#L39)。**因为4不是质数**。  

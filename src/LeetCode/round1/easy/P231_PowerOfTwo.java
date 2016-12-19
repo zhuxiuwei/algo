@@ -6,6 +6,15 @@ Given an integer, write a function to determine if it is a power of two.
 public class P231_PowerOfTwo {
 
 	/**
+	 * AC: 2ms, 19.2%.
+	 * @param num
+	 * @return
+	 */
+	public boolean isPowerOfTwo_NonLoop_refer(int n){
+		return (n > 0) && ((n & (n - 1)) == 0);
+	}
+	
+	/**
 	 * AC: 2ms, 20%.
 	 */
 	public boolean isPowerOfTwo(int n) {
@@ -23,6 +32,7 @@ public class P231_PowerOfTwo {
 	
 	public static void main(String[] args) {
 		P231_PowerOfTwo p = new P231_PowerOfTwo();
+		System.out.println(p.isPowerOfTwo_NonLoop_refer(8192));
 		System.out.println(p.isPowerOfTwo(8192));
 	}
 
