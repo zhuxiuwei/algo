@@ -39,7 +39,7 @@ public class P390_EliminationGame {
 	}
 	
 	/**
-	 * O(n)比较直观法。在1000000000时AC超时但结果对。
+	 * O(n)比较直观法。在1000000000时AC超时(1.8s)，但结果对。
 	 * 对返回结果，注意2个bug。得错几次。
 	 * @param n
 	 * @return
