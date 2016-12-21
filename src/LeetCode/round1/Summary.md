@@ -312,12 +312,16 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 
 [448. Find All Numbers Disappeared in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P448_FindAllNumbersDisappearedInAnArray.java) ★★★  
 **REFER**  
-参考的top solution https://discuss.leetcode.com/topic/65738/java-accepted-simple-solution，对不利用extra space的**思路挺巧妙的**。  
+参考的[top solution](https://discuss.leetcode.com/topic/65738/java-accepted-simple-solution)，对不利用extra space的**思路挺巧妙的**。  
 [442. Find All Duplicates in an Array](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P442_FindAllDuplicatesInAnArray.java)也用类似的思路实现。  
 
 [2. Add Two Numbers](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P002_AddTwoNumbers.java) ★  
 属于编程有点小复杂容易出错的题目。  
 * 第一次理解错了，完全写的不对。  
 * 重新理解题目后，有[一个bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P002_AddTwoNumbers.java#L63)。总体顺利。  
+
+[477. Total Hamming Distance](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P477_TotalHammingDistance.java) ★★★  
+刚开始**O(n^2)**的思路会超时。**O(n)**的思路想了半天想到了。有思路了编程实现不难。  
+
 
 
