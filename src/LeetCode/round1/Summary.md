@@ -328,4 +328,13 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [最开始的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P445_AddTwoNumbersII.java#L98)，和[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)一样，但是2的思路在这里实现要很困难，最后放弃了。  
 * 后来一眼瞄到top solution里有人提到用到一种数据结构很容易解决，[改变思路后的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P445_AddTwoNumbersII.java#L27)很容易就解决了。  
 
+[345. Reverse Vowels of a String](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P345_ReverseVowelsOfAString.java) ★  
+* 注意区分大小写。  
+* 实现了两种解法。其中更高效的那种解法需要注意一个bug。  
+
+[300. Longest Increasing Subsequence](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P300_LongestIncreasingSubsequence.java) ★★★★★  
+**REFER**  
+典型DP问题。看了一会感觉没思路，直接参考的某[top solution](https://discuss.leetcode.com/topic/30721/my-easy-to-understand-o-n-2-solution-using-dp-with-video-explanation)  
+
+
 
