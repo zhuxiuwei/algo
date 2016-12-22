@@ -323,5 +323,9 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [477. Total Hamming Distance](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P477_TotalHammingDistance.java) ★★★  
 刚开始**O(n^2)**的思路会超时。**O(n)**的思路想了半天想到了。有思路了编程实现不难。  
 
+[445. Add Two Numbers II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P445_AddTwoNumbersII.java) ★★★★  
+**典型的换个思路就很好解决的问题，不要钻牛角尖**  
+* [最开始的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P445_AddTwoNumbersII.java#L98)，和[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)一样，但是2的思路在这里实现要很困难，最后放弃了。  
+* 后来一眼瞄到top solution里有人提到用到一种数据结构很容易解决，[改变思路后的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P445_AddTwoNumbersII.java#L27)很容易就解决了。  
 
 
