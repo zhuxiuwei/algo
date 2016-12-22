@@ -303,7 +303,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * [我的方案](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P390_EliminationGame.java#L47)是O(N)的，超时了。在算1000000000需要1.8s而O(lgn)算法瞬间完成。而且有些bug。  
 
 [367. Valid Perfect Square](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java) ★★  
-* 我的方案注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java#L30)。  
+* 我的方案注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P367_ValidPerfectSquare.java#L42)。  
 * 参考 https://discuss.leetcode.com/topic/49325/a-square-number-is-1-3-5-7-java-code  
 
 [342. Power of Four](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P342_PowerOfFour.java) ★★  
