@@ -334,7 +334,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 
 [300. Longest Increasing Subsequence](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P300_LongestIncreasingSubsequence.java) ★★★★★  
 **REFER**  
-典型DP问题。看了一会感觉没思路，直接参考的某[top solution](https://discuss.leetcode.com/topic/30721/my-easy-to-understand-o-n-2-solution-using-dp-with-video-explanation)  
+**典型DP问题。**看了一会感觉没思路，直接参考的某[top solution](https://discuss.leetcode.com/topic/30721/my-easy-to-understand-o-n-2-solution-using-dp-with-video-explanation)  
 
+[309. Best Time to Buy and Sell Stock with Cooldown](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P309_BestTimeToBuyAndSellStockWithCooldown.java) ★★★★★  
+**REFER**  
+和300类似也是典型DP问题。不会。参考的https://discuss.leetcode.com/topic/30421/share-my-thinking-process  
 
 
