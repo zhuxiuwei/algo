@@ -6,7 +6,7 @@ import java.util.Stack;
  * @author Xiuwei Zhu
  * @date 15/4/8
  */
-public class Google_TwoStringMinus {
+public class I150408_Google_TwoStringMinus {
 	
 	//Max number to process each time(to avoid Integer Max value overflow)
 	int maxLength = 8;
@@ -229,7 +229,7 @@ public class Google_TwoStringMinus {
 	 * Test Cases
 	 */
 	public static void main(String[] args) throws Exception {
-		Google_TwoStringMinus g = new Google_TwoStringMinus();
+		I150408_Google_TwoStringMinus g = new I150408_Google_TwoStringMinus();
 		//positive positive
 		System.out.println(g.getResult("010000000000000000000000000001", "0002"));	//9999999999999999999999999999	
 		System.out.println(g.getResult("22222222", "111111111"));	//-88888889
