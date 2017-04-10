@@ -47,8 +47,8 @@ public class P537_ComplexNumberMultiplication {
 	
 	public static void main(String[] args) {
 		P537_ComplexNumberMultiplication p = new P537_ComplexNumberMultiplication();
-		System.out.println(p.complexNumberMultiply("1+1i", "1+1i"));
-		System.out.println(p.complexNumberMultiply("1+-1i", "1+-1i"));
+		System.out.println(p.complexNumberMultiply("1+1i", "1+1i"));	//0+2i
+		System.out.println(p.complexNumberMultiply("1+-1i", "1+-1i"));	//0+-2i
 	}
 
 }

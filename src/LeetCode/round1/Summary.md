@@ -340,4 +340,6 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 **REFER**  
 和300类似也是典型DP问题。不会。参考的https://discuss.leetcode.com/topic/30421/share-my-thinking-process  
 
+[513. Find Bottom Left Tree Value](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P513_FindBottomLeftTreeValue.java) ★★★  
+树的层次遍历的问题。不是特顺。第一次实现的有bug。第二次重写才OK。主要难点是，在**树的层次遍历时，如何分辨新的一层开始了。**  
 
