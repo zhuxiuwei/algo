@@ -343,3 +343,6 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [513. Find Bottom Left Tree Value](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P513_FindBottomLeftTreeValue.java) ★★★  
 树的层次遍历的问题。不是特顺。第一次实现的有bug。第二次重写才OK。主要难点是，在**树的层次遍历时，如何分辨新的一层开始了。**  
 
+[485. Find Bottom Left Tree Value](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P485_MaxConsecutiveOnes.java) ★  
+注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P485_MaxConsecutiveOnes.java#L33)。  
+
