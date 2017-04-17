@@ -29,9 +29,9 @@ public class I170303_FW_OneTwoSteps {
 			step_helper(total - 1, res, current);	
 			current.remove(current.size() - 1);		
 			if(total > 1){
-				current.add(2);	//走1
+				current.add(2);	//走2
 				step_helper(total - 2, res, current);
-				current.remove(current.size() - 1);	//!!!!!!!!!注意走完也要删除。否则结果诡异。
+				current.remove(current.size() - 1);	//!!!!!!!!!注意走完2也要删除队尾。否则结果诡异。
 			}
 		}
 		if(total == 0){		//a solution found
