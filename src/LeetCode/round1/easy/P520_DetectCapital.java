@@ -35,7 +35,7 @@ public class P520_DetectCapital {
         		if(second >= 'a' && second <= 'z'){	//First upper, other lower is OK
         			return judgeCases(word, 2, true);
         		}else{
-        			return judgeCases(word, 2, false);	//All upper lower is OK  !!!!!!!!!! Note bug: start is 2, not 3.
+        			return judgeCases(word, 2, false);	//All upper is OK.  !!!!!!!!!! Note bug: start is 2, not 3.
         		}
         	}
         }
@@ -67,8 +67,6 @@ public class P520_DetectCapital {
 		System.out.println(p.detectCapitalUse("Hello"));
 		System.out.println(p.detectCapitalUse("hello"));
 		System.out.println(p.detectCapitalUse("NIy"));
-
-
 	}
 
 }
