@@ -346,3 +346,5 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [485. Find Bottom Left Tree Value](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P485_MaxConsecutiveOnes.java) ★  
 注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P485_MaxConsecutiveOnes.java#L33)。  
 
+[492. Construct the Rectangle](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P492_ConstructTheRectangle.java) ★  
+题目如果用最直接的解法不难，想提高些效率，[失败](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P492_ConstructTheRectangle.java#L53)。
