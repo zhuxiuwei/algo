@@ -347,4 +347,8 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P485_MaxConsecutiveOnes.java#L33)。  
 
 [492. Construct the Rectangle](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P492_ConstructTheRectangle.java) ★  
-题目如果用最直接的解法不难，想提高些效率，[失败](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P492_ConstructTheRectangle.java#L53)。
+题目如果用最直接的解法不难，想提高些效率，[失败](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P492_ConstructTheRectangle.java#L53)。  
+
+[563. Binary Tree Tilt](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P563_BinaryTreeTilt.java) ★★★  
+**典型的二叉树递归算法问题**。自己对二叉树递归问题挺有信息，而且这个题目还是Easy，但是还是费了些时间。提交错了两次。递归返回值需要考虑清楚，比如tilt的定义是**全部**子树之和与**全部**右子树之和的差的绝对值，不只是左子树之和与右子树之和的差的绝对值。  
+
