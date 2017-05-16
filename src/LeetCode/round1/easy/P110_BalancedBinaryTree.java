@@ -23,11 +23,11 @@ public class P110_BalancedBinaryTree {
 	 * 		非递归：24ms, 2.4%。
 	 * ！！！！！！！！！！递归法稍微费劲儿点。非递归反倒挺顺利。！！！！！！！！！！
 	 * 1. 首先有个bug。不能在函数总出口处，判断if(Math.abs(leftH - rightH) > 1 )，否则对如下树会误报true。应该在执行中就判断，把结果存在filed中。
-	 * 			o
-	 * 		   / \
-	 * 	 	  o   o
-	 *       /	   \
-	 *      o		o  
+	 *          o
+	 *         / \
+	 *        o   o
+	 *       /     \
+	 *      o       o  
 	 * 2. 注意递归过程中既然无法退出，但是我们可以设法降低递归深度，见L47。
 	 * @param root
 	 * @return
