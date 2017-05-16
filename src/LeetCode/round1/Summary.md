@@ -355,5 +355,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [501. Find Mode in Binary Search Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P501_FindModeinBinarySearchTree.java) ★★  
 其实本身不难，但是有个地方还是[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P501_FindModeinBinarySearchTree.java#L61)了两次。  
 
+[110. Balanced Binary Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P110_BalancedBinaryTree.java) ★★★  
+递归法稍微费劲儿点。[非递归](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P110_BalancedBinaryTree.java#L61)反倒挺顺利。  
+1. 首先有个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P110_BalancedBinaryTree.java#L55)。  
+2. 注意递归过程中既然无法退出，但是我们可以[设法降低递归深度](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P110_BalancedBinaryTree.java#L47)。  
+
 
  
