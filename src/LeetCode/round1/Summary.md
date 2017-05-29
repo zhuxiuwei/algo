@@ -363,5 +363,5 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [438. Find All Anagrams In A String](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P438_FindAllAnagramsInAString.java) ★★★★  
 **REFER**  
 **典型sub string的滑动窗口问题。**开始[我的解法超时](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P438_FindAllAnagramsInAString.java#L81)了。  
-参考的[Sliding Window algorithm template to solve all the Leetcode substring search problem.] (https://discuss.leetcode.com/topic/68976/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)，**这种sub string的滑动窗口问题都有一套比较固定的template解决方法**。思路绕，自己想不出来。  
+参考的[Sliding Window algorithm template to solve all the Leetcode substring search problem] (https://discuss.leetcode.com/topic/68976/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)，**这种sub string的滑动窗口问题都有一套比较固定的template解决方法**。思路绕，自己想不出来。  
 
