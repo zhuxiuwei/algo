@@ -9,5 +9,6 @@
 后面还有几道题目，暂时没时间看了。  
 
 [《Amazon HackerRank OA 面经》](http://www.jiuzhang.com/qa/748/)  
-题目1：Find first repeating letter in a string. 比如输入“abcba”, 返回“a”。 [代码]()  
-
+题目1：Find first repeating letter in a string. 比如输入“abcba”, 返回“a”。 [代码](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/FindFirstRepeatingLetterInAString.java)  
+题目2：Merge 2 arrays in 1 array. 两个sorted array都有M个元素，但是a的capacity是M， b的capacity是2M，最后是把a中的元素加入到b中，保持sorted。[代码](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Merge2ArraysInto1Array.java)  
+感觉解决方法不是很优雅。虽然可以做到，每个元素只移动一次。  

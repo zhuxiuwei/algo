@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * [《Amazon HackerRank OA 面经》](http://www.jiuzhang.com/qa/748/) 170529  
+ * Find first repeating letter in a string. 比如输入“abcba”, 返回“a”
  */
 public class FindFirstRepeatingLetterInAString {
 	public static char find(String s){
