@@ -39,7 +39,7 @@ public class I170530_Amazon_CuisineForFriends {
 	
 	public static void main(String[] args) {
 		I170530_Amazon_CuisineForFriends a = new I170530_Amazon_CuisineForFriends();
-		String[][] res = a.matchLunches(new String[][]{{"Pizza","Ita"}, {"Curry","Ina"},{"Masala","Ina"}}, new String[][]{{"Jose","Ita"},{"John","Ina"},{"Sarah","Thai"},{"Mary","*"}});
+		String[][] res = a.matchLunches(new String[][]{{"Pizza","Italy"}, {"Curry","India"},{"Masala","India"}}, new String[][]{{"Jose","Italy"},{"John","India"},{"Sarah","Thai"},{"Mary","*"}});
 		System.out.println(Arrays.deepToString(res));
 	}
 
