@@ -7,7 +7,7 @@
 [二叉树两个节点的最近公共祖先](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P088_LowestCommonAncestor.java). 还是要注意如何退出递归调用问题、**有状态的类可能引入bug**的问题。   
 [Find smallest range containing elements from k lists]()  
 [在一个文件中，找出所有的Anagram](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P438_FindAllAnagramsInAString.java)我的[原始方法](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P438_FindAllAnagramsInAString.java#L81)超时了。可以用**滑动窗口**。思路绕，自己想不出来。  
-[Find smallest range containing elements from k lists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java) LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑动窗口算法**来解决。注意[一个小bug]((https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java#L42))。  
+[Find smallest range containing elements from k lists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java) LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑动窗口算法**来解决。注意写的时候还是有bug。  
 [Finding max and 2nd max in an array by minimum times.](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/FindMax2ndMaxInArray.java)。算法导论做过这个题目。  
 
 

@@ -366,7 +366,6 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 参考的"Sliding Window algorithm template to solve all the Leetcode substring search problem": [Link](https://discuss.leetcode.com/topic/68976/sliding-window-algorithm-template-to-solve-all-the-leetcode-substring-search-problem)。  
 **这种sub string的滑动窗口问题都有一套比较固定的template解决方法**。思路绕，自己想不出来。  
 
-[340. Find smallest range containing elements from k lists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java)  
-是个hard题目。也和上一题目438类似，利用**滑动窗口算法**来解决。总体顺利。注意[一个小bug]((https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java#L42))。  
-最开始我想用**DP**来解决，放弃了。  
+[340. Find smallest range containing elements from k lists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java) ★★★  
+是个hard题目。也和上一题目438类似，利用**滑动窗口算法**来解决。总体顺利。注意写的时候还是有bug。最开始我想用**DP**来解决，放弃了。  
 

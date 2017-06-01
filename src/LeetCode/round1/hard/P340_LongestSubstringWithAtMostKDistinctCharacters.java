@@ -32,16 +32,14 @@ public class P340_LongestSubstringWithAtMostKDistinctCharacters {
 				if(cur > max)
 					max = cur;
 			}else{
-				if(map.size() < k){
-					counter -- ;
-					map.put(c, 1);
-					cur ++;
+				counter -- ;
+				map.put(c, 1);
+				cur ++;
+				if(map.size() <= k){
 					if(cur > max)
 						max = cur;
 				}else{
-					map.put(c, 1);	//!!!!!!!!!!!!!!注意这行和下一行不能忘了。否则结果可能会少1.！！！！！！！！！！
-					cur ++;
-					while(counter == 0){
+					while(counter < 0){
 						char c2 = s.charAt(left);
 						int val = map.get(c2) - 1;
 						if(val == 0){
@@ -65,7 +63,8 @@ public class P340_LongestSubstringWithAtMostKDistinctCharacters {
 		System.out.println(p.lengthOfLongestSubstringKDistinct("eceba", 2)); //3
 		System.out.println(p.lengthOfLongestSubstringKDistinct("eceebbaaaaad", 4)); //11
 		System.out.println(p.lengthOfLongestSubstringKDistinct("eceebbaaaaad", 3)); //9
-
+		System.out.println(p.lengthOfLongestSubstringKDistinct("eceebbaaaaad", 2)); //7
+		System.out.println(p.lengthOfLongestSubstringKDistinct("eceebbaaaaad", 1)); //5
 	}
 
 }
