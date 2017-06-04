@@ -197,8 +197,8 @@ public class P146_LRUCache {
 		cache.put(4, 30);
 		cache.put(9, 3);
 		cache.get(9);
-		cache.get(10); 
-		cache.get(10); 
+		cache.get(10); //5
+		cache.get(10); //5
 	}
 
 }
