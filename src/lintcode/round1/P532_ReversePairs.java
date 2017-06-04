@@ -1,7 +1,7 @@
 package lintcode.round1;
 
 /**
- * 170601 Medium
+ * 170604 Medium
 For an array A, if i < j, and A [i] > A [j], called (A [i], A [j]) is a reverse pair.
 return total of reverse pairs in A.
 

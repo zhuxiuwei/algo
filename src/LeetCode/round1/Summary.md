@@ -369,3 +369,10 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [340. Find smallest range containing elements from k lists](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P340_LongestSubstringWithAtMostKDistinctCharacters.java) ★★★  
 是个hard题目。也和上一题目438类似，利用**滑动窗口算法**来解决。总体顺利。注意写的时候还是有bug。最开始我想用**DP**来解决，放弃了。  
 
+[460. LFU Cache](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P146_LRUCache.java) ★★★  
+提交错了4次。。。属于本身逻辑不算复杂，但是实现起来步骤多、繁琐，容易出错的问题。  
+几个问题：  
+* 注意如果cache里有key，再添加时属于**UPDATE**的情况。这块当时漏掉了，引入了bug。  
+* 对于LRU Cache的size，只需要用map的size即可，不需要引入单独一个变量。加入一个变量，就加入bug的风险。  
+
+
