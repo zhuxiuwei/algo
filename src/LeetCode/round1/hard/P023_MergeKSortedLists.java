@@ -2,6 +2,8 @@ package LeetCode.round1.hard;
 
 import java.util.PriorityQueue;
 
+import LeetCode.round1.common.ListNode;
+
 /**
  * 170606 Hard
  * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
@@ -87,13 +89,7 @@ public class P023_MergeKSortedLists {
 			System.out.print(p.next().val + " ");	//1 3 3 5 7 9 9 12 37
 		}
 		Thread.sleep(100);
-//		p.next();	//java.util.NoSuchElementException
+		p.next();	//java.util.NoSuchElementException
 	}
 
-}
-
-class ListNode {
-	 int val;
-	 ListNode next;
-	 ListNode(int x) { val = x; }
 }
