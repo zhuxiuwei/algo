@@ -51,5 +51,9 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [LeetCode](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P136_SingleNumber.java)做过了。略过。  
 
 ## [Amazon 面经(OA+Onsite)](http://www.jiuzhang.com/qa/2623/)
-  
+[Trap Water](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java) ★★★★★  
+**REFER**  
+典型**对撞型双指针**问题。当年google面过，就没答上来。[我自己的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java#L47)错了，而且写起来很复杂。参考的[这个方案](https://discuss.leetcode.com/topic/3016/share-my-short-solution)。  
+看了答案后，[自己又实现了一遍](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/TrapWater1.java)。  
+
  

@@ -375,4 +375,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 * 注意如果cache里有key，再添加时属于**UPDATE**的情况。这块当时漏掉了，引入了bug。  
 * 对于LRU Cache的size，只需要用map的size即可，不需要引入单独一个变量。加入一个变量，就加入bug的风险。  
 
+[42. Trapping Rain Water](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java) ★★★★★  
+**REFER**  
+典型**对撞型双指针**问题。当年google面过，就没答上来。[我自己的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java#L47)错了，而且写起来很复杂。参考的[这个方案](https://discuss.leetcode.com/topic/3016/share-my-short-solution)。  
 
