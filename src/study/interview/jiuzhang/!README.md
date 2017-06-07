@@ -56,4 +56,6 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 典型**对撞型双指针**问题。当年google面过，就没答上来。[我自己的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java#L47)错了，而且写起来很复杂。参考的[这个方案](https://discuss.leetcode.com/topic/3016/share-my-short-solution)。  
 看了答案后，[自己又实现了一遍](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/TrapWater1.java)。  
 
- 
+[Minimum Window Substring](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P076_MinimumWindowSubstring.java) ★  
+一次AC。和上面Anagram的题目一样思路，用**滑动窗口**方法。  
+
