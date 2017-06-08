@@ -76,7 +76,7 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 * 修复上面的bug，同时注意用到了number of island I学到的“投机取巧”思路。  
 * 第一次尝试用数组替代Map。注意数组是int[],不是char[]。  
 
-[Rectangle Overlap](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_LongestPalindrome.java) ★  
+[Rectangle Overlap](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_RectangleOverlap.java) ★  
 简单。  
 
 [window sum](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_WindowSum.java) ★  

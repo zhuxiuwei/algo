@@ -383,4 +383,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 [200. Number Of Islands](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java) ★★  
 典型DFS问题。写起来稍微麻烦。 注意一个**投机取巧的**[点子](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java#L80)，以后可以利用。  
 
+[207。 Course Schedule](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P207_CourseSchedule.java) ★★  
+典型DFS问题。提交总体顺利。 就是通过DFS来检测途中是否有环。 DFS又熟悉了一次。总体有点小啰嗦，有两个注意。  
+
 
