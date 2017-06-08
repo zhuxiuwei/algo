@@ -380,3 +380,7 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 **REFER**  
 典型**对撞型双指针**问题。当年google面过，就没答上来。[我自己的思路](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P042_TrappingRainWater.java#L47)错了，而且写起来很复杂。参考的[这个方案](https://discuss.leetcode.com/topic/3016/share-my-short-solution)。  
 
+[200. Number Of Islands](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java) ★★  
+典型DFS问题。写起来稍微麻烦。 注意一个**投机取巧的**[点子](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java#L80)，以后可以利用。  
+
+

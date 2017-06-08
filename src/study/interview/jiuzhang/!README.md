@@ -59,3 +59,19 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [Minimum Window Substring](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P076_MinimumWindowSubstring.java) ★  
 一次AC。和上面Anagram的题目一样思路，用**滑动窗口**方法。  
 
+[number of island I](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java) ★★  
+典型DFS问题。写起来稍微麻烦。 注意一个**投机取巧的**[点子](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java#L80)，以后可以利用。  
+
+[Binary Tree Zigzag Level Order Traversal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P103_BinaryTreeZigzagLevelOrderTraversal.java) ★  
+二叉树层次遍历的变形。不难。  
+
+## [Amazon 经典9题 | 独家题库, 免费 Online Judge !](https://mp.weixin.qq.com/s?__biz=MzA5MzE4MjgyMw==&mid=2649456518&idx=1&sn=1357066e1910ce736804fef716511af1&chksm=887e118ebf0998986ff9455c00e7dd76a2f20ddb76719f5787da1958938cc53cd5cde0838c97&mpshare=1&scene=1&srcid=03176Lr2wNzzdXnbczqd5Rt5&key=5657e61c2ec7753dd17978d58491302bd6abe854dfb2438ad09c292e55b6717bd174d5bb9f49aab3eb7edfb7b1fbcd1383bd01894017b5da7563d754126cecdd8ffbcc02c72c99607f8f7e342bd15cc7&ascene=0&uin=MTUyMzg3NjAwMA%3D%3D&devicetype=iMac+MacBookAir7%2C1+OSX+OSX+10.12.3+build(16D32)&version=12020010&nettype=WIFI&fontScale=100&pass_ticket=0AiIToHJN8yqpuqRAsA5PaaQMJr8KtvlnZ2EqkX0zx%2BEZweRvHKyF%2ByjmycpUbVn)  
+习题描述：http://www.cnblogs.com/zcy-backend/p/6734304.html  
+[maximum subtree](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MaximumSubtree.java) ★  
+比较简单。二叉树递归。有人说这是分治法。  
+
+[Longest Palindrome](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_LongestPalindrome.java) ★  
+简单。Leetcode有，重做了一次。几个注意：  
+* 注意一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_LongestPalindrome.java#L40)。  
+* 修复上面的bug，同时注意用到了number of island I学到的“投机取巧”思路。  
+* 第一次用数组替代Map。注意数组是int[],不是char[]。  
