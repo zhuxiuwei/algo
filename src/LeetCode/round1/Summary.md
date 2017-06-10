@@ -384,6 +384,13 @@ __第一个__接触到的`hard`的题目。[符合条件的bit方案](https://gi
 典型DFS问题。写起来稍微麻烦。 注意一个**投机取巧的**[点子](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P200_NumberOfIslands.java#L80)，以后可以利用。  
 
 [207。 Course Schedule](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P207_CourseSchedule.java) ★★  
-典型DFS问题。提交总体顺利。 就是通过DFS来检测途中是否有环。 DFS又熟悉了一次。总体有点小啰嗦，有两个注意。  
+典型**DFS**问题。提交总体顺利。 就是通过DFS来检测途中是否有环。 DFS又熟悉了一次。总体有点小啰嗦，有两个注意。  
 
+[210。 Course Schedule II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P210_CourseScheduleII.java) ★★  
+典型**DFS**问题。2个注意：  
+* 注意，我不用Vertex类、Color枚举类这些比较heavy的方式了，直接用Integer表示Vertex, Set<Integer>表示邻居集合。然后，基于本题业务需要，必须用grey、black两个颜色区分，这里用了个Set（visiting，visited）代表两个颜色。  
+* 注意2个bug。其中第一个图初始化的错误比较严重，会导致丢失结果，其实上面【207 Course Schedule】我也犯过类似错误。  
+
+[138。 Copy List With Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P138_CopyListWithRandomPointer.java) ★★★  
+用了**DFS**思路，不知道有没有必要。而且有一个**严重bug**。写的时候没有完全考虑清楚造成的。  
 

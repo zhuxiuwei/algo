@@ -82,4 +82,16 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [window sum](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_WindowSum.java) ★  
 简单。  
 
+[Course Schedule II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P210_CourseScheduleII.java) ★★  
+典型**DFS**问题。2个注意：  
+* 注意，我不用Vertex类、Color枚举类这些比较heavy的方式了，直接用Integer表示Vertex, Set<Integer>表示邻居集合。然后，基于本题业务需要，必须用grey、black两个颜色区分，这里用了个Set（visiting，visited）代表两个颜色。  
+* 注意2个bug。其中第一个图初始化的错误比较严重，会导致丢失结果，其实上面【207 Course Schedule】我也犯过类似错误。  
 
+[High Five](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_HighFive.java) ★  
+比较简单。  
+
+[K Closest Points](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_KClosestPoints.java) ★  
+比较简单。有一个**for循环内部i++的bug。这种情况不是第一次遇到了，要注意**。  
+
+[Copy List With Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P138_CopyListWithRandomPointer.java) ★★★  
+用了**DFS**思路，不知道有没有必要。而且有一个**严重bug**。写的时候没有完全考虑清楚造成的。 
