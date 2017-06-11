@@ -102,7 +102,7 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 * 记录已经访问过的vertex，必须用[**并查集**](https://github.com/zhuxiuwei/CLRS/blob/master/src/chap21_DisjointSets/DisjointSetForest.java)，不能用普通的Set。 否则结果根本不对。  
 
 **[Prim](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L75)**：  
-* 算法**非常繁琐**。需要维护各种引用关系、集合。需要并查集的Kruskal算法，相比反倒更简洁。  
+* 算法本身思路虽然简单，但是实现起来**非常繁琐**。需要维护各种引用关系、集合。需要并查集的Kruskal算法相比反倒更简洁。出乎我的意料。  
 * 注意[**PriorityQueue的一个限制**](https://stackoverflow.com/questions/1871253/updating-java-priorityqueue-when-its-elements-change-priority)。一旦pq建好后，修改成员里面的属性，是不会re-sort的。所以代码里必须加上很SB的[resortPriorityQueue](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L175)函数。  
 * Vertex节点的**π属性是必须**的，否则拼接List<Connection>结果集，寻找Connection的“from”会非常麻烦。π就是干这个的。  
 
