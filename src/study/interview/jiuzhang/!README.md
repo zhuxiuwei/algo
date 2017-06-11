@@ -83,7 +83,7 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 简单。  
 
 [Course Schedule II](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P210_CourseScheduleII.java) ★★  
-典型**DFS**问题。2个注意：  
+典型**DFS > 拓扑排序**问题。2个注意：  
 * 注意，我不用Vertex类、Color枚举类这些比较heavy的方式了，直接用Integer表示Vertex, Set<Integer>表示邻居集合。然后，基于本题业务需要，必须用grey、black两个颜色区分，这里用了个Set（visiting，visited）代表两个颜色。  
 * 注意2个bug。其中第一个图初始化的错误比较严重，会导致丢失结果，其实上面【207 Course Schedule】我也犯过类似错误。  
 
@@ -95,3 +95,13 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 
 [Copy List With Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P138_CopyListWithRandomPointer.java) ★★★  
 用了**DFS**思路，不知道有没有必要。而且有一个**严重bug**。写的时候没有完全考虑清楚造成的。 
+
+[Minimum Spanning Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/Ama9Ti_MinimumSpanningTree.java) ★★★★  
+《算法导论》的第23章“最小生成树”先看了。用两个算法：Kruskal和Prim。  
+**[Kruskal](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/Ama9Ti_MinimumSpanningTree.java#L31)**：  
+一个注意：记录已经访问过的vertex，必须用**[并查集](https://github.com/zhuxiuwei/CLRS/blob/master/src/chap21_DisjointSets/DisjointSetForest.java)**，不能用普通的Set。 否则结果根本不对。  
+**[Prim](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/Ama9Ti_MinimumSpanningTree.java#L75)**：  
+1. 算法**非常繁琐**。需要维护各种引用关系、集合。需要并查集的Kruskal算法，相比反倒更简洁。  
+2. 注意**[PriorityQueue的一个限制](https://stackoverflow.com/questions/1871253/updating-java-priorityqueue-when-its-elements-change-priority)**。一旦pq建好后，修改成员里面的属性，是不会re-sort的。所以代码里必须加上很SB的[resortPriorityQueue](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/Ama9Ti_MinimumSpanningTree.java#L175)函数。  
+3. Vertex节点的**π属性是必须**的，否则拼接List<Connection>结果集，寻找Connection的“from”会非常麻烦。π就是干这个的。  
+
