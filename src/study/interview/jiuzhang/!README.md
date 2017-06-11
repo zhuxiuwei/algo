@@ -96,10 +96,11 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [Copy List With Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P138_CopyListWithRandomPointer.java) ★★★  
 用了**DFS**思路，不知道有没有必要。而且有一个**严重bug**。写的时候没有完全考虑清楚造成的。 
 
-[Minimum Spanning Tree](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/Ama9Ti_MinimumSpanningTree.java) ★★★★  
+[Minimum Spanning Tree](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java) ★★★★  
 《算法导论》的第23章“最小生成树”先看了。用两个算法：Kruskal和Prim。  
 **[Kruskal](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L31)**：  
 * 记录已经访问过的vertex，必须用[**并查集**](https://github.com/zhuxiuwei/CLRS/blob/master/src/chap21_DisjointSets/DisjointSetForest.java)，不能用普通的Set。 否则结果根本不对。  
+
 **[Prim](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L75)**：  
 * 算法**非常繁琐**。需要维护各种引用关系、集合。需要并查集的Kruskal算法，相比反倒更简洁。  
 * 注意[**PriorityQueue的一个限制**](https://stackoverflow.com/questions/1871253/updating-java-priorityqueue-when-its-elements-change-priority)。一旦pq建好后，修改成员里面的属性，是不会re-sort的。所以代码里必须加上很SB的[resortPriorityQueue](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L175)函数。  
