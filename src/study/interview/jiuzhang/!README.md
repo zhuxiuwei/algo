@@ -118,8 +118,8 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [Phone Interview 2 - 167. Add Two Numbers]  
 做过。简单。不做了。  
 
-[Phone Interview 2 - 88. lowest common ancestor](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P088_LowestCommonAncestor.java) ★★  
-做过。查找ancestors的递归，写的时候还是有bug。  
+[Phone Interview 2 - 88. lowest common ancestor](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P088_AmaMoni_LowestCommonAncestor.java) ★★  
+[做过](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P088_LowestCommonAncestor.java)。查找ancestors的递归，写的时候还是有bug。  
 
 [On Site 1 - 655. Big Integer Addition](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P655_BigIntegerAddition.java) ★★  
 总体顺利。1个[注意](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P655_BigIntegerAddition.java#L56)。  
