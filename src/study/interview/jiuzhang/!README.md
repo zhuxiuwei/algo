@@ -138,3 +138,16 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 [On Site 2 - 171. Anagrams](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P171_Anagrams.java) ★  
 和<158. Two Strings Are Anagrams>类似，调用了它的方法。总体顺利。  
 
+[On Site 3 - 479. Second Max of Array](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P479_SecondMaxOfArray.java) ★ 
+一次AC。简单。  
+
+[On Site 3 - 589. Connecting Graph](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P589_ConnectingGraph.java) ★  
+考察并查集(disjoint set)。顺利，一次AC。  
+
+[On Site 4 - 532. Reverse Pairs] ★★  
+[做过](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P532_ReversePairs.java)  
+
+[On Site 4 - 134. LRU Cache](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P134_LRUCache.java) ★★★  
+[做过](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/hard/P146_LRUCache.java)。不做了。  
+
+
