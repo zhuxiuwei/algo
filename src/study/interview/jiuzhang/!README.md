@@ -106,3 +106,35 @@ LeetCode类似题目是第340题，hard。也和上一题目类似，利用**滑
 * 注意[**PriorityQueue的一个限制**](https://stackoverflow.com/questions/1871253/updating-java-priorityqueue-when-its-elements-change-priority)。一旦pq建好后，修改成员里面的属性，是不会re-sort的。所以代码里必须加上很SB的[resortPriorityQueue](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/jiuzhang/Ama9Ti_MinimumSpanningTree.java#L175)函数。  
 * Vertex节点的**π属性是必须**的，否则拼接List<Connection>结果集，寻找Connection的“from”会非常麻烦。π就是干这个的。  
 
+## [Amazon 模拟面试 | 真实面试难度, 一站式在线评测](http://mp.weixin.qq.com/s?__biz=MzA5MzE4MjgyMw==&mid=2649457365&idx=1&sn=575e93d2b05830fa830f87c6f064dbd7&chksm=887eecddbf0965cbb04810f4e498b69133c22df154000a9d6b1e9a8056bfd576aeefd1bbe512&mpshare=1&scene=23&srcid=0614sGjIobjr4nIxB9w8IJBb#rd)  
+[Phone Interview 1 - 53. Reverse Words in a String](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P053_AmaMoni_ReverseWordsInAString.java) ★  
+做过。简单。
+
+[Phone Interview 1 - 31. Partition Array](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P031_AmaMoni_PartitionArray.java) ★★★  
+做过。但是这次没有[上次](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P031_PartitionArray.java)顺利。2个主意：  
+* 注意nums[j]、nums[i]与k比较大小的时候，包不包含等于。影响后面逻辑。  
+* 注意return结果，需要nums[j]和k大小不同时分情况讨论。  
+
+[Phone Interview 2 - 167. Add Two Numbers]  
+做过。简单。不做了。  
+
+[Phone Interview 2 - 88. lowest common ancestor](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P088_LowestCommonAncestor.java) ★★  
+做过。查找ancestors的递归，写的时候还是有bug。  
+
+[On Site 1 - 655. Big Integer Addition](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P655_BigIntegerAddition.java) ★★  
+总体顺利。1个[注意](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P655_BigIntegerAddition.java#L56)。  
+
+[On Site 1 - 221. Add Two Numbers II](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P221_AddTwoNumbersII.java) ★  
+总体顺利。和上题类似。
+
+[On Site 2 - 158. Two Strings Are Anagrams](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P158_AmaMoni_TwoStringsAreAnagrams.java) ★★  
+两个注意。总体不难。  
+* 用map当hash时，要老老实实的加加减减。不要投机取巧置0或1，当有重复字符会有bug。  
+* 开始用了[异或和加和](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P158_AmaMoni_TwoStringsAreAnagrams.java#L63)。**结果不对**。"az", "by"这种case会错误返回true。  
+
+[On Site 2 - 386. Longest Substring with At Most K Distinct Characters](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P386_LongestSubstringWithAtMostKDistinctCharacters.java) ★★  
+滑动窗口问题。 总体顺利。一个[bug](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P386_LongestSubstringWithAtMostKDistinctCharacters.java#L39)。  
+
+[On Site 2 - 171. Anagrams](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P171_Anagrams.java) ★  
+和<158. Two Strings Are Anagrams>类似，调用了它的方法。总体顺利。  
+
