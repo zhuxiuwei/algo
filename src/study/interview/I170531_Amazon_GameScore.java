@@ -7,6 +7,11 @@ import java.util.List;
  */
 public class I170531_Amazon_GameScore {
 
+	/**
+	 * @param blocks
+	 * @param n
+	 * @return
+	 */
 	public int totalScore(String[] blocks, int n)
     {
 		if(blocks == null || blocks.length != n)
