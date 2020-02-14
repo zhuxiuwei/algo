@@ -30,7 +30,7 @@ public class P005_LongestPalindromicSubstring {
 
         int maxLength = 0;
         String res = "";
-        for (int i = 0; i <= s.length() - 1; i++) {     //！！！ bug: 注意两个for循环的边界。错过。
+        for (int i = 0; i <= s.length() - 1; i++) {     //！！！ bug: 注意两个for循环的边界。bug过。
             for (int j = s.length(); j >= i ; j--) {
                 String subStr = s.substring(i, j);
                 int subIdx = s1.indexOf(subStr);

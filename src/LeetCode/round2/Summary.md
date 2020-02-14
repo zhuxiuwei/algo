@@ -1,9 +1,9 @@
-题目总结
+top100 题目总结
 =
 [1. Two Sum - easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P001_TwoSum.java) ★★
 * Easy的居然还是错了一次。和第一轮错误一样。
 
-[445. Add Two Numbers II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P445_AddTwoNumbersII.java) ★★★
+[445. Add Two Numbers II - Medium (非top100)](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P445_AddTwoNumbersII.java) ★★★
 * 总体还算顺利，循环里的进位问题处理，还是有点乱。 debug了一下。
 
 [2. Add Two Numbers - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P002_AddTwoNumbers.java) ★★
@@ -21,10 +21,45 @@
 * 花了大概20分钟，思路：查找翻转s得到s'，然后找s和s'的最大公共字符串。 第一次还写错了（见longestPalindrome_Wrong），上面solution里说这是个常见错误。
 * solution提示可以通过index解决上述错误，改了，比较ugly(用了java原生的indexOf)，通过了，但是还是没AC，因为超时了。
 * TODO: 有时间看看solution里的动态规划解法。
-* 和之前九章算法、leetcide时刷过的[P409_LongestPalindrome](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/P409_LongestPalindrome.java)的统计回文个数的题目不一样，那个简单很多。
+* 和之前九章算法、leetcode时刷过的[P409_LongestPalindrome](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P409_LongestPalindrome.java)的统计回文个数的题目不一样，那个简单很多。
 
 [11. Container With Most Water - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P011_ContainerWithMostWater.java) ★★★★
 * 和另一个题目 水池蓄水 https://leetcode.com/problems/trapping-rain-water/ 不完全一样。
 * 双指针问题，自己写了两个错误方案，一是指针碰撞方案，二是双指针两轮遍历 方案，都不对；
 * 最后看了[solution](https://leetcode.com/problems/container-with-most-water/solution/)，还是双指针碰撞，O(n)
 
+[15. 3Sum - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P015_3Sum.java)
+* 自己的方法(threeSum_overtime)比较复杂，主要负载在要自定义一个数据结构 + hash做去重，导致算法在超大数据超时。 写了快一个小时，不是特别顺利
+* 参考了其他人的思路，双指针碰撞，比较优雅 ，虽然和我算法时间复杂度都是O(n^2)但是可能因为不需要hash去重，快很多。 实现的时候问题不太大。
+
+[20. Valid Parentheses - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P020_ValidParentheses.java) ★
+* 简单，但还是有一个低级错误。不是一次bug free。
+
+[7. Reverse Integer - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P007_Reverse_Integer.java) ★★
+* 非100题，为阿里题库。
+* 不考虑溢出的话比较简单。 我用了投机取巧的办法。 把返回结果先变成long，在和Interger的上限比较。
+* 此外需要注意负数情况。
+* 网上看到不少优雅的解法，但是不想花时间理解了。
+
+[9. Palindrome Number - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P009_PalindromeNumber.java) ★★
+* 非100题，为阿里题库。
+* 和第七题[7. Reverse Integer - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P007_Reverse_Integer.java)很像。
+* 不考虑溢出的话比较简单。 我用了投机取巧的办法。 把返回结果先变成long，在和Interger的上限比较。
+
+[8. 字符串转换整数 (atoi) - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P008_字符串转换整数atoi.java) ★★★
+* 非100题，为阿里题库。
+* 不是很难，但是很容易出错。
+* 共产生三个的bug。
+* 和7,9类似，还是被整数上下界溢出折腾够呛。
+
+[141. 环形链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P008_字符串转换整数atoi.java) ★
+* 非100题，为阿里题库。
+* 不算难。 需要细心点。
+
+[19. 删除链表的倒数第N个节点 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P008_字符串转换整数atoi.java) ★
+* 非100题，为阿里题库。
+* 一次通过
+
+[33. 搜索旋转排序数组 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P033_搜索旋转排序数组.java) ★★
+* 非100题，为阿里题库。
+* 二分查找的变形。 问题不是太大，有一个bug。

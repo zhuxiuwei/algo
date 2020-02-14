@@ -1,4 +1,4 @@
-package LeetCode.round1.medium;
+package LeetCode.round1.easy;
 /**
  * 161212
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -8,7 +8,7 @@ More practice:
 If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
  */
 public class P053_MaximumSubarray {
-	
+
 	/**
 	 * 1 time AC: 17ms, 29.6%.
 	 * O(n) solution.
@@ -17,7 +17,7 @@ public class P053_MaximumSubarray {
 		int max = Integer.MIN_VALUE, tempSum = 0;
 		if(nums == null || nums.length == 0)
 			return max;
-		
+
 		for (int i = 0; i < nums.length; i++) {
 			if(nums[i] > max)
 				max = nums[i];
@@ -28,10 +28,10 @@ public class P053_MaximumSubarray {
 			}else
 				tempSum = 0;
 		}
-		
+
 		return max;
 	}
-	
+
 	/**
 	 * divide and conquer solution. Wrong.
 	 * 修修补补的，花了很多时间，最后还不对。
@@ -54,7 +54,7 @@ public class P053_MaximumSubarray {
 		}
 		if(start + 1 == end){
 			ConquerResult c = new ConquerResult();
-			c.start = start; c.end = end; 
+			c.start = start; c.end = end;
 			if(nums[start] >= 0 && nums[end] >= 0){
 				c.maxStart = start;
 				c.maxEnd = end;
@@ -66,7 +66,7 @@ public class P053_MaximumSubarray {
 				c.maxValue = nums[idx];
 			}
 			return c;
-		}else		
+		}else
 			return mergeConquerResult(nums, leftRes, rightRes);
 	}
 	private ConquerResult mergeConquerResult(int[] nums, ConquerResult leftRes, ConquerResult rightRes){
@@ -101,7 +101,7 @@ public class P053_MaximumSubarray {
 					c = rightRes;
 			}else{
 				int newSum =  leftRes.maxValue + rightRes.maxValue;
-				for (int i = leftRes.maxEnd + 1; i < rightRes.maxStart; i++) 
+				for (int i = leftRes.maxEnd + 1; i < rightRes.maxStart; i++)
 					newSum += nums[i];
 				if(newSum >= leftRes.maxValue && newSum >= rightRes.maxValue){
 					c.maxValue = newSum; c.start = leftRes.start; c.end = rightRes.end; c.maxStart = leftRes.maxStart; c.maxEnd = rightRes.maxEnd;
@@ -120,8 +120,8 @@ public class P053_MaximumSubarray {
 		int maxEnd;
 		int maxValue;
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		P053_MaximumSubarray p = new P053_MaximumSubarray();
 		System.out.println(p.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4}));	//6
