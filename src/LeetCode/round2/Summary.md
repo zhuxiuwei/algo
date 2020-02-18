@@ -63,3 +63,19 @@ top100 题目总结
 [33. 搜索旋转排序数组 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P033_搜索旋转排序数组.java) ★★
 * 非100题，为阿里题库。
 * 二分查找的变形。 问题不是太大，有一个bug。
+
+[206. 反转链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P206_反转链表.java) ★
+* 字节跳动题库。
+* 指针操作算法，一次AC。
+* 问题： 递归算法，存在一个bug。和java reference在递归最底层返回的值，在上层递归变null了有关。
+
+[21. 合并两个有序链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P021_合并两个有序链表.java) ★★
+* 字节跳动题库。
+* 不是特别顺利。虽然easy，还是先写错了一版。后又实现了一版，还是存在一个易犯错的地方。
+
+[42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P042_接雨水.java) ★★★
+* 字节跳动题库。
+* 直接看的双指针的解释。自己想不容易。https://leetcode-cn.com/problems/trapping-rain-water/solution/jie-yu-shui-by-leetcode/
+
+
+

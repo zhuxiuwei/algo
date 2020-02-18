@@ -20,9 +20,9 @@ public class P011_ContainerWithMostWater {
         int res = 0;
         int left = 0, right = height.length - 1;
         while (left < right) {
-            int h = height[left] < height[right]? height[left]: height[right];
-            int l = right - left;
-            int square = h * l;
+            int high = height[left] < height[right]? height[left]: height[right];
+            int length = right - left;
+            int square = high * length;
             if(res < square)
                 res = square;
             if (height[left] < height[right])
