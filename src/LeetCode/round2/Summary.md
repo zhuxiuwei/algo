@@ -1,4 +1,4 @@
-top100 题目总结
+top100 题目总结 2020.2
 =
 [1. Two Sum - easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P001_TwoSum.java) ★★
 * Easy的居然还是错了一次。和第一轮错误一样。
@@ -91,3 +91,39 @@ top100 题目总结
 [160.相交链表 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P160_相交链表.java) ★
 * 字节跳动题库。
 * 不难，但还是搞出一个bug。
+
+[56.合并区间 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P160_相交链表.java) ★★
+* 字节跳动题库。
+* 不难，主要是需要手写快排。快排部分看了以前的代码。
+
+[23. 合并K个排序链表 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P023_合并K个排序链表.java) ★★
+* 字节跳动题库。
+* 用了PriorityQueue，不难。
+
+[135. 分发糖果 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P135_分发糖果.java) ★★
+* 字节跳动题库。
+* 总体不是很难。关键是思路。算法有点像贪心。在需要回头改的地方小复杂，！！！！ 有一个bug。
+
+[46. 全排列 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P046_Permutations.java)★★★
+* 字节跳动题库。
+* 典型回溯问题。 没做。TODO: 看一下之前实现的代码。
+
+[215. 数组中的第K个最大元素 - Medium]](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P215_KthLargestElementInAnArray.java)★★
+* 字节跳动题库。
+* 没做，之前做过。用快排思想，或者我现在觉得用优先级队列思路也ok。
+
+[31. 下一个排列 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P031_下一个排列.java) ★★★★
+* 字节跳动题库。
+* 属于思路需要想清楚，写的过程也比较容易犯错的。小细节太多。
+* 我和讨论区热门答案的思路一样，但是人家实现的更巧妙简短。
+
+
+
+
+
+
+
+
+
+
+

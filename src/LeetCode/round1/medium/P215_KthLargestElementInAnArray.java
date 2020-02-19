@@ -10,7 +10,7 @@ Note:  You may assume k is always valid, 1 ≤ k ≤ array's length.
  *
  */
 public class P215_KthLargestElementInAnArray {
-	
+
 	/**
 	 * 最直观的先排序。。。。O(nlgn)
 	 * AC: 5ms, 81.4%
@@ -22,7 +22,7 @@ public class P215_KthLargestElementInAnArray {
 		Arrays.sort(nums);
 		return nums[nums.length - k];
 	}
-	
+
 	/**
 	 * 用快速排序思想。
 	 * @param args
@@ -49,8 +49,8 @@ public class P215_KthLargestElementInAnArray {
 		System.out.println(Arrays.toString(nums));
 		return 0;
 	}
-	
-	
+
+
 	public static void main(String[] args) {
 		P215_KthLargestElementInAnArray p = new P215_KthLargestElementInAnArray();
 		p.findKthLargest_quickSort(new int[]{5,1,3,2,7,4,8}, 4);

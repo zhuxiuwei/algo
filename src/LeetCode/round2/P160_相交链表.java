@@ -1,5 +1,6 @@
 package LeetCode.round2;
 
+import LeetCode.CommonUtils.BuildListFromArray;
 import LeetCode.round1.common.ListNode;
 
 /**
@@ -42,5 +43,12 @@ public class P160_相交链表 {
             node = node.next;
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        ListNode head = BuildListFromArray.build(new int[]{1,2,3});
+        P160_相交链表 p = new P160_相交链表();
+        p.listLength(head);
+        System.out.println(head);
     }
 }
