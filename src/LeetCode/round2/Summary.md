@@ -83,11 +83,11 @@ top100 题目总结
 * get操作若找到需要更新tail；set操作需要更新tail(分key是否已存在两种情况)，同时注意是不是超过了LRU的capacity，超过了还要删除head。
 * 不是很难，条件多了点需要注意到。
 
-[121. 买卖股票的最佳时机 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P134_LRUCache.java) ★★★
+[121. 买卖股票的最佳时机 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P121_买卖股票的最佳时机.java) ★★★
 * 字节跳动题库。
 * 我本轮采用了双指针的解法，感觉最后虽然AC了，但是还是不能解释为啥。。。
-* 还是[第一轮](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round2/easy/P121_BestTimeToBuyAndSellStock.java)的方案：做的先取每天的delta，然后找出连续 max >0 的delta思路比较好解释。
+* 还是[第一轮](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P121_BestTimeToBuyAndSellStock.java)的方案：做的先取每天的delta，然后找出连续 max >0 的delta思路比较好解释。
 
-[160.相交链表 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P160_相交链表.java) ★
+[160.相交链表 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P160_相交链表.java) ★
 * 字节跳动题库。
 * 不难，但还是搞出一个bug。
