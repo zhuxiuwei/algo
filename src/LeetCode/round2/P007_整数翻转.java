@@ -22,7 +22,7 @@ import java.util.List;
 
  假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−2^31,  2^31 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。
  */
-public class P007_Reverse_Integer {
+public class P007_整数翻转 {
 
     /**
      *  不考虑溢出的话比较简单。 我用了投机取巧的办法。把返回结果先变成long。
@@ -48,7 +48,7 @@ public class P007_Reverse_Integer {
     }
 
     public static void main(String[] args) {
-        P007_Reverse_Integer p = new P007_Reverse_Integer();
+        P007_整数翻转 p = new P007_整数翻转();
         System.out.println(p.reverse(123));
         System.out.println(p.reverse(120));
         System.out.println(p.reverse(-22)); //负数的处理

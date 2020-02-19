@@ -12,9 +12,9 @@ top100 题目总结
 [3. Longest Substring Without Repeating Characters - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P003_LongestSubstringWithoutRepeatingCharacters.java) ★★
 *  总体还算顺利，但是写的不快，有俩边界条件bug。
 
-[4. Median of Two Sorted Arrays - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P004_MedianOfTwoSortedArrays.java) ★★★★★
+[4. 寻找两个有序数组的中位数 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P004_寻找两个有序数组的中位数_我.java) ★★★★★
 * 面Contiva时遇到这个题的变种。Contiva是要找到两个sorted array最中间的number。
-* TODO: 有了大致思路，还没写。
+* 最后抄的标准答案。自己实现了一遍。思路和我的差的不太大，都是二分变体，不断收敛两个指针。但是写起来更有技巧。
 
 [5. Longest Palindromic Substring - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P005_LongestPalindromicSubstring.java) ★★★★★
 * solution： https://leetcode.com/articles/longest-palindromic-substring/
@@ -35,7 +35,7 @@ top100 题目总结
 [20. Valid Parentheses - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P020_ValidParentheses.java) ★
 * 简单，但还是有一个低级错误。不是一次bug free。
 
-[7. Reverse Integer - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P007_Reverse_Integer.java) ★★
+[7. 整数翻转 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P007_整数翻转.java) ★★
 * 非100题，为阿里题库。
 * 不考虑溢出的话比较简单。 我用了投机取巧的办法。 把返回结果先变成long，在和Interger的上限比较。
 * 此外需要注意负数情况。
@@ -73,9 +73,21 @@ top100 题目总结
 * 字节跳动题库。
 * 不是特别顺利。虽然easy，还是先写错了一版。后又实现了一版，还是存在一个易犯错的地方。
 
-[42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P042_接雨水.java) ★★★
+[42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P042_接雨水.java) ★★★
 * 字节跳动题库。
 * 直接看的双指针的解释。自己想不容易。https://leetcode-cn.com/problems/trapping-rain-water/solution/jie-yu-shui-by-leetcode/
 
+[146. LRU缓存机制 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P134_LRUCache.java) ★★
+* 字节跳动题库。
+* 没做，只看了之前的代码。总体是新定义了LRUCacheNode类，扩展了链表Node，每个node有prev和next两个指针。用一个HashMap<Integer, LRUCacheNode>做LRU的缓存。并且整个类维护tail(最近使用)和head(最久没使用)两个指针。
+* get操作若找到需要更新tail；set操作需要更新tail(分key是否已存在两种情况)，同时注意是不是超过了LRU的capacity，超过了还要删除head。
+* 不是很难，条件多了点需要注意到。
 
+[121. 买卖股票的最佳时机 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P134_LRUCache.java) ★★★
+* 字节跳动题库。
+* 我本轮采用了双指针的解法，感觉最后虽然AC了，但是还是不能解释为啥。。。
+* 还是[第一轮](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round2/easy/P121_BestTimeToBuyAndSellStock.java)的方案：做的先取每天的delta，然后找出连续 max >0 的delta思路比较好解释。
 
+[160.相交链表 - EASY](https://github.com/zhuxiuwei/algo/blob/master/src/lintcode/round1/P160_相交链表.java) ★
+* 字节跳动题库。
+* 不难，但还是搞出一个bug。
