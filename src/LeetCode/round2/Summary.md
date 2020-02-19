@@ -108,7 +108,7 @@ top100 题目总结 2020.2
 * 字节跳动题库。
 * 典型回溯问题。 没做。TODO: 看一下之前实现的代码。
 
-[215. 数组中的第K个最大元素 - Medium]](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P215_KthLargestElementInAnArray.java)★★
+[215. 数组中的第K个最大元素 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/medium/P215_KthLargestElementInAnArray.java)★★
 * 字节跳动题库。
 * 没做，之前做过。用快排思想，或者我现在觉得用优先级队列思路也ok。
 
