@@ -1,7 +1,7 @@
 package LeetCode.round1.common;
 
 /**
- * Used by below questions: 
+ * Used by below questions:
  * 104
  */
 public class TreeNode {
@@ -9,7 +9,9 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
     public TreeNode(int x) { val = x; }
-    
+
+    public TreeNode(){}
+
     @Override
     public String toString(){
     	return val + "";

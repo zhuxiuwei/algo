@@ -117,7 +117,27 @@ top100 题目总结 2020.2
 * 属于思路需要想清楚，写的过程也比较容易犯错的。小细节太多。
 * 我和讨论区热门答案的思路一样，但是人家实现的更巧妙简短。
 
+[70. 爬楼梯 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P070_爬楼梯.java) ★★
+* 字节跳动题库。
+* 使用递归会超时。不用递归快很多，稍微想想就能想出来。其实这也算是个动态规划问题。
 
+[101. 对称二叉树 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P101_对称二叉树.java) ★★★
+* 字节跳动题库。
+* 分递归和非递归两种方式。
+* 虽然是easy，但是我的思路还是比较傻，参考了最佳答案。
+* 关键思路：每个树的右子树都与另一个树的左子树镜像对称，这两个树互为镜像。
+
+[79. 单词搜索](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P079_单词搜索.java) ★★★★
+* 字节跳动题库。
+* 典型DFS问题。思路不算难，但是写不明白了。 TODO: 完成代码。
+
+[143. 重拍链表 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P143_重排链表.java) ★
+* 字节跳动题库。
+* 总体顺利。画好图缕清思路就好。 思路：把图画出来，观察到是一个螺旋形。然后观察到用一个双端队列即可以解决。
+
+[54. 螺旋矩阵 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P143_重排链表.java) ★★
+* 字节跳动题库。
+* 总体顺利。属于写起来比较容易犯错的。有一个分支写了小bug。
 
 
 
