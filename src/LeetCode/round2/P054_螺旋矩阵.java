@@ -83,8 +83,8 @@ public class P054_螺旋矩阵 {
     public static void main(String[] args) {
         P054_螺旋矩阵 p = new P054_螺旋矩阵();
         List<Integer> res = p.spiralOrder(new int[][]{new int[]{1, 2, 3, 4},new int[]{5, 6, 7, 8},new int[]{9, 10, 11, 12},new int[]{13, 14, 15, 16}});
-        System.out.println(res);
+        System.out.println(res);    //[1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10]
         res = p.spiralOrder(new int[][]{new int[]{1, 2, 3, 4},new int[]{5, 6, 7, 8},new int[]{9, 10, 11, 12}});
-        System.out.println(res);
+        System.out.println(res);    //[1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
     }
 }

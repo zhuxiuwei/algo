@@ -16,15 +16,20 @@ top100 题目总结 2020.2
 * 面Contiva时遇到这个题的变种。Contiva是要找到两个sorted array最中间的number。
 * 最后抄的标准答案。自己实现了一遍。思路和我的差的不太大，都是二分变体，不断收敛两个指针。但是写起来更有技巧。
 
-[5. Longest Palindromic Substring - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P005_LongestPalindromicSubstring.java) ★★★★★
+[5. 最长回文子串 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P005_最长回文子串.java) ★★★★★
 * solution： https://leetcode.com/articles/longest-palindromic-substring/
 * 花了大概20分钟，思路：查找翻转s得到s'，然后找s和s'的最大公共字符串。 第一次还写错了（见longestPalindrome_Wrong），上面solution里说这是个常见错误。
 * solution提示可以通过index解决上述错误，改了，比较ugly(用了java原生的indexOf)，通过了，但是还是没AC，因为超时了。
-* TODO: 有时间看看solution里的动态规划解法。
 * 和之前九章算法、leetcode时刷过的[P409_LongestPalindrome](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round1/easy/P409_LongestPalindrome.java)的统计回文个数的题目不一样，那个简单很多。
 
-[11. Container With Most Water - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P011_ContainerWithMostWater.java) ★★★★
-* 和另一个题目 水池蓄水 https://leetcode.com/problems/trapping-rain-water/ 不完全一样。
+200223 update
+* 用中心扩展法完成了。思想：对每一个字母，往左右看。时间复杂度)(n^2)
+* 错了好几次！！！！！！
+*  1、 主要是左右回看时，回文有两种模式: 1. 所有字母相等，则回看的时候可以只往一个方向； 2. 并非所有字母相等，则回看时必须同时往两个方向。
+*  2、 注意利用哨兵，否则处理也很麻烦。
+
+[11. 盛最多水的容器 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P011_盛最多水的容器.java) ★★★★
+* 和另一个题目 42.接雨水 https://leetcode.com/problems/trapping-rain-water/ 不完全一样。
 * 双指针问题，自己写了两个错误方案，一是指针碰撞方案，二是双指针两轮遍历 方案，都不对；
 * 最后看了[solution](https://leetcode.com/problems/container-with-most-water/solution/)，还是双指针碰撞，O(n)
 
@@ -139,8 +144,18 @@ top100 题目总结 2020.2
 * 字节跳动题库。
 * 总体顺利。属于写起来比较容易犯错的。有一个分支写了小bug。
 
+[440. 字典序的第K小数字 - HARD](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P440_字典序的第K小数字.java) ★★★★
+* 字节跳动题库。
+* 我最初思路， 自定义字典序排序的IntStr类，把所有n的数字都变成IntStr类进行字典排序，然后取出k-1位置即可。但是不AC，超过内存限制了，优化了内存依然超过时间限制。
+* 看的答案。其实滤清思路，也没那么难。
 
+[25. K个一组翻转链表 - HARD](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P025_K个一组翻转链表.java) ★★
+* 字节跳动题库。 总体还算顺利，有2个边界值的bug。
+* 思路： 先计算链表长度length，然后根据length和k，计算要做几次链表翻转，并进行那么多次。每次翻转后，把相关指针返回。
 
+[199. 二叉树的右视图 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P199_二叉树的右视图.java) ★★
+* 字节跳动题库。 总体还算顺利。
+* 典型DFS问题。 小马智行问过。我之前也是用二叉树层次遍历做的。用DFS代码更简单。
 
 
 

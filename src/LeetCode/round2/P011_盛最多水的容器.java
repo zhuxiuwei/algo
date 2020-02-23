@@ -12,7 +12,7 @@ package LeetCode.round2;
  Input: [1,8,6,2,5,4,8,3,7]
  Output: 49
  */
-public class P011_ContainerWithMostWater {
+public class P011_盛最多水的容器 {
 
     // 正确思路：https://leetcode.com/problems/container-with-most-water/solution/
     // 双指针，左右往中间走，比较左右高度，哪个低，就把哪个指针往中间走，在这个过程中记录下来最大值。
@@ -108,7 +108,7 @@ public class P011_ContainerWithMostWater {
     }
 
     public static void main(String[] args) {
-        P011_ContainerWithMostWater p = new P011_ContainerWithMostWater();
+        P011_盛最多水的容器 p = new P011_盛最多水的容器();
         System.out.println(p.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));    //49
         System.out.println(p.maxArea(new int[]{2,4,8}));    //4
         System.out.println(p.maxArea(new int[]{8,4,2}));    //4
