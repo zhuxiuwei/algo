@@ -97,7 +97,7 @@ top100 题目总结 2020.2
 * 字节跳动题库。
 * 不难，但还是搞出一个bug。
 
-[56.合并区间 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P160_相交链表.java) ★★
+[56.合并区间 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P056_合并区间.java) ★★
 * 字节跳动题库。
 * 不难，主要是需要手写快排。快排部分看了以前的代码。
 
@@ -140,7 +140,7 @@ top100 题目总结 2020.2
 * 字节跳动题库。
 * 总体顺利。画好图缕清思路就好。 思路：把图画出来，观察到是一个螺旋形。然后观察到用一个双端队列即可以解决。
 
-[54. 螺旋矩阵 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P143_重排链表.java) ★★
+[54. 螺旋矩阵 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P054_螺旋矩阵.java) ★★
 * 字节跳动题库。
 * 总体顺利。属于写起来比较容易犯错的。有一个分支写了小bug。
 
