@@ -19,7 +19,8 @@ package LeetCode.round2;
 public class HARD_P004_寻找两个有序数组的中位数_我 {
 
     /**
-     * 抄的评论里最热门【Wait想念】的方法。然后自己实现的。https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/
+     * 抄的评论里最热门【Wait想念】的方法。然后自己实现的。
+     * https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/
      * 其实本质和我思路一样：
      *  思路：从两个数组里找到中间元素，然后以他俩为中点，从两边往中间不断消除多余的点；
         每轮查找都会使范围缩小，直到剩余最后1/2个元素
