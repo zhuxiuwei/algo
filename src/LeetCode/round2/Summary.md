@@ -57,11 +57,11 @@ top100 题目总结 2020.2
 * 共产生三个的bug。
 * 和7,9类似，还是被整数上下界溢出折腾够呛。
 
-[141. 环形链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P008_字符串转换整数atoi.java) ★
+[141. 环形链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P141_环形链表.java) ★
 * 非100题，为阿里题库。
 * 不算难。 需要细心点。
 
-[19. 删除链表的倒数第N个节点 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P008_字符串转换整数atoi.java) ★
+[19. 删除链表的倒数第N个节点 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P019_删除链表的倒数第N个节点.java) ★
 * 非100题，为阿里题库。
 * 一次通过
 
