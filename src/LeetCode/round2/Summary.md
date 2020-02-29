@@ -163,7 +163,27 @@ top100 题目总结 2020.2
 * 1. 总体框架写的还算顺利，但是返回结果、临时结果的保存，花了不少精力；包括判断字符串能否构成合法的IP地址的一部分（isLengthOk方法），也折腾了一下。
 * 2. 开始忘了ip可以有0，以为是1-255，又单独加了0的处理，导致代码很ugly；
 
+[88. 合并两个有序数组 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P088_合并两个有序数组.java) ★
+* 字节跳动题库。
+* Easy的，有2个小bug。都和java值传递/引用传递有关系。
 
+[84. 柱状图中的最大矩形 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P084_柱状图中最大的矩形.java) ★★★
+* 因为这个题是85的基础，所以看看。
+* 暴力法很快做出来了，好想。
+* 栈的方法看的比较迷糊，不看了。
 
+[85. 最大矩形 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P085_最大矩形.java) ★★★★★
+* 字节跳动题库。 小马智行和华为都考了。
+* 不会。看的答案。 直接用的暴力法，暴力法AC速度也挺快的。（依赖84的栈方法，和DP，都没看。）
+* 暴力法参考：https://leetcode-cn.com/problems/maximal-rectangle/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-1-8/
+
+[1114. 按序打印 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P1114_按序打印.java) ★★
+* 字节跳动题库。 
+* 多线程打印问题。我直接用了volatile特性。
+
+[72. 编辑距离 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P072_编辑距离.java) ★★
+* 字节跳动题库。 
+* DP问题。直接看的答案https://leetcode-cn.com/problems/edit-distance/solution/zi-di-xiang-shang-he-zi-ding-xiang-xia-by-powcai-3/
+ 
 
 

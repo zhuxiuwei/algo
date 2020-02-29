@@ -9,7 +9,7 @@ package LeetCode.round2;
  Example 1:
  nums1 = [1, 3]
  nums2 = [2]
- The median is 2.0
+ The median is 2.0caoxn@ruc.edu.cn
 
  Example 2:
  nums1 = [1, 2]

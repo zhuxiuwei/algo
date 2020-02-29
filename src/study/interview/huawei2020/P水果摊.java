@@ -1,12 +1,15 @@
 package study.interview.huawei2020;
 
-import sun.nio.ch.sctp.SctpNet;
-
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//华为200229 笔试题
+/**
+ * 华为200229 笔试题
+ *  有买入价m[]， 卖出价n[]，目前手里资金k，问买卖后商贩手里最多还有多少钱。
+ *  例子：
+ *  m={4,2,6,4}， n={5,3,8,7}, k=15， 结果应该为22(先卖头三种水果，然后再卖第四种).
+ */
 public class P水果摊 {
     /**
      * @param m 成本价
