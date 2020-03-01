@@ -181,7 +181,7 @@ top100 题目总结 2020.2
 * 字节跳动题库。 
 * 多线程打印问题。我直接用了volatile特性。
 
-[72. 编辑距离 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P072_编辑距离.java) ★★
+[72. 编辑距离 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/HARD_P072_编辑距离.java) ★★★★★
 * 字节跳动题库。 
 * DP问题。直接看的答案https://leetcode-cn.com/problems/edit-distance/solution/zi-di-xiang-shang-he-zi-ding-xiang-xia-by-powcai-3/
  
