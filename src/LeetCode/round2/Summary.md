@@ -185,5 +185,11 @@ top100 题目总结 2020.2
 * 字节跳动题库。 
 * DP问题。直接看的答案https://leetcode-cn.com/problems/edit-distance/solution/zi-di-xiang-shang-he-zi-ding-xiang-xia-by-powcai-3/
  
+[26. 删除排序数组中的重复项 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P026_删除排序数组中的重复项.java) ★
+* 字节跳动题库。 
+* 一次AC。比较容易。
 
-
+[236. 二叉树的最近公共祖先 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round2/P236_二叉树的最近公共祖先.java) ★★★
+* 字节跳动题库。  https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
+* DFS + 回溯问题。自己没啥思路。直接参考递归思路： https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/er-cha-shu-de-zui-jin-gong-gong-zu-xian-by-leetcod/
+* 自己实现一遍，有了思路不算难。
