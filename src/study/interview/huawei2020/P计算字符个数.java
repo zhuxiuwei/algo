@@ -1,5 +1,8 @@
 package study.interview.huawei2020;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -40,4 +43,5 @@ public class P计算字符个数 {
         char c = sc.nextLine().charAt(0);
         System.out.println(p.count(words, c));
     }
+
 }
