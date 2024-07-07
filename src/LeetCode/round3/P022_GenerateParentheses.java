@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  * 240706
- * # Backtracking 以前做过
+ * # Backtracking - medium - 以前做过
  * Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
  *
  * Example 1:
