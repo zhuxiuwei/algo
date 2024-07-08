@@ -19,7 +19,7 @@ package LeetCode.round3;
  */
 public class P005_LongestPalindromicSubstring {
     /**
-     * 双指针法。从一个字符串往两边不停探索。
+     * 对于字符串里的每个字符，都从左到最右看一遍是否符合回文标准。总体时间复杂度O(n^2)
      * AC: 602ms 13%, mem: 81.6%
      * @param s
      * @return
