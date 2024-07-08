@@ -17,3 +17,7 @@ top100 题目总结 2024.7
 
 [98. 验证二叉搜索数Validate Binary Search Tree - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P098_ValidateBinarySearchTree.java) ★
 * 第一次做。总体ok。中序遍历的应用。 有一个小bug要注意。
+
+[05. 最长回文Longest Palindromic Substring - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P005_LongestPalindromicSubstring.java) ★★
+* 16年做过。还是没写出来dp解法。不过总体写的貌似比16年简洁。
+
