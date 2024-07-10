@@ -24,17 +24,19 @@ import java.util.*;
  */
 public class P200_NumberOfIslands {
     /**
-     * 49个case，第48个挂了。
-     * 代码写的很ugly。感觉逻辑上ok，不知道错在哪了。
-     * @param grid
-     * @return
+     * O(n^2)的方案。
+     * 思路：从左上到右下一个个看数字，如果是1，就重新看下上边和左边，如果有1，那么就合并到一个岛里。如果都是0，就暂定发现了一个新岛屿。
+     * 当某个1发现上和左两个岛的编号不同时，就需要将两个编号不同的岛记录下来，后面进行合并。代码里的map就是用于最后做合并的。
+     *
+     * 结果：49个case，第48个挂了。
+     * 而且代码写的很ugly。感觉逻辑上ok，不知道错在哪了。
      */
     public int numIslands_wrong(char[][] grid) {
         if(grid == null || grid.length == 0)
             return 0;
         int[][] cache = new int[grid.length][grid[0].length];
         Map<Integer, Set<Integer>> map = new HashMap<>();
-        int res = 0, order = 1;
+        int order = 1;
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if(grid[i][j] == '1'){
@@ -65,6 +67,8 @@ public class P200_NumberOfIslands {
                 }
             }
         }
+
+        //合并本来应该都是同一个的岛屿
         Set<Set<Integer>> forCount = new HashSet<>();
         for(Integer k: map.keySet()){
             boolean found = false;
