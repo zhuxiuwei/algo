@@ -105,8 +105,8 @@ public class P200_NumberOfIslands {
 	
 	public static void main(String[] args) {
 		P200_NumberOfIslands p = new P200_NumberOfIslands();
-		System.out.println(p.numIslands(new char[][]{{'1',0,0,0},{0,'1','1',0},{'1',0,'1',0},{'1','1','1',0}}));	//2
-		System.out.println(p.numIslands(new char[][]{{'1','1','1','1',0},{'1','1',0,'1',0},{'1','1',0,0,0},{0,0,0,0,0}}));	//1
+		System.out.println(p.numIslands(new char[][]{{'1','0','0','0'},{'0','1','1','0'},{'1','0','1','0'},{'1','1','1','0'}}));	//2
+		System.out.println(p.numIslands(new char[][]{{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}}));	//1
 	}
 
 }
