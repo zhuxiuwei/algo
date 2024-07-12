@@ -27,3 +27,5 @@ top100 题目总结 2024.7
 [55. Jump Game - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P055_JumpGame.java) ★
 * 第一次做。总体ok。
 
+[121. Best Time To Buy and Sell Stock - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P121_BestTimeToBuySellStock.java) ★
+* 17、20都做过。没难度，这次写的应该比上两次更简洁。【O(n^2)的暴力解法显然不行】
