@@ -41,3 +41,11 @@ top100 题目总结 2024.7
 
 [215. 数组中的第K个最大元素 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P215_数组中的第K个最大元素.java) ★★★
 * 16做过。思路不难，主要是快速排序应用。 快排大体结构可以写出来，但是边界处理还是比较费劲，主要是大于 小于 等号的边界条件爱出错！！！！
+
+[19. 删除链表的倒数第N个节点 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P019_RemoveNthNodeFromEndOfList.java) ★
+* 20做过，一次过。这次也是一次过。不过思路和20年完全不同，20年的思路更巧妙，代码更简洁。
+
+[48. 矩阵旋转 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P048_RotateImage.java) ★★★
+* 第一次做。旋转位置公式推导很简单，麻烦的是**在旋转过程中，旧值总要去覆盖新位置的值，那么新位置的值如何缓存下来**以便后续旋转到它的时候正确使用。
+* 一开始，我以为让它从(0,0)开始循环n*n次，就可以把所有数字旋转一遍了，实则不是，这样只能旋转到(0,0)4个角的值。
+* 所以我加了一个二维数组，复制原始matrix所有值，用作旧值的cache。这么做符合【You have to rotate the image in-place】要求，但不知道怎么做是否破坏了【DO NOT allocate another 2D matrix and do the rotation.】的要求。
