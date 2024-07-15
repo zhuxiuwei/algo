@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 240715
- * 实验可重入的概念。代码由gpt生成。
+ * 实验锁【可重入】的概念。代码由gpt生成。
  */
 public class LockReentrantTest {
 

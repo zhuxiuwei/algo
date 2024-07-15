@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 240715
- * Lock & TryLock Demo。代码由gpt生成。
+ * 【Lock】 & 【TryLock】 Demo。代码由gpt生成。
  */
 public class LockAndTryLockDemo {
     private static Lock lock = new ReentrantLock();
