@@ -53,3 +53,6 @@ top100 题目总结 2024.7
 [24. Swap Nodes In Pairs 联表元素两两反转 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P024_SwapNodesInPairs.java) ★★
 * 第一次做。链表翻转升级版。还是有debug发现会出错的地方，需要本地debug后一次过。
 
+[78. Sub sets - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P078_Subsets.java) ★
+* 第一次做。backtracking问题，总体比较顺利。关键是想明白全部解生成的步骤。
+
