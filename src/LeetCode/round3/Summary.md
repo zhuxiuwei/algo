@@ -56,3 +56,5 @@ top100 题目总结 2024.7
 [78. Sub sets - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P078_Subsets.java) ★
 * 第一次做。backtracking问题，总体比较顺利。关键是想明白全部解生成的步骤。
 
+[155. Min Stack - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P155_MinStack.java) ★
+* 第一次做。主要是思路，编程不难。有一个边界小问题。
