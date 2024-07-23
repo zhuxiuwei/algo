@@ -12,7 +12,7 @@ top100 题目总结 2024.7
 [34. Find First and Last Position of Element in Sorted Array - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P034_FindFirstAndLastPositionOfElementInSortedArray.java) ★
 * 第一次做。总体ok。二分查找变形。
 
-[94. 中序遍历二叉数Binary Tree Inorder Traversal - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P094_BinaryTreeInorderTraversal.java)) ★★
+[94. 中序遍历二叉数Binary Tree Inorder Traversal - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P094_BinaryTreeInorderTraversal.java)) ★★
 * 16年做过。第一轮还是忘了需要记录访问过的左节点，会导致不断走回头路，死循环。不过这次的写法比16年的简单点，比16年应该顺利。
 
 [98. 验证二叉搜索数Validate Binary Search Tree - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P098_ValidateBinarySearchTree.java) ★
@@ -27,7 +27,7 @@ top100 题目总结 2024.7
 [55. Jump Game - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P055_JumpGame.java) ★
 * 第一次做。总体ok。
 
-[121. Best Time To Buy and Sell Stock - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P121_BestTimeToBuySellStock.java) ★
+[121. Best Time To Buy and Sell Stock - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P121_BestTimeToBuySellStock.java) ★
 * 17、20都做过。没难度，这次写的应该比上两次更简洁。【O(n^2)的暴力解法显然不行】
 
 [200. Number Of Islands - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P200_NumberOfIslands.java) ★★★
@@ -62,7 +62,7 @@ top100 题目总结 2024.7
 [240. Search a 2D Matrix II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P240_SearchA2DMatrixII.java) ★
 * 第一次做。感觉我做的方法比较暴力，但是AC速度还行。二分查找写的还是有点小问题(while循环上)
 
-[21. Merge Two Sorted Lists - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P021_MergeTwoSortedLists.java) ★★★
+[21. Merge Two Sorted Lists - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P021_MergeTwoSortedLists.java) ★★★
 * 头两轮做过。虽然是easy，还是费了功夫： 第一次思路完全是错的。第二轮一次改对了。
 * 看以前，16年做的最顺，20年也错了一次但是思路没那么离谱， 这次第一轮做错思路就错的离谱。
 
