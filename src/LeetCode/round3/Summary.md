@@ -70,6 +70,6 @@ top100 题目总结 2024.7
 * 20做过。和另一个题目 42.接雨水 https://leetcode.com/problems/trapping-rain-water/ 不一样。
 * 双指针问题，一开始O(n^2)的暴力法会超时，然后自己想了个思路不对（20年一样），最后还是抄的标准答案思路。 
 
-[42. 接雨水 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P042_TrapRainWalter.java) ★★★★★
+[42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P042_TrapRainWalter.java) ★★★★★
 * 头两轮做过。经典hard。
 * 还是不会。先自己写了个o(n^2)写法，发现不对，想简单了。然后参考了别人的双数组思路（没用双指针），主要是思路难想，写不困难。
