@@ -73,3 +73,9 @@ top100 题目总结 2024.7
 [42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P042_TrapRainWalter.java) ★★★★★
 * 头两轮做过。经典hard。
 * 还是不会。先自己写了个o(n^2)写法，发现不对，想简单了。然后参考了别人的双数组思路（没用双指针），主要是思路难想，写不困难。
+
+[3. Longest Substring Without Repeating Characters - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P003_LongestSubstringWithoutRepeatingCharacters.java) ★
+* 20做过。不难。有个小bug。
+
+[238. Move Zeroes - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P283_MoveZeroes.java) ★
+* 16做过。没难度，写的应该比16简洁。
