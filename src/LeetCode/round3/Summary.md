@@ -79,3 +79,9 @@ top100 题目总结 2024.7
 
 [238. Move Zeroes - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P283_MoveZeroes.java) ★
 * 16做过。没难度，写的应该比16简洁。
+
+[31. Next Permutation - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P031_NextPermutation.java) ★★★★
+* 第一次做。主要是搞明白数字交换规则的思路花了很多时间，错了2-3轮。有个思路，跑一堆case后发现有fail，就得又重新整理思路，直到找到正确思路。
+
+[75. Sort Colors - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P031_NextPermutation.java) ★★
+* 第一次做。不难，但是写的时候也不能bug free，调试着写的。
