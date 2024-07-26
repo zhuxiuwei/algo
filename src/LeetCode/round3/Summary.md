@@ -85,3 +85,6 @@ top100 题目总结 2024.7
 
 [75. Sort Colors - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P031_NextPermutation.java) ★★
 * 第一次做。不难，但是写的时候也不能bug free，调试着写的。
+
+[46. Permutations 全排列 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_全排列.java) ★★★
+* 16做过。这次代码写的很ugly，重复太多。backtracking问题需要统一看下。
