@@ -67,7 +67,7 @@ top100 题目总结 2024.7
 * 看以前，16年做的最顺，20年也错了一次但是思路没那么离谱， 这次第一轮做错思路就错的离谱。
 
 [11. 盛最多水的容器 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P011_ContainerWithMostWater.java) ★★★★
-* 20做过。和另一个题目 42.接雨水 https://leetcode.com/problems/trapping-rain-water/ 不一样。
+* 20做过。和另一个题目 [42.接雨水](https://leetcode.com/problems/trapping-rain-water/) 不一样。
 * 双指针问题，一开始O(n^2)的暴力法会超时，然后自己想了个思路不对（20年一样），最后还是抄的标准答案思路。 
 
 [42. 接雨水 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P042_TrapRainWalter.java) ★★★★★
@@ -87,6 +87,6 @@ top100 题目总结 2024.7
 * 第一次做。不难，但是写的时候也不能bug free，调试着写的。
 
 [46. Permutations 全排列 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_全排列.java) ★★★
-* 16做过。这次代码**写的很ugly，重复太多**。 
-* 第二天重构了下，好了很多，但是**表示还不够熟**。
+* 16做过。这次代码[写的很ugly，重复太多](https://github.com/zhuxiuwei/algo/commit/ac6ca48a68a48fff5ea6cb982f6ec3da711e4202)。 
+* 第二天[重构了下](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_%E5%85%A8%E6%8E%92%E5%88%97.java)，好了很多，但是**表示还不够熟**。
 * TODO: backtracking问题需要统一看下。
