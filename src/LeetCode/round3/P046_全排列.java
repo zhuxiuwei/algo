@@ -25,6 +25,10 @@ public class P046_全排列 {
 
     /**
      * AC: 5ms 9%, mem 15.8%
+     * 思路：
+     * 对于一个数组 a b c... z的解，设为p(a,b,c,...,z)
+     * 则 p(a,b,c,...,z) =List(a, p(b,c,...,z))
+     * 其中，p的解需要递归求解，当p的参数只有两个元素 a、b时，可以退出递归，其解为List(List(a,b), List(b, a))。
      * @param nums
      * @return
      */
