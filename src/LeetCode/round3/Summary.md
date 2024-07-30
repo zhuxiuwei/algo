@@ -90,3 +90,10 @@ top100 题目总结 2024.7
 * 16做过。这次代码[写的很ugly，重复太多](https://github.com/zhuxiuwei/algo/commit/ac6ca48a68a48fff5ea6cb982f6ec3da711e4202)。 
 * 第二天[重构了下](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_%E5%85%A8%E6%8E%92%E5%88%97.java)，好了很多，但是**表示还不够熟**。
 * TODO: backtracking问题需要统一看下。
+
+[189. Rotate Array数组移动k位 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P189_RotateArray.java) ★★
+* 第一次做。 符合了题目要求的最优解，但是解决「避免移动顺序形成环，导致死循环」问题花了一些时间，导致写代码时间较长。另外涉及到求是否存在公约数算法感觉实现的效率较低。
+
+[118. Pascal's Triangle - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P118_PascalTriangle.java) ★
+* 第一次做。简单，有一个小bug。
+
