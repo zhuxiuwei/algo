@@ -97,5 +97,5 @@ top100 题目总结 2024.7
 [118. Pascal's Triangle - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P118_PascalTriangle.java) ★
 * 第一次做。简单，有一个小bug。
 
-[118. Pascal's Triangle - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P118_PascalTriangle.java) ★★★
+[79. Word Search矩阵中单词搜索 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P079_WordSearch.java) ★★★
 * 典型回溯问题。20做过，上次没写完代码。这次思路不难，但是在判断一个节点是否被访问过的过程，不断出错需要debug才能写出来【看代码，大致三处错误】，最后写代码耗时很长。
