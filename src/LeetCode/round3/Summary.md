@@ -99,3 +99,6 @@ top100 题目总结 2024.7
 
 [79. Word Search矩阵中单词搜索 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P079_WordSearch.java) ★★★
 * 典型回溯问题。20做过，上次没写完代码。这次思路不难，但是在判断一个节点是否被访问过的过程，不断出错需要debug才能写出来【看代码，大致三处错误】，最后写代码耗时很长。
+
+[739. Daily Temperatures - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P739_DailyTemperatures.java) ★★★★
+* 第一次做。只想到了暴力O(n^2)法，用栈的方法没想出来，看了下别人思路。
