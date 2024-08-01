@@ -42,8 +42,7 @@ public class P226_InvertBinaryTree {
     public TreeNode invertTree(TreeNode root) {
         if(root != null) {
             TreeNode tmp = root.left;
-            TreeNode right = root.right;
-            root.left = right;
+            root.left = root.right;
             root.right = tmp;
 
             if (root.left != null) {
