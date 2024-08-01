@@ -102,3 +102,6 @@ top100 题目总结 2024.7
 
 [739. Daily Temperatures - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P739_DailyTemperatures.java) ★★★★
 * 第一次做。只想到了暴力O(n^2)法，用栈的方法没想出来，看了下别人思路。
+
+[45. Jump Game II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P045_JumpGameII.java) ★★★
+* 第一次做。一开始按照和Jump Game 1一样的思路，思路是错的。后来想出了新思路，写的时候有点小Bug。
