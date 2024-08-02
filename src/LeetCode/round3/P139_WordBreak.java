@@ -37,7 +37,7 @@ public class P139_WordBreak {
 
     /**
      * DP，自顶向下带备忘录法。
-     * AC: 29ms Beats 5.26%, mem 44.76MB Beats 15.94%
+     * AC: 28ms Beats 5.26%, mem 44.76MB Beats 15.94%
      * 思路还行，写的时候问题有点多。
      * 一个是helper里的循环条件容易出错
      * 二是第一次写的时候，根本没有正确使用cache，导致大case超时。
@@ -73,10 +73,9 @@ public class P139_WordBreak {
                 if (leftOk && rightOk) {
                     cache[start][end] = true;
                     return true;
-                } else {
-                    cache[start][end] = false;
                 }
             }
+            cache[start][end] = false;
         }
         // 返回cache结果
         return cache[start][end];
