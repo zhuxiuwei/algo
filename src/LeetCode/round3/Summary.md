@@ -108,3 +108,9 @@ top100 题目总结 2024.7
 
 [45. Jump Game II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P045_JumpGameII.java) ★★★
 * 第一次做。一开始按照和Jump Game 1一样的思路，思路是错的。后来想出了新思路，写的时候有点小Bug。
+
+[101. Symmetric Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P101_SymmetricTree.java) ★★
+* 20做过。 有递归、迭代2种写法。
+* 迭代写法，比20顺利，debug时发现一个bug。
+* 递归写法，一开始也和20一样是个蠢思路。看20笔记，发现思路不对后，重新考虑思路，相对顺利，提交时发现一个bug。
+
