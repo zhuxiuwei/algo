@@ -114,3 +114,9 @@ top100 题目总结 2024.7
 * 迭代写法，比20顺利，debug时发现一个bug。
 * 递归写法，一开始也和20一样是个蠢思路。看20笔记，发现思路不对后，重新考虑思路，相对顺利，提交时发现一个bug。
 
+[139. Word Break - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P139_WordBreak.java) ★★★
+* 第一次做。 DP，自顶向下带备忘录法。
+* 思路还行，但是写的时候问题挺多的。
+* 一个是helper里的循环条件容易出错
+* 二是第一次写的时候，根本没有正确使用cache，实际在不停重复计算同样的子空间，导致大test case超时。
+* **一个教训：** 注意cache只初始化明确true的部分。不明确的部分不要默认给false，而是保持默认为null。否则后续用cache时，不知道false结果是否可信(是初始值，还是计算结果？)。从而不停重复计算，没用上cache。
