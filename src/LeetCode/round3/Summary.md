@@ -87,7 +87,8 @@ top100 题目总结 2024.7
 * 第一次做。不难，但是写的时候也不能bug free，调试着写的。
 
 [46. Permutations 全排列 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_全排列.java) ★★★
-* 16做过。这次代码[写的很ugly，重复太多](https://github.com/zhuxiuwei/algo/commit/ac6ca48a68a48fff5ea6cb982f6ec3da711e4202)。 
+* 16做过。
+* 第一次代码[写的很ugly，重复太多](https://github.com/zhuxiuwei/algo/commit/ac6ca48a68a48fff5ea6cb982f6ec3da711e4202)。 
 * 第二天[重构了下](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P046_%E5%85%A8%E6%8E%92%E5%88%97.java)，好了很多，但是**表示还不够熟**。
 * TODO: backtracking问题需要统一看下。
 
