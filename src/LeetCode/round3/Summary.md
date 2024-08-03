@@ -120,3 +120,9 @@ top100 题目总结 2024.7
 * 一个是helper里的循环条件容易出错
 * 二是第一次写的时候，根本没有正确使用cache，实际在不停重复计算同样的子空间，导致大test case超时。
 * **一个教训：** 注意cache只初始化明确true的部分。不明确的部分不要默认给false，而是保持默认为null。否则后续用cache时，不知道false结果是否可信(是初始值，还是计算结果？)。从而不停重复计算，没用上cache。
+
+[543. Diameter of Binary Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P543_DiameterOfBinaryTree.java) ★
+* 第一次做，基本顺利，但是提交不是bug free。
+
+[994. Rotting Oranges - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P994_RottingOranges.java) ★★
+* 第一次做。图遍历问题，总体顺利，有个边界值小问题。
