@@ -127,3 +127,10 @@ top100 题目总结 2024.7
 
 [994. Rotting Oranges - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P994_RottingOranges.java) ★★
 * 第一次做。图遍历问题，总体顺利，有个边界值小问题。
+
+[236. Lowest Common Ancestor of a Binary Tree二叉树最近公共祖先 - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P236_LowestCommonAncestorOfBinaryTree.java) ★★
+* 20做过。这次用的BFS层次遍历，代码较长，运行效率也不高，但是写起来比较顺利。
+* 20年的DFS写法简洁很多。
+
+[160. Intersection of Two Linked Lists相交链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P160_IntersectionOfTwoLinkedLists.java) ★
+* 20做过。没啥难度顺利。
