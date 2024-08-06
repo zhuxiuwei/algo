@@ -136,4 +136,5 @@ top100 题目总结 2024.7
 * 20做过。没啥难度顺利。
 
 [74. Search a 2D Matrix - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P074_Search2DMatrix.java) ★
-* 没做过
+* 没做过。二分查找变形。思路和代码顺利，有一个小Bug。
+
