@@ -138,3 +138,6 @@ top100 题目总结 2024.7
 [74. Search a 2D Matrix - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P074_Search2DMatrix.java) ★
 * 没做过。二分查找变形。思路和代码顺利，有一个小Bug。
 
+[136. Single Number - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P136_SingleNumber.java) ★
+* 16做过。看到了16年的实现思路，就没难度了。关键是思路。
+
