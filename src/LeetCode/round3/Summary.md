@@ -134,3 +134,6 @@ top100 题目总结 2024.7
 
 [160. Intersection of Two Linked Lists相交链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P160_IntersectionOfTwoLinkedLists.java) ★
 * 20做过。没啥难度顺利。
+
+[74. Search a 2D Matrix - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P074_Search2DMatrix.java) ★
+* 没做过
