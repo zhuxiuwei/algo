@@ -141,3 +141,5 @@ top100 题目总结 2024.7
 [136. Single Number - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P136_SingleNumber.java) ★
 * 16做过。看到了16年的实现思路，就没难度了。关键是思路。
 
+[148. Sort List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P148_SortList.java) ★
+* 没做过。
