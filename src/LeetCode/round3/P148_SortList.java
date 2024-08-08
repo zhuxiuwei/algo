@@ -69,9 +69,11 @@ public class P148_SortList {
                 }
             }
             if(!out) {
+                //进行merge sort
                 ListNode[] sortedNodes = mergeSortList(left, right, nextHead);
-                ListNode sortedNodesHead = sortedNodes[0];
-                ListNode sortedNodesTail = sortedNodes[1];
+
+                ListNode sortedNodesHead = sortedNodes[0];  //sort后，区间里的head
+                ListNode sortedNodesTail = sortedNodes[1];  //sort后，区间里的tail
                 if (lastTail != null) {
                     lastTail.next = sortedNodesHead;
                 } else {  //第一组
