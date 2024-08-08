@@ -141,5 +141,6 @@ top100 题目总结 2024.7
 [136. Single Number - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P136_SingleNumber.java) ★
 * 16做过。看到了16年的实现思路，就没难度了。关键是思路。
 
-[148. Sort List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P148_SortList.java) ★
-* 没做过。
+[148. Sort List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P148_SortList.java) ★★★★★
+* 没做过。先熟悉了经典的基于数组的merge sort。
+* ！！！ 思路倒是不是很难，但写起来费老鼻子劲了。完全一步步debug写的。写代码花了很长时间(大半天)，而且代码很长。
