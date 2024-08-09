@@ -1,4 +1,4 @@
-package study.threadPool.Executor与线程池如何创建正确的线程池;
+package study.threadPool;
 
 import java.util.ArrayList;
 import java.util.List;
