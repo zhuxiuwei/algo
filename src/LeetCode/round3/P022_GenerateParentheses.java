@@ -26,9 +26,15 @@ public class P022_GenerateParentheses {
         List<String> res = new ArrayList<>();
         if(n <= 0)
             return res;
-        Set<String> resSet = new HashSet<>();
-//        generateParenthesis_helper(n, 1, resSet);
-        res.addAll(resSet);
+        List<List<int[]>> pairsList = new ArrayList<>();
+        int rightCount = 0, rightTotal = 0, leftTotal = 0;
+        for (int leftCount = n; leftCount > 0 ; leftCount--) {
+            List<int[]> pairs = new ArrayList<>();
+//            while (Ll)
+            for (rightCount = 1; rightCount <= leftCount; rightCount++) {
+
+            }
+        }
         return res;
     }
 
