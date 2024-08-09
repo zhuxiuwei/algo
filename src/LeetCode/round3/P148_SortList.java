@@ -51,47 +51,47 @@ public class P148_SortList {
 
         ListNode lastTail = null, left = head, right = head, nextHead = head, res = head;
         while (true){
-            boolean out = false;
+            boolean reachEnd = false;   //是否已经处理到链表尾
             //right找到合适位置
             for (int i = 0; i < range / 2; i++) {
                 if(right != null) {
                     right = right.next;
                 }else {
-                    out = true;
+                    reachEnd = true;
                 }
             }
-            //nextHead找到合适位置
+            //nextHead找到合适位置（也就是当前处理组到下一组的边界）
             for (int i = 0; i < range; i++) {
                 if(nextHead != null) {
                     nextHead = nextHead.next;
                 }else {
-                    out = true;
+                    reachEnd = true;
                 }
             }
-            if(!out) {
+            if(!reachEnd) {
                 //进行merge sort
                 ListNode[] sortedNodes = mergeSortList(left, right, nextHead);
 
                 ListNode sortedNodesHead = sortedNodes[0];  //sort后，区间里的head
                 ListNode sortedNodesTail = sortedNodes[1];  //sort后，区间里的tail
                 if (lastTail != null) {
-                    lastTail.next = sortedNodesHead;
-                } else {  //第一组
+                    lastTail.next = sortedNodesHead;    //让上一个区间的尾巴，指向当前区间的头
+                } else {  //对于第一组，要把res(也就是head)指向第一组的头
                     if (res.val > sortedNodesHead.val)
                         res = sortedNodesHead;
                 }
-                lastTail = sortedNodesTail;
+                lastTail = sortedNodesTail;     //重新设置新的lastTail为当前组的tail，供下一组使用
                 left = lastTail.next;
                 right = lastTail.next;
                 nextHead = lastTail.next;
-            }else {   //开始下一轮
+            }else {   //本轮处理完成，开始下一轮
                 range *= 2;
                 lastTail = null;
                 left = res;
                 right = res;
                 nextHead = res;
             }
-            if(range >= length * 2) {
+            if(range >= length * 2) {   //全部轮次完成，整个链表已经有序
                 break;
             }
         }
@@ -103,16 +103,17 @@ public class P148_SortList {
     /**
      * @param left  左边部分开始节点
      * @param right 右边部分开始节点
-     * @param nextHeader 下一个区间的头
+     * @param rightBorder 下一个区间的头
      * @return
      */
-    private ListNode[] mergeSortList(ListNode left, ListNode right, ListNode nextHeader){
-        ListNode rightBorder = right;
+    private ListNode[] mergeSortList(ListNode left, ListNode right, ListNode rightBorder){
+        ListNode leftBorder = right;
         ListNode smallestNode = left.val <= right.val ? left: right;
         ListNode largestNode = null;
-        while (left != rightBorder && right != nextHeader){
+        //！！！下面还是挺容易出错的。左右两部分比大小，同时调整指针。
+        while (left != leftBorder && right != rightBorder){
             if(left.val <= right.val){
-                if(left.next != rightBorder && left.next.val <= right.val) {
+                if(left.next != leftBorder && left.next.val <= right.val) {
                     left = left.next;
                 }else {
                     ListNode nextLeft = left.next;
@@ -120,7 +121,7 @@ public class P148_SortList {
                     left = nextLeft;
                 }
             }else {
-                if(right.next != nextHeader && right.next.val < left.val) {
+                if(right.next != rightBorder && right.next.val < left.val) { //注意右边<不包含=。非常容易出错的细节。
                     right = right.next;
                 }else {
                     ListNode nextRight = right.next;
@@ -129,15 +130,16 @@ public class P148_SortList {
                 }
             }
         }
-        while(left != rightBorder){
+        //处理完长的剩余的list。主要是为了找到largestNode。（largestNode一定是更长的list里的最后一个）
+        while(left != leftBorder){
             largestNode = left;
             left = left.next;
         }
-        while(right != nextHeader){
+        while(right != rightBorder){
             largestNode = right;
             right = right.next;
         }
-        largestNode.next = nextHeader;
+        largestNode.next = rightBorder;
         ListNode[] res =new ListNode[2];
         res[0] = smallestNode;
         res[1] = largestNode;
