@@ -7,8 +7,14 @@
 线程池的需求是如此普遍，所以Java SDK并发包自然也少不了它。但是很多人在初次接触并发包里线程池相关的工具类时，多少会都有点蒙，不知道该从哪里入手，我觉得根本原因在于线程池和一般意义上的池化资源是不同的。一般意义上的池化资源，都是下面这样，当你需要资源的时候就调用acquire()方法来申请资源，用完之后就调用release()释放资源。若你带着这个固有模型来看并发包里线程池相关的工具类时，会很遗憾地发现它们完全匹配不上，Java提供的线程池里面压根就没有申请线程和释放线程的方法。
 
 ```
-class XXXPool{  // 获取池化资源  XXX acquire() {  }  // 释放池化资源  void release(XXX x){  }}  
-
+class XXXPool{
+  // 获取池化资源
+  XXX acquire() {
+  }
+  // 释放池化资源
+  void release(XXX x){
+  }
+} 
 ```
 
 ## 线程池是一种生产者-消费者模式
@@ -16,16 +22,29 @@ class XXXPool{  // 获取池化资源  XXX acquire() {  }  // 释放池化资源
 为什么线程池没有采用一般意义上池化资源的设计方法呢？如果线程池采用一般意义上池化资源的设计方法，应该是下面示例代码这样。你可以来思考一下，假设我们获取到一个空闲线程T1，然后该如何使用T1呢？你期望的可能是这样：通过调用T1的execute()方法，传入一个Runnable对象来执行具体业务逻辑，就像通过构造函数Thread(Runnable target)创建线程一样。可惜的是，你翻遍Thread对象的所有方法，都不存在类似execute(Runnable target)这样的公共方法。
 
 ```
-//采用一般意义上池化资源的设计方法class ThreadPool{  // 获取空闲线程  Thread acquire() {  }  // 释放线程  void release(Thread t){  }} //期望的使用ThreadPool pool；Thread T1=pool.acquire();//传入Runnable对象T1.execute(()->{  //具体业务逻辑  ......});
-
+//采用一般意义上池化资源的设计方法
+class ThreadPool{
+  // 获取空闲线程
+  Thread acquire() {
+  }
+  // 释放线程
+  void release(Thread t){
+  }
+} 
+//期望的使用
+ThreadPool pool；
+Thread T1=pool.acquire();
+//传入Runnable对象
+T1.execute(()->{
+  //具体业务逻辑
+  ......
+});
 ```
 
 所以，线程池的设计，没有办法直接采用一般意义上池化资源的设计方法。那线程池该如何设计呢？目前业界线程池的设计，普遍采用的都是**生产者-消费者模式**。线程池的使用方是生产者，线程池本身是消费者。在下面的示例代码中，我们创建了一个非常简单的线程池MyThreadPool，你可以通过它来理解线程池的工作原理。
 
-```
 //简化的线程池，仅用来说明工作原理
-[MyThreadPool](https://github.com/zhuxiuwei/algo/blob/master/src/study/round3/P189_RotateArray.java) ★★
-```
+[MyThreadPool](https://github.com/zhuxiuwei/algo/blob/master/src/study/threadPool/Executor%E4%B8%8E%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E6%AD%A3%E7%A1%AE%E7%9A%84%E7%BA%BF%E7%A8%8B%E6%B1%A0/MyThreadPool.java) 
 
 在MyThreadPool的内部，我们维护了一个阻塞队列workQueue和一组工作线程，工作线程的个数由构造函数中的poolSize来指定。用户通过调用execute()方法来提交Runnable任务，execute()方法的内部实现仅仅是将任务加入到workQueue中。MyThreadPool内部维护的工作线程会消费workQueue中的任务并执行任务，相关的代码就是代码①处的while循环。线程池主要的工作原理就这些，是不是还挺简单的？
 
@@ -36,8 +55,14 @@ Java并发包里提供的线程池，远比我们上面的示例代码强大得�
 ThreadPoolExecutor的构造函数非常复杂，如下面代码所示，这个最完备的构造函数有7个参数。
 
 ```
-ThreadPoolExecutor(  int corePoolSize,  int maximumPoolSize,  long keepAliveTime,  TimeUnit unit,  BlockingQueue workQueue,  ThreadFactory threadFactory,  RejectedExecutionHandler handler) 
-
+ThreadPoolExecutor(
+  int corePoolSize,
+  int maximumPoolSize,
+  long keepAliveTime,
+  TimeUnit unit,
+  BlockingQueue workQueue,
+  ThreadFactory threadFactory,
+  RejectedExecutionHandler handler) 
 ```
 
 下面我们一一介绍这些参数的意义，你可以**把线程池类比为一个项目组，而线程就是项目组的成员**。
@@ -66,8 +91,13 @@ Java在1.6版本还增加了 allowCoreThreadTimeOut(boolean value) 方法，它�
 使用线程池，还要注意异常处理的问题，例如通过ThreadPoolExecutor对象的execute()方法提交任务时，如果任务在执行的过程中出现运行时异常，会导致执行任务的线程终止；不过，最致命的是任务虽然异常了，但是你却获取不到任何通知，这会让你误以为任务都执行得很正常。虽然线程池提供了很多用于异常处理的方法，但是最稳妥和简单的方案还是捕获所有异常并按需处理，你可以参考下面的示例代码。
 
 ```
-try {  //业务逻辑} catch (RuntimeException x) {  //按需处理} catch (Throwable x) {  //按需处理} 
-
+try {
+  //业务逻辑
+} catch (RuntimeException x) {
+  //按需处理
+} catch (Throwable x) {
+  //按需处理
+} 
 ```
 
 ## 总结
