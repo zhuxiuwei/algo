@@ -43,8 +43,9 @@ public class NQueens {
 								System.out.println("");
 						}
 					}
-				}else
+				}else {
 					printSolution_helper(res, row + 1);
+				}
 			}
 		}
 	}

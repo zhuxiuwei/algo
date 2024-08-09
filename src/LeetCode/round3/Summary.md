@@ -144,3 +144,6 @@ top100 题目总结 2024.7
 [148. Sort List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P148_SortList.java) ★★★★★
 * 没做过。先熟悉了经典的基于数组的merge sort。
 * ！！！ 思路倒是不是很难，但写起来费老鼻子劲了。完全一步步debug写的。写代码花了很长时间(大半天)，而且代码很长。
+
+[51. N皇后问题 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P051_NQueens.java) ★★★
+* 以前写过，参考了以前的代码。自己从头写估计还是费劲。
