@@ -147,3 +147,6 @@ top100 题目总结 2024.7
 
 [51. N皇后问题 - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P051_NQueens.java) ★★★
 * 以前写过，参考了以前的代码。自己从头写估计还是费劲。
+
+[234. Palindrome Linked List - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P234_PalindromeLinkedList.java) ★
+* 以前没做过。顺利，思路也不算难。
