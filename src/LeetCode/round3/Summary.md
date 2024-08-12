@@ -151,7 +151,7 @@ top100 题目总结 2024.7
 [234. Palindrome Linked List - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P234_PalindromeLinkedList.java) ★
 * 以前没做过。顺利，思路也不算难。
 
-[102. Binary Tree Level Order Traversal - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P148_SortList.java) ★
+[102. Binary Tree Level Order Traversal - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P102_BinaryTreeLevelOrderTraversal.java) ★
 * 16做过。这次总体顺利，一个小Bug。
 
 [64. Minimum Path Sum - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P064_MinimumPathSum.java) ★
