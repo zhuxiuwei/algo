@@ -156,3 +156,6 @@ top100 题目总结 2024.7
 
 [64. Minimum Path Sum - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P064_MinimumPathSum.java) ★
 * 没做过。顺利，一次过。
+
+[763. Partition Labels - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P763_PartitionLabels.java) ★★
+* 没做过。还算顺利，有些bug需要debug发现。
