@@ -77,7 +77,7 @@ top100 题目总结 2024.7
 [3. Longest Substring Without Repeating Characters - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P003_LongestSubstringWithoutRepeatingCharacters.java) ★
 * 20做过。不难。有个小bug。
 
-[238. Move Zeroes - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P283_MoveZeroes.java) ★
+[283. Move Zeroes - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P283_MoveZeroes.java) ★
 * 16做过。没难度，写的应该比16简洁。
 
 [31. Next Permutation - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P031_NextPermutation.java) ★★★★
@@ -160,5 +160,8 @@ top100 题目总结 2024.7
 [763. Partition Labels - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P763_PartitionLabels.java) ★★
 * 没做过。还算顺利，有些bug需要debug发现。
 
-[146. LRU Cache - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/I240812_ebay_LRU.java) ★★
+[146. LRU Cache - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/I240812_ebay_LRU.java) ★
 * 用了一个取巧的数据结构，比之前写的精简。有个小bug。ebay面了。
+
+[238. Product of Array Except Self - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/P238_ProductOfArrayExceptSelf.java) ★★★★
+* 16做过。自己依然想不出来最佳思路，看的16年笔记。有了思路，写起来倒是不难。
