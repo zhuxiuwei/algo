@@ -163,5 +163,11 @@ top100 题目总结 2024.7
 [146. LRU Cache - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/I240812_ebay_LRU.java) ★
 * 用了一个取巧的数据结构，比之前写的精简。有个小bug。ebay面了。
 
-[238. Product of Array Except Self - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/P238_ProductOfArrayExceptSelf.java) ★★★★
+[238. Product of Array Except Self - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P238_ProductOfArrayExceptSelf.java) ★★★★
 * 16做过。自己依然想不出来最佳思路，看的16年笔记。有了思路，写起来倒是不难。
+
+[141. 环形链表 - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P141_环形链表.java) ★
+* 20做过。不难，但还是有个小bug。
+
+[142. 环形链表II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★★★★
+* 第一次做。看了[参考方案](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly/?envType=study-plan-v2&envId=top-100-liked)，自己想不出来。主要是思路，写不难。
