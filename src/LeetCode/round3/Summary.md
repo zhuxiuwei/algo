@@ -159,3 +159,6 @@ top100 题目总结 2024.7
 
 [763. Partition Labels - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P763_PartitionLabels.java) ★★
 * 没做过。还算顺利，有些bug需要debug发现。
+
+[146. LRU Cache - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/I240812_ebay_LRU.java) ★★
+* 用了一个取巧的数据结构，比之前写的精简。有个小bug。ebay面了。
