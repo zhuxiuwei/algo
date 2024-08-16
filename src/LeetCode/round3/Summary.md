@@ -171,3 +171,6 @@ top100 题目总结 2024.7
 
 [142. 环形链表II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★★★★
 * 第一次做。看了[参考方案](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly/?envType=study-plan-v2&envId=top-100-liked)，自己想不出来。主要是思路，写不难。
+
+[322. Coin Change - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★
+* 20做过
