@@ -177,7 +177,7 @@ top100 题目总结 2024.7
 * 动态规划：When we have many ways to do something and find minimum(or maximum) number of something, there is possibility that the question is solved by Dynamic Programming.
 * 暂时放弃了。
 
-[104. Maximum Depth of Binary Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★
+[104. Maximum Depth of Binary Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P104_Maximum_DepthOfBinaryTree.java) ★
 * 16做过。 和16一样一次过。
 
 [128. Longest Consecutive Sequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P128_LongestConsecutiveSequence.java) ★★★★
