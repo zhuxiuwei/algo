@@ -183,3 +183,5 @@ top100 题目总结 2024.7
 [128. Longest Consecutive Sequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P128_LongestConsecutiveSequence.java) ★★★★
 * 第一次做。自己想不出来思路，参考的别人方案。有了方案写不难。
 
+[114. Flatten Binary Tree to Linked List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P114_FlattenBinaryTreeToLinkedList.java) ★
+* 第一次做。平铺直叙的写法，空间复杂度O(n)，没有达到最佳O(1)的要求。写起来没啥问题。
