@@ -172,7 +172,14 @@ top100 题目总结 2024.7
 [142. 环形链表II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★★★★
 * 第一次做。看了[参考方案](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly/?envType=study-plan-v2&envId=top-100-liked)，自己想不出来。主要是思路，写不难。
 
-[322. Coin Change - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★
+[322. Coin Change - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★★★★★
 * 20年做过没做完。第一次用的backtracking思路不对，和20年的错误结果一样。 
-* When we have many ways to do something and find minimum(or maximum) number of something, there is possibility that the question is solved by Dynamic Programming.
+* 动态规划：When we have many ways to do something and find minimum(or maximum) number of something, there is possibility that the question is solved by Dynamic Programming.
 * 暂时放弃了。
+
+[104. Maximum Depth of Binary Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P142_环形链表II.java) ★
+* 16做过。 和16一样一次过。
+
+[128. Longest Consecutive Sequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P128_LongestConsecutiveSequence.java) ★★★★
+* 第一次做。自己想不出来思路，参考的别人方案。有了方案写不难。
+
