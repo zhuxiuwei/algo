@@ -185,3 +185,12 @@ top100 题目总结 2024.7
 
 [114. Flatten Binary Tree to Linked List - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P114_FlattenBinaryTreeToLinkedList.java) ★
 * 第一次做。平铺直叙的写法，空间复杂度O(n)，没有达到最佳O(1)的要求。写起来没啥问题。
+
+[438. Find All Anagrams in a String - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P438_FindAllAnagramsInAString.java) ★★
+* 17做过，那次运行超时，看的别人思路。这次第一次也是超时，但是想出来了一个改进优化，AC成功。
+
+[230. Kth Smallest Element in a BST - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P230_KthSmallestElementInABST.java) ★
+* 17做过，这次比较顺利。
+
+[73. Set Matrix Zeroes - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P073_SetMatrixZeroes.java) ★
+* 非最优解法写起来还顺利，AC结果也还行。最优解法没想。
