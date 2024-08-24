@@ -29,8 +29,8 @@ public class P070_ClimbingStairs {
 	/**
 	 * Recursive. Timeout.
 	 * 递归式：f(n)=f(n-1)+f(n-2)
-	 * @param n
-	 * @return
+	 *
+	 * 240824: 解决递归timeout的办法，就是自顶向下带备忘录的DP思路。加上备忘录cache就好了。
 	 */
 	public int climbStairs_timeout(int n) {
 		if(n <= 0)

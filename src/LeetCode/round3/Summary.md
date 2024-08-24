@@ -194,3 +194,8 @@ top100 题目总结 2024.7
 
 [73. Set Matrix Zeroes - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P073_SetMatrixZeroes.java) ★
 * 非最优解法写起来还顺利，AC结果也还行。最优解法没想。
+
+[70. Climbing Stairs - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P070_ClimbingStairs.java) ★★★
+* 16、20 做过。虽然Easy，这次还是不顺利。主要是DP的推导公式要想对了。我想的推导公式复杂了，导致用了自顶向下带备忘录模式，依旧会超时。
+* 有了正确的DP公式后，自顶向下带备忘录、自底向上的dp，都挺好写的。
+* 多说一句：17年[freewheel考的题目](https://github.com/zhuxiuwei/algo/blob/master/src/study/interview/I170303_FW_ClimbStairsWithDetailStepsInfo.java)，本质和这个相同，但是难点是需要给出具体解法（走法），而不是只给出解法数量就行（走法数量）。

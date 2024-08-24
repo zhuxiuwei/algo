@@ -12,7 +12,7 @@ import java.util.List;
  * 240824： 这个比LeetCode-79-climbStairs难在需要给出具体解法（走法），而不是只给出解法数量就行（走法数量）
  */
 
-public class I170303_FW_OneTwoSteps {
+public class I170303_FW_ClimbStairsWithDetailStepsInfo {
 
 	/**
 	 * 给出N个台阶，每次只能走1或者2步，列出全部走法。
@@ -43,7 +43,7 @@ public class I170303_FW_OneTwoSteps {
 	}
 	
 	public static void main(String[] args) {
-		I170303_FW_OneTwoSteps i = new I170303_FW_OneTwoSteps();
+		I170303_FW_ClimbStairsWithDetailStepsInfo i = new I170303_FW_ClimbStairsWithDetailStepsInfo();
 		System.out.println(i.step(4));
 	}
 

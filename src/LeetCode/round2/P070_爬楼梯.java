@@ -41,6 +41,8 @@ public class P070_爬楼梯 {
 
     /**
      * 递归超时。
+     *
+     * 240824: 解决递归timeout的办法，就是自顶向下带备忘录的DP思路。加上备忘录cache就好了。
      */
     public int climbStairs_recursive(int n) {
         if(n == 1)
