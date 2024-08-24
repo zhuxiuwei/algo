@@ -8,6 +8,8 @@ import java.util.List;
  * 1. 给你N个台阶，每次只能走1或者2步，给出全部可能的走法。
  * 2. 用栈再实现一遍。（没做）
  * @author Zhu Xiuwei
+ *
+ * 240824： 这个比LeetCode-79-climbStairs难在需要给出具体解法（走法），而不是只给出解法数量就行（走法数量）
  */
 
 public class I170303_FW_OneTwoSteps {
