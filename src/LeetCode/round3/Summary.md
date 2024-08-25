@@ -200,7 +200,7 @@ top100 题目总结 2024.7
 * 有了正确的DP公式后，自顶向下带备忘录、自底向上的dp，都挺好写的。
 * 多说一句：17年[freewheel考的题目](https://githu560b.com/zhuxiuwei/algo/blob/master/src/study/interview/I170303_FW_ClimbStairsWithDetailStepsInfo.java)，本质和这个相同，但是难点是需要给出具体解法（走法），而不是只给出解法数量就行（走法数量）。
 
-[560. SubArray Sum Equals K - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P560_SubArraySumEqualsK.java) ★
+[560. SubArray Sum Equals K - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P560_SubArraySumEqualsK.java) ★★★★
 * 第一次做。第一次思路错了。
-* 第二次写了暴力解法，倒是可以AC了。但是肯定可以更优。
-* TODO: 非暴力解法
+* 第二次写了暴力解法O(n^2)，倒是可以AC了。但是肯定可以更优。
+* 非暴力O(n)解法，自己想不到，参考了别人思路。写起来也不是绝对好写。
