@@ -204,3 +204,9 @@ top100 题目总结 2024.7
 * 第一次做。第一次思路错了。
 * 第二次写了暴力解法O(n^2)，倒是可以AC了。但是肯定可以更优。
 * 非暴力O(n)解法，自己想不到，参考了别人思路。写起来也不是绝对好写。
+
+[35. Search Insert Position - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P560_SubArraySumEqualsK.java) ★
+* 16做过。没难度。
+
+[108. Convert Sorted Array to Binary Search Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P560_SubArraySumEqualsK.java) ★
+* 16做过。没难度。但是写的比16的啰嗦。

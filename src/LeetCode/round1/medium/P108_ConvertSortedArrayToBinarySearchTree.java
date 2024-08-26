@@ -16,8 +16,6 @@ public class P108_ConvertSortedArrayToBinarySearchTree {
 	public TreeNode sortedArrayToBST(int[] nums) {
 		if(nums == null || nums.length == 0)
 			return null;
-		if(nums == null || nums.length == 0)
-			return null;
 		return helper(nums, 0, nums.length - 1);
     }
 	public TreeNode helper(int[] nums, int start, int end) {
