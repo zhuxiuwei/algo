@@ -210,3 +210,6 @@ top100 题目总结 2024.7
 
 [108. Convert Sorted Array to Binary Search Tree - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P108_ConvertSortedArrayToBinarySearchTree.java) ★
 * 16做过。没难度。但是写的比16的啰嗦。
+
+[152. Maximum Product Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P108_ConvertSortedArrayToBinarySearchTree.java) ★★
+* 第一次做。思路还行。写起来稍微麻烦，比较爱出错，过程有三个小错误。
