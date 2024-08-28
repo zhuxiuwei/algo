@@ -32,7 +32,6 @@ public class P152_MaximumProductSubarray {
      *      如果有1个负数，分别计算左右两边的乘积，取最大的（包括这个负数本身）
      *      如果是偶数个，就全部乘起来就好（都是整数，肯定越乘越大）
      *      如果是奇数(>=3)个，就需要看最左、最右两个负数隔离出来的左右两部分区间的乘积，取大的。【俩区间：[start, 倒数第1个负数)、(第一个负数，end]
-     * 4、
      * AC: Runtime 1ms Beats 96.83%, Memory 45.08 MB Beats 21.50%
      * @param nums
      * @return
@@ -81,7 +80,7 @@ public class P152_MaximumProductSubarray {
                 //分别计算左右两边的结果，返回大的
                 int res1 = doGetSubArrayProduct(nums, start, minusIdx.get(0) - 1);
                 int res2 = doGetSubArrayProduct(nums, minusIdx.get(0) + 1, end);
-                return Math.max(nums[minusIdx.get(0)], Math.max(res1, res2)); //唯一的负数也要参与比较。 ！！！注意取值是：nums[minusIdx.get(0)]
+                return Math.max(nums[minusIdx.get(0)], Math.max(res1, res2)); //唯一的负数也要参与比较(主要避免只有一个负数的情况)。 ！！！注意取值是：nums[minusIdx.get(0)]
             }
             if (minusSize % 2 == 0) {
                 //偶数个，那么全部计算乘积即可

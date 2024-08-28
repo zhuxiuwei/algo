@@ -213,3 +213,10 @@ top100 题目总结 2024.7
 
 [152. Maximum Product Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P108_ConvertSortedArrayToBinarySearchTree.java) ★★
 * 第一次做。思路还行。写起来稍微麻烦，比较爱出错，过程有三个小错误。
+
+[207. Course Schedule - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P207_CourseSchedule.java) ★
+* 17做过
+
+[105. Construct Binary Tree from Preorder and Inorder Traversal - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P105_ConstructBinaryTreeFomPreorderAndInorderTraversal.java) ★★
+* 第一次做。根据先根顺序、中根顺序构建二叉树。 总体还算顺利。
+     
