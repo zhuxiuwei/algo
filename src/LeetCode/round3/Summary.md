@@ -219,4 +219,6 @@ top100 题目总结 2024.7
 
 [105. Construct Binary Tree from Preorder and Inorder Traversal - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P105_ConstructBinaryTreeFomPreorderAndInorderTraversal.java) ★★
 * 第一次做。根据先根顺序、中根顺序构建二叉树。 总体还算顺利。
-     
+
+[347. Top K Frequent Elements - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P347_TopKFrequentElements.java) ★
+* 16做过。顺利。
