@@ -222,3 +222,9 @@ top100 题目总结 2024.7
 
 [347. Top K Frequent Elements - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P347_TopKFrequentElements.java) ★
 * 16做过。顺利。
+
+[131. Palindrome Partitioning - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P347_TopKFrequentElements.java) ★
+* 第一次做。
+
+[437. Path Sum III - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P437_PathSumIII.java) ★★★★★
+* 16做过。递归问题，我的思路还是不对，还是参考16年参考的思路。

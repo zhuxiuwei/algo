@@ -113,7 +113,7 @@ public class P437_PathSumIII {
 		t4.left = t7;
 		t4.right = t8;
 		t5.right = t9;
-		System.out.println(p.pathSum_wrong(t1, 8));	//4
+		System.out.println(p.pathSum(t1, 8));	//4
 		
 		p = new P437_PathSumIII();
 		TreeNode t11 = new TreeNode(0);
@@ -121,10 +121,10 @@ public class P437_PathSumIII {
 		TreeNode t13 = new TreeNode(1);
 		t11.left = t12;
 		t11.right = t13;
-		System.out.println(p.pathSum_wrong(t11, 1));	//4
+		System.out.println(p.pathSum(t11, 1));	//4
 		
 		p = new P437_PathSumIII();
-		System.out.println(p.pathSum_wrong(t11, 0));	//1
+		System.out.println(p.pathSum(t11, 0));	//1
 	}
 
 }
