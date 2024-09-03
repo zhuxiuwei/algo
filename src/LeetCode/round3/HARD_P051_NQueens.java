@@ -30,38 +30,40 @@ public class HARD_P051_NQueens {
      */
     public List<List<String>> solveNQueens(int n) {
         /*
-            用于记录每行皇后的位置。如[1,3,0,2]代表:
+            tempLocations: 用于记录每行皇后的位置。如[1,3,0,2]代表:
             [".Q.."]
             ["...Q"]
             ["Q..."]
             ["..Q."]
          */
-        int[] res = new int[n];
+        int[] tempLocations = new int[n];
         List<List<String>> resList = new ArrayList<>();
-        helper(res, 0, resList);
+        helper(tempLocations, 0, resList);
         return resList;
     }
 
-    private void helper(int[] res, int row, List<List<String>> resList) {
-        for (int column = 0; column < res.length; column++) {   //看当前行的每一列位置可行性
-            if (isLegalLocation(res, row, column)) {
-                res[row] = column;
-                if (row == res.length - 1) {  //已经找到了一个解决方案
-                    //数组结果存储res List
-                    List<String> tmpList = new ArrayList<>();
-                    for (int i = 0; i < res.length; i++) {
+    private void helper(int[] tempLocations, int row, List<List<String>> resList) {
+        for (int column = 0; column < tempLocations.length; column++) {   //看当前行的每一列位置可行性
+            if (isLegalLocation(tempLocations, row, column)) {
+                tempLocations[row] = column;    //！！！感觉tempLocations记录中间结果比较精妙的一点是，当需要回溯时，不需要从tempLocations里移除数据。算法本身逻辑保证了不会出错。
+                if (row == tempLocations.length - 1) {  //已经找到了一个解决方案
+
+                    //将一维数组转化格式，并存入res List
+                    List<String> partialResList = new ArrayList<>();
+                    for (int i = 0; i < tempLocations.length; i++) {
                         StringBuilder sb = new StringBuilder();
-                        for (int j = 0; j < res.length; j++) {
-                            if (res[i] == j)
+                        for (int j = 0; j < tempLocations.length; j++) {
+                            if (tempLocations[i] == j)
                                 sb.append("Q");
                             else
                                 sb.append(".");
                         }
-                        tmpList.add(sb.toString());
+                        partialResList.add(sb.toString());
                     }
-                    resList.add(tmpList);
-                } else {
-                    helper(res, row + 1, resList);
+                    resList.add(partialResList);
+
+                } else {    //继续看下一行
+                    helper(tempLocations, row + 1, resList);
                 }
             }
         }
@@ -69,21 +71,21 @@ public class HARD_P051_NQueens {
 
     /**
      * 位置是否是合法位置
-     * @param res 保存结果的矩阵
+     * @param tempLocations 保存当前临时方案的数组
      * @param row 行
      * @param column 当前的column
      * @return
      */
-    private boolean isLegalLocation(int[] res, int row, int column){
+    private boolean isLegalLocation(int[] tempLocations, int row, int column){
         if(row == 0){   //第一行总是合法的
             return true;
         }
-        for (int i = 0; i <= row - 1; i++) {    //看是否在同一列
-            if(res[i] == column)
+        for (int i = 0; i <= row - 1; i++) {    //看是否在同一列。注意是从上往下，只看到本行即可。不看本行下面的。
+            if(tempLocations[i] == column)
                 return false;
         }
-        for (int i = 0; i <= row - 1; i++) {    //看是否形成对角
-            if(Math.abs(column - res[i]) == Math.abs(row - i))
+        for (int i = 0; i <= row - 1; i++) {    //看是否形成对角。注意是从上往下，只看到本行即可。不看本行下面的。
+            if(Math.abs(column - tempLocations[i]) == Math.abs(row - i))
                 return false;
         }
         return true;
