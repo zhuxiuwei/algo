@@ -228,3 +228,6 @@ top100 题目总结 2024.7
 
 [437. Path Sum III - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P437_PathSumIII.java) ★★★★★
 * 16做过。递归问题，我的思路还是不对，还是参考16年参考的思路。
+
+[23. Merge k Sorted Lists - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P023_MergeKSortedLists.java) ★
+* 16、20做过。顺利。
