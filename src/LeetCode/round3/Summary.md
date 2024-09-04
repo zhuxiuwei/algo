@@ -223,16 +223,14 @@ top100 题目总结 2024.7
 [347. Top K Frequent Elements - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P347_TopKFrequentElements.java) ★
 * 16做过。顺利。
 
-[131. Palindrome Partitioning - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P347_TopKFrequentElements.java) ★★
-* 第一次做。bp问题，对这类问题有阴影所以想的时间比较久，动手比较晚。但真写起来还挺顺利。
-
 [437. Path Sum III - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P437_PathSumIII.java) ★★★★★
 * 16做过。递归问题，我的思路还是不对，还是参考16年参考的思路。
 
 [23. Merge k Sorted Lists - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P023_MergeKSortedLists.java) ★
 * 16、20做过。顺利。
 
+[131. Palindrome Partitioning - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P131_PalindromePartitioning.java) ★★
+* 第一次做。bp问题，对这类问题有阴影所以想的时间比较久，动手比较晚。但真写起来还挺顺利。
+
 [279. Perfect Squares - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P279_PerfectSquares.java) ★★
 * 第一次做。自底向上dp，想思路花了一些时间，写的过程较顺利。
-
-
