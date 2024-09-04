@@ -50,8 +50,8 @@ public class P131_PalindromePartitioning {
                         for (List<String> partResList : tmpRes) {
                             partResList.add(0, cur);
                         }
+                        res.addAll(tmpRes);  //！！！！少了这行会返回空结果！！！！
                     }
-                    res.addAll(tmpRes);  //！！！！少了这行会返回空结果！！！！
                 }
             }
         }
