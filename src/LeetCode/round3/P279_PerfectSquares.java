@@ -30,7 +30,7 @@ public class P279_PerfectSquares {
      * for i = 2 to n:
      *   for each perfect square that <= i:
      *     计算tmp = f(i - perfectSquare) + 1
-     *     f(i) = 上面过程中最小的一个tmp。
+     *   f(i) = 上面过程中最小的一个tmp。
      * 循环结束后，返回f(n)即可。
      */
     public int numSquares(int n) {
