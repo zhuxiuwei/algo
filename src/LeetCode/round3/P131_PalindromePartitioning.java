@@ -23,7 +23,7 @@ import java.util.List;
 public class P131_PalindromePartitioning {
     /**
      * AC: 18ms Beats 6.40%. Memory 56.50MB Beats 80.62%
-     * bp问题，对这类问题有阴影所以想的时间比较久，动手比较晚。但真写起来还挺顺利。
+     * back tracking问题，对这类问题有阴影所以想的时间比较久，动手比较晚。但真写起来还挺顺利。
      */
     public List<List<String>> partition(String s) {
         return helper(s.toCharArray(), 0);
