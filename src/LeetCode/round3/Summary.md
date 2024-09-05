@@ -234,3 +234,6 @@ top100 题目总结 2024.7
 
 [279. Perfect Squares - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P279_PerfectSquares.java) ★★
 * 第一次做。自底向上dp，想思路花了一些时间，写的过程较顺利。
+
+[25. Reverse Nodes in k-Group - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P025_K个一组翻转链表.java) ★★★
+* 20做过。轻视了这个题。思路比较简单清晰，但是写的时候小问题还是挺多的，花了不少时间。
