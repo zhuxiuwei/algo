@@ -243,4 +243,5 @@ top100 题目总结 2024.7
 
 [295. Find Median from Data Stream - Hard](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P295_FindMedianFromDataStream.java) ★★★★
 * 最开始的包里思路写法，会超时。[写法1](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P295_FindMedianFromDataStream.java#L171)
-* 然后使用了二维数组(索引)降低查找时间。稍微类似__跳表__的思路。转换逻辑有点复杂，写得很花时间。[改进写法2](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P295_FindMedianFromDataStream.java#L44)
+* 然后使用了二维数组(索引)降低查找时间。稍微类似**跳表**的思路。转换逻辑有点复杂，写得很花时间。[改进写法2](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/HARD_P295_FindMedianFromDataStream.java#L44)
+* 优化前的写法，每次查找，能达到十万级的顺序查找。改进方案，降低为千级的顺序查找。
