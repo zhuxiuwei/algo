@@ -143,9 +143,9 @@ public class HARD_P295_FindMedianFromDataStream {
         p.addNum(-99999);
         System.out.println(p.findMedian()); //-99999.5
         p.addNum(888);
-        System.out.println(p.findMedian()); //-49555.5
+        System.out.println(p.findMedian()); //-99999
         p.addNum(1212);
-        System.out.println(p.findMedian()); //-99555
+        System.out.println(p.findMedian()); //-49555.5
         p.addNum(1212);
         p.addNum(2200);
         p.addNum(2200);
