@@ -249,4 +249,6 @@ top100 题目总结 2024.7
 [20. Valid Parentheses - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P020_ValidParentheses.java) ★
 * 20做过。总体顺利。有个bug，和20一样。 
 
+[169. Majority Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P169_MajorityElement.java) ★★★★
+* 16做过。和16一样，space O(1)的最佳方案自己想不到。有了思路很好写。
 
