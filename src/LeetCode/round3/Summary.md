@@ -252,3 +252,7 @@ top100 题目总结 2024.7
 [169. Majority Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P169_MajorityElement.java) ★★★★
 * 16做过。和16一样，space O(1)的最佳方案自己想不到。有了思路很好写。
 
+[1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P169_MajorityElement.java) ★
+* 第一次做。
+
+
