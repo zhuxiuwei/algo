@@ -252,12 +252,13 @@ top100 题目总结 2024.7
 [169. Majority Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P169_MajorityElement.java) ★★★★
 * 16做过。和16一样，space O(1)的最佳方案自己想不到。有了思路很好写。
 
-[1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P1143_LongestCommonSubsequence.java) ★
-* 第一次做。
+[1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P1143_LongestCommonSubsequence.java) ★★★★★
+* 第一次做。很费劲，连着两天写了好几个小时，错了3次左右。
+* 
 
 [300. Longest Increasing Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P300_LongestIncreasingSubsequence.java) ★★★
 * 16做过，这次自己想出来的。
-* 一开始轻视这个问题了。做[1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P1143_LongestCommonSubsequence.java)的过程中，最后是转化为是解决这个问题，做1143时以为这部分写对了，现在看思路应该不对。
+* 一开始轻视这个问题了。做[1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P1143_LongestCommonSubsequence.java)的过程中，最后是转化为解决这个问题，做1143时以为这部分写对了，现在看思路应该不对。
 * 然后自己想思路，想错了2-3次，最后一次思路对了。（错的思路在题目里也大致说了）
 * 自底向上DP写法。 但是我觉得我写的办法有点暴力【O(n^2)】，不过AC结果还不错。
 
