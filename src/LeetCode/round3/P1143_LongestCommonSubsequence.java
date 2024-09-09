@@ -99,6 +99,7 @@ public class P1143_LongestCommonSubsequence {
     /**
      * 找出二维数组里最长递增序列的长度
      * dp自底向上算法。
+     * hot100里也有类似题目：[300. Longest Increasing Subsequence]https://leetcode.com/problems/longest-increasing-subsequence/description/?envType=study-plan-v2&envId=top-100-liked
      */
     private int findLen(Integer[][] arr){
         int[][] cache = new int[arr.length][];
