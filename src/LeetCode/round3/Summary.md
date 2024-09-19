@@ -262,3 +262,5 @@ top100 题目总结 2024.7
 * 然后自己想思路，想错了2-3次，最后一次思路对了。（错的思路在题目里也大致说了）
 * 自底向上DP写法。 但是我觉得我写的办法有点暴力【O(n^2)】，不过AC结果还不错。
 
+[394. Decode String - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P394_DecodeString.java) ★★
+* 16做过，这次比16顺利很多。主要是要想清楚各种情况。
