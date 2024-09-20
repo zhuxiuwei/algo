@@ -31,6 +31,35 @@ import java.util.*;
 public class P1143_LongestCommonSubsequence {
 
     /**
+     * 第四次尝试。
+     */
+    public int longestCommonSubsequence(String text1, String text2) {
+        char[] chars1 = text1.toCharArray(), chars2 = text2.toCharArray();
+
+        //记录text2里每个char出现的位置
+        Map<Character, List<Integer>> text2CharIdxMap = new HashMap<>();
+        for (int i = 0; i <= chars2.length - 1 ; i++) {
+            char c = chars2[i];
+            List<Integer> indexes = text2CharIdxMap.getOrDefault(c, new ArrayList<>());
+            indexes.add(0, i);   //List次序是递减的
+            text2CharIdxMap.put(c, indexes);
+        }
+
+        Map<Character, Set<Integer>> visitedNodesMap = new HashMap<>();
+        return findLongestPath(chars1, chars1.length - 1, text2CharIdxMap, visitedNodesMap);
+    }
+
+    private int findLongestPath(char[] chars1, int startIdx,
+                                Map<Character, List<Integer>> text2CharIdxMap,
+                                Map<Character, Set<Integer>> visitedNodesMap){
+        int res = 0;
+//        for (int i = startIdx; i >= 0 ; i--) {
+//            if(text2CharIdxMap.containsKey())
+//        }
+        return res;
+    }
+
+    /**
      * 第三次尝试，思路：
      * 看text1每个char，在text2出现的位置，记录到Map<Character, List<Integer>>中
      * 从后往前遍历Map<Character, List<Integer>>，记录能找到的最长的递增序列长度，就是结果
@@ -42,9 +71,8 @@ public class P1143_LongestCommonSubsequence {
      * 反例："abcba","abcbcba" -- 期望5，实际返回3。
      * abcba里每个char对应的map value是： [0,6],[1,3,5],[2,4]
      * 最长递增序列是：[0],[1],[2]结果是其长度，3。错了。。。。。
-     * （我的结题思路是错的，调用的findLen() dp算法本身没错。）
      */
-    public int longestCommonSubsequence(String text1, String text2) {
+    public int longestCommonSubsequence_wrong(String text1, String text2) {
         char[] chars1 = text1.toCharArray(), chars2 = text2.toCharArray();
 
         //记录text2里每个char最后出现的位置
