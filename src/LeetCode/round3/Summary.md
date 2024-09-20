@@ -266,4 +266,4 @@ top100 题目总结 2024.7
 * 16做过，这次比16顺利很多。主要是要想清楚各种情况。
 
 [138. Copy List with Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P138_CopyListWithRandomPointer.java) ★
-* 16做过。
+* 16做过。总体顺利，有一个bug。
