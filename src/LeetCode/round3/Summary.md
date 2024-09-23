@@ -274,4 +274,4 @@ hot150 题目总结 2024.9
 * 20做过。主要是循环退出条件问题。开始想搞个简单写法，搞砸了。最后还是老老实实写法吧。
 
 [27. Remove Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P027_RemoveElement.java) ★
-* 20做过。主要是循环退出条件问题。开始想搞个简单写法，搞砸了。最后还是老老实实写法吧。
+* 第一次做。写的没啥技术含量。。。时间空间都是O(n)，一次过了。
