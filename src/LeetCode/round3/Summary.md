@@ -265,5 +265,13 @@ top100 题目总结 2024.7
 [394. Decode String - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P394_DecodeString.java) ★★
 * 16做过，这次比16顺利很多。主要是要想清楚各种情况。
 
-[138. Copy List with Random Pointer](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P138_CopyListWithRandomPointer.java) ★
+[138. Copy List with Random Pointer - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P138_CopyListWithRandomPointer.java) ★
 * 16做过。总体顺利，有一个bug。
+
+hot150 题目总结 2024.9
+=
+[88. Merge Sorted Array - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P088_MergeSortedArray.java) ★★
+* 20做过。主要是循环退出条件问题。开始想搞个简单写法，搞砸了。最后还是老老实实写法吧。
+
+[27. Remove Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P027_RemoveElement.java) ★
+* 20做过。主要是循环退出条件问题。开始想搞个简单写法，搞砸了。最后还是老老实实写法吧。
