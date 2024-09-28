@@ -275,3 +275,9 @@ hot150 题目总结 2024.9
 
 [27. Remove Element - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P027_RemoveElement.java) ★
 * 第一次做。写的没啥技术含量。。。时间空间都是O(n)，一次过了。
+
+[125. Valid Palindrome - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P125_ValidPalindrome.java) ★
+* 第一次做。回文判断，不难。 需要注意的是回文如何定义。这里按题目要求，**回文也可以包含数字，不只是英文字母**。数字的char不能漏了。
+
+[162. Find Peak Element - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P162_FindPeakElement.java) ★★★★
+* 第一次做。最佳思路想不出来。看了别人答案后，写起来不困难。
