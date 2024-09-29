@@ -281,3 +281,11 @@ hot150 题目总结 2024.9
 
 [162. Find Peak Element - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P162_FindPeakElement.java) ★★★★
 * 第一次做。最佳思路想不出来。看了别人答案后，写起来不困难。
+
+[228. Summary Ranges - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
+* 第一次做。顺利。
+
+
+
+
+
