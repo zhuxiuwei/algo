@@ -254,7 +254,7 @@ top100 题目总结 2024.7
 
 [1143. Longest Common Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P1143_LongestCommonSubsequence.java) ★★★★★
 * 第一次做。很费劲，连着两天写了好几个小时，错了3次左右。
-* 
+* TODO: 完成这个题
 
 [300. Longest Increasing Subsequence - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P300_LongestIncreasingSubsequence.java) ★★★★★
 * 16做过，这次自己想出来的。
@@ -284,6 +284,12 @@ hot150 题目总结 2024.9
 
 [228. Summary Ranges - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
 * 第一次做。顺利。
+
+[26. Remove Duplicates from Sorted Array - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
+* 第一次做。顺利。
+
+[80. Remove Duplicates from Sorted Array II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
+* 第一次做。在题目#26上的微小改动。顺利。
 
 
 
