@@ -297,5 +297,10 @@ hot150 题目总结 2024.9
 [383. Ransom Note - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P383_RansomNote.java) ★
 * 16做过。顺利。
 
-[918. Maximum Sum Circular Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P918_MaximumSumCircularSubarray.java) ★
-* 第一次做。
+[918. Maximum Sum Circular Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P918_MaximumSumCircularSubarray.java) ★★★★
+* 第一次做。比较费劲。
+* 第一次思路错误（写的也磕磕碰碰），第二次偏暴力思路超时（思路也想了一会儿才有）。
+* 最后看了别人答案。此思路我应该想不到。
+
+[53. Maximum Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P053_MaximumSubarray.java) ★
+* 16做过。顺利。做上面#918时，顺道解决了。是#918的简单版【数组非循环版本】。

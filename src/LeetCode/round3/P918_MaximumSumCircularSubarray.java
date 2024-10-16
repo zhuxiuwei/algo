@@ -35,34 +35,89 @@ import java.util.List;
  */
 public class P918_MaximumSumCircularSubarray {
 
+
+    /**
+     * 参考的答案：https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/178422/one-pass
+     * AC： Runtime 9 ms Beats 10.01%。 Memory 48.88 MB Beats 87.20%
+     */
     public int maxSubarraySumCircular(int[] nums) {
-        int res = nums[0], sum = 0, round = 1;
-        boolean sumBeenNegative = false;   //中途sum遇到负数过
-        for (int i = 0; ; i++) {
-            if(i == nums.length){   //过了最后一个
-                round ++;
-                if(sumBeenNegative || round > 2)    //全程都是正的，或者遍历完了第二轮，退出
-                    break;
-                if(sum > 0){    //从头遍历
-                    i = 0;
-                }else {
-                    break;
-                }
-            }else {
-                int n = nums[i];
-                sum += n;
-                res = Math.max(res, Math.max(n, sum));
-                if (sum < 0) {
-                    sum = 0;
-                    sumBeenNegative = true;
-                }
+        //case1: max在数组中间
+        int sum1 = maxSubarraySumNonCircular(nums, 0, nums.length);
+
+        //case2: max在首位相连部分。则运用公式： maxSum = totalSum - minSum。！！！！这个公式我应该想不出来！！！！！
+        //注意有个edge case。
+        int totalSum =0;
+        for (int i = 0; i < nums.length; i++) {
+            totalSum += nums[i];
+        }
+        int minSum = minSubarraySumNonCircular(nums);
+        int sum2 = totalSum - minSum;
+        if(sum2 == 0)   //特殊case：全部都是负数时，sum2会计算得0
+            sum2 = Integer.MIN_VALUE;
+
+        //返回sum1 sum2更大的即结果。
+        return Math.max(sum1, sum2);
+    }
+
+    private int minSubarraySumNonCircular(int nums[]){
+        int res = nums[0], sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int n = nums[i];
+            sum += n;
+            res = Math.min(res, Math.min(n, sum));
+            if (sum > 0) {
+                sum = 0;
             }
         }
         return res;
     }
 
+    //------------------------------------------------------------------//
+
     /**
-     * 思路：以负数为分割。分隔为多个subarray。
+     * 本题主要的复杂点在于数组是【循环】的。而非循环版本，求解是比较容易的。
+     * 思路：将数组扩展成2倍大小，然后从第一个元素开始，依次看原数组长度的subarray里非循环版本最大的sum，过程中遇到的最大sum即最终结果。
+     * 时间复杂度： O(n^2)。空间复杂度： O(n)
+     * 问题：会超时，因为确实很多重复计算，偏暴力。这个思路也想了一些时间才想出来的。
+     * @param nums
+     * @return
+     */
+    public int maxSubarraySumCircular_timeout(int[] nums) {
+        int res = nums[0];
+        //扩展原数组到2倍
+        int[] newNums = new int[nums.length * 2];
+        int len = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            newNums[i] = nums[i];
+            newNums[i + len] = nums[i];
+        }
+
+        //对n个sub array,依次调用非循环数组版本的max subarray sum.
+        for (int i = 0; i < len; i++) {
+            int tmp = maxSubarraySumNonCircular(newNums, i, i + len);
+            res = Math.max(res, tmp);
+        }
+        return res;
+    }
+
+    //求max subarray sum【非循环数组版本】
+    private int maxSubarraySumNonCircular(int[] nums, int start, int end){
+        int res = nums[0], sum = 0;
+        for (int i = start; i < end; i++) {
+            int n = nums[i];
+            sum += n;
+            res = Math.max(res, Math.max(n, sum));
+            if (sum < 0) {
+                sum = 0;
+            }
+        }
+        return res;
+    }
+
+    //------------------------------------------------------------------//
+
+    /**
+     * 错误思路：以负数为分割。分隔为多个subarray。
      * 计算每个subarray的sum，取其中最大的。第一个subarray、最后一个subArray如果能连接起来，要特殊处理。
      * ！！！！负数做分割的思路不对 ！！！！
      * 用例：{3,-1,2,-1}， expect: 4, actual: 3
@@ -130,5 +185,6 @@ public class P918_MaximumSumCircularSubarray {
         System.out.println(p.maxSubarraySumCircular(new int[]{5,-2,5,3})); //13
         System.out.println(p.maxSubarraySumCircular(new int[]{-3,-2,-3})); //-2
         System.out.println(p.maxSubarraySumCircular(new int[]{3,-1,2,-1})); //4
+        System.out.println(p.maxSubarraySumCircular(new int[]{-1,9,-30,-30, 8,-2})); //14
     }
 }
