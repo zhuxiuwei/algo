@@ -285,15 +285,17 @@ hot150 题目总结 2024.9
 [228. Summary Ranges - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
 * 第一次做。顺利。
 
-[26. Remove Duplicates from Sorted Array - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
+[26. Remove Duplicates from Sorted Array - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P026_RemoveDuplicatesFromSortedArray.java) ★
 * 第一次做。顺利。
 
-[80. Remove Duplicates from Sorted Array II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P228_SummaryRanges.java) ★
+[80. Remove Duplicates from Sorted Array II - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P080_RemoveDuplicatesFromSortedArrayII.java) ★
 * 第一次做。在题目#26上的微小改动。顺利。
 
 [36. Valid Sudoku - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P036_ValidSudoku.java) ★★★
 * 第一次做。属于理解不难，但编程有点费劲的题目。写的比较ugly，不优雅，写的也比较耗时。
 
-[383. Ransom Note - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P036_ValidSudoku.java) ★
+[383. Ransom Note - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P383_RansomNote.java) ★
 * 16做过。顺利。
 
+[918. Maximum Sum Circular Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P918_MaximumSumCircularSubarray.java) ★
+* 第一次做。
