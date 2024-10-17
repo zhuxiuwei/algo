@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 241016 medium
  * https://leetcode.com/problems/maximum-sum-circular-subarray/description/?envType=study-plan-v2&envId=top-interview-150
- * 找循环数组里子数组的最大sum
+ * 找循环数组里子数组的最大sum。P053_MaximumSubarray是此问题的简化版，非循环数组。
  *
  * Given a circular integer array nums of length n, return the maximum possible sum of a non-empty subarray of nums.
  * A circular array means the end of the array connects to the beginning of the array. Formally, the next element of nums[i] is nums[(i + 1) % n] and the previous element of nums[i] is nums[(i - 1 + n) % n].
@@ -38,6 +38,7 @@ public class P918_MaximumSumCircularSubarray {
 
     /**
      * 参考的答案：https://leetcode.com/problems/maximum-sum-circular-subarray/solutions/178422/one-pass
+     * 【--思路：反向思维--】
      * AC： Runtime 9 ms Beats 10.01%。 Memory 48.88 MB Beats 87.20%
      */
     public int maxSubarraySumCircular(int[] nums) {
@@ -52,7 +53,7 @@ public class P918_MaximumSumCircularSubarray {
         }
         int minSum = minSubarraySumNonCircular(nums);
         int sum2 = totalSum - minSum;
-        if(sum2 == 0)   //特殊case：全部都是负数时，sum2会计算得0
+        if(sum2 == 0)   //edge case：全部都是负数时，sum2会计算得0
             sum2 = Integer.MIN_VALUE;
 
         //返回sum1 sum2更大的即结果。
