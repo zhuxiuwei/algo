@@ -43,7 +43,7 @@ public class P918_MaximumSumCircularSubarray {
      */
     public int maxSubarraySumCircular(int[] nums) {
         //case1: max在数组中间
-        int sum1 = maxSubarraySumNonCircular(nums, 0, nums.length);
+        int maxSum1 = maxSubarraySumNonCircular(nums, 0, nums.length);
 
         //case2: max在首位相连部分。则运用公式： maxSum = totalSum - minSum。！！！！这个公式我应该想不出来！！！！！
         //注意有个edge case。
@@ -52,14 +52,15 @@ public class P918_MaximumSumCircularSubarray {
             totalSum += nums[i];
         }
         int minSum = minSubarraySumNonCircular(nums);
-        int sum2 = totalSum - minSum;
-        if(sum2 == 0)   //edge case：全部都是负数时，sum2会计算得0
-            sum2 = Integer.MIN_VALUE;
+        int maxSum2 = totalSum - minSum;
+        if(maxSum2 == 0)   //edge case：全部都是负数时，sum2会计算得0
+            maxSum2 = Integer.MIN_VALUE;
 
-        //返回sum1 sum2更大的即结果。
-        return Math.max(sum1, sum2);
+        //返回maxSum1 maxSum2更大的即结果。
+        return Math.max(maxSum1, maxSum2);
     }
 
+    //反向的问题：求minSum【非循环数组】
     private int minSubarraySumNonCircular(int nums[]){
         int res = nums[0], sum = 0;
         for (int i = 0; i < nums.length; i++) {

@@ -304,3 +304,6 @@ hot150 题目总结 2024.9
 
 [53. Maximum Subarray - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P053_MaximumSubarray.java) ★
 * 16做过。顺利。做上面#918时，顺道解决了。是#918的简单版【数组非循环版本】。
+
+[66. Plus One - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P066_PlusOne.java) ★
+* 第一次做，一次过。
