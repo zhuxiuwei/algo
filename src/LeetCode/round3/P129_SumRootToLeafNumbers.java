@@ -96,9 +96,7 @@ public class P129_SumRootToLeafNumbers {
         P129_SumRootToLeafNumbers p = new P129_SumRootToLeafNumbers();
         TreeNode node1 = BuildTreeFromArrayUtil.build(new Integer[]{1, 2, 3});
         System.out.println(p.sumNumbers(node1));    //25
-
-        p = new P129_SumRootToLeafNumbers();
-        TreeNode node2 = BuildTreeFromArrayUtil.build(new Integer[]{4, 9, 0, 5, 1, null, null});
+        TreeNode node2 = BuildTreeFromArrayUtil.build(new Integer[]{4, 9, 0, 5, 1});
         System.out.println(p.sumNumbers(node2));    //1026
     }
 }
