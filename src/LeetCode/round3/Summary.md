@@ -311,5 +311,9 @@ hot150 题目总结 2024.9
 [71._Simplify Path - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P071_SimplifyPath.java) ★
 * 第一次做。在选择数据结构上出了个错，以及一个边界条件问题。其余整体顺利。
 
-[129. Sum Root to Leaf Numbers](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P129_SumRootToLeafNumbers.java) ★★☆
+[129. Sum Root to Leaf Numbers - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P129_SumRootToLeafNumbers.java) ★★☆
 * 第一次做。用的递归写法，不是特别顺利，还是debug着写出来的，主要是因为一个错误点。
+
+[274. H-Index - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P274_HIndex.java) ★☆
+* 第一次做。直接用的暴力解法也过了。有一个边界条件错误点。
+
