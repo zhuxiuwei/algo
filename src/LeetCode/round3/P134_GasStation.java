@@ -43,7 +43,7 @@ public class P134_GasStation {
      * AC： Runtime 3 ms Beats 38.26%。 Memory 59.01 MB Beats 6.02%
      * 思路：
      * 取temp[k] = gas[k] - cost[k]。temp[k]相当于从k开始，跑到下一站后，车辆剩余的gas。
-     * 问题就变成了：找到idx k，在k到k期后所有元素su m过程中，sum的和一直>=0。
+     * 问题就变成了：找到idx k，在k到k期后所有元素sum过程中，sum的和一直>=0。
      *
      * O(n)解法：【思路和下面暴力法的一样，但是解法变成了O(n)】
      * i: from 0 to len(gas) - 1:
