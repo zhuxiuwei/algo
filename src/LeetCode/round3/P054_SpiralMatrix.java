@@ -21,7 +21,7 @@ public class P054_SpiralMatrix {
 
         while (true){
             startIdx = travelRight(matrix, startIdx, res, borderInfo);
-            if(res.size() >= totalNums) //退出条件
+            if(res.size() >= totalNums) //退出条件。也可以在具体的travel方法里做判断（开始位置已经超过border位置的极限则退出）
                 break;
             startIdx = travelDown(matrix, startIdx, res, borderInfo);
             if(res.size() >= totalNums) //退出条件
