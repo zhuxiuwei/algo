@@ -322,3 +322,8 @@ hot150 题目总结 2024.9
 * 有段时间没刷题，又手生了。
 * 首先暴力法，想法比较平铺直叙，写了O(n^2)的解法。期间各种因为数组边界值、循环截止和跳出的条件设置不对，各种出错。好不容易调对了，对大case还超时了。
 * 后来还是用之前暴力法的思路，但是写法变成了O(n)，AC了【写法变成O(n)的过程自己有点晕乎乎的】。
+
+[54. Spiral Matrix - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P054_SpiralMatrix.java) ★★
+* 20做过。
+* debug着写的，比20年写的啰嗦多了。。。耗时50分钟。。。
+
