@@ -62,9 +62,10 @@ public class P222_CountCompleteTreeNodes {
 
         if(node.left == null && node.right == null){
             if(totalLevel == curNodeLevel) {
-                bottomLevelNodeCount.addAndGet(1);
+                bottomLevelNodeCount.addAndGet(1);  //是最底层的叶子结点，计数加一
             }else {
-                goOn.set(false);
+                //注意使用goOn.set方法继续复用同一个AtomicBoolean，而不是new一个新的AtomicBoolean。
+                goOn.set(false);    //遍历到了非最底层的叶子，退出遍历
             }
         }
     }
