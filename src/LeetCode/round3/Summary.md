@@ -327,3 +327,10 @@ hot150 题目总结 2024.9
 * 20做过。
 * debug着写的，比20年写的啰嗦多了。。。耗时50分钟。。。
 
+[222. Count Complete Tree Nodes - Easy](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P222_CountCompleteTreeNodes.java) ★★
+* 第一次做。
+* 虽然是easy，思路还是想了查不多有20分钟。。。
+* 写还算是顺利，主要是**递归时又有那种基本类型的变量要进行引用传递**的情况，用的AtomicXXX类解决。
+
+[97. Interleaving String - Medium](https://github.com/zhuxiuwei/algo/blob/master/src/LeetCode/round3/P097_InterleavingString.java) ★
+
